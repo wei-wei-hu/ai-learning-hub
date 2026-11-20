@@ -40,8 +40,6 @@
 
 **New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-All five tracks draw from the same 22-lesson curriculum, using official OpenAI and Anthropic learning resources.
-
 The [AI Learning Curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
