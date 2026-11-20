@@ -4,7 +4,7 @@
 
 > Guardrails, oversight and what frontier research teaches about risk.
 
-**Tracks:** Leadership, Research & Safety · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Leadership, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

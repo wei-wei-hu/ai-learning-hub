@@ -4,7 +4,7 @@
 
 > How the course works, the four tracks, and the free accounts you need.
 
-**Tracks:** Leadership, Architecture, Engineering, Research & Safety · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Leadership, Architecture, Engineering, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

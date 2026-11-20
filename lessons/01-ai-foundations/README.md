@@ -4,7 +4,7 @@
 
 > How language models work, what they do well, and where they fail.
 
-**Tracks:** Leadership, Architecture, Engineering, Research & Safety · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Leadership, Architecture, Engineering, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
