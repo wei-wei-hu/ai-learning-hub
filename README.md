@@ -22,7 +22,7 @@
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
 </p>
 
-<p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a></p>
+<p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Newsletter</a></p>
 
 
 ---
@@ -107,7 +107,7 @@ open docs/index.html          # or serve the docs/ folder with any static server
 
 ## Share your feedback
 
-Tried a learning track? Tell me what worked and where you got stuck in this [3-minute feedback form](https://forms.gle/9DdkzDKoyQURQJJZ9).
+Tried a learning track? Tell me what worked and where you got stuck in this [feedback form](https://forms.gle/9DdkzDKoyQURQJJZ9).
 
 ## Contributing
 
@@ -115,11 +115,11 @@ Found a broken link, a newer official resource, or a better exercise? Contributi
 
 ## About the author
 
-Created by **Weiwei Hu** · [Website](https://weiweihu.carrd.co/) · [LinkedIn](https://www.linkedin.com/in/weiweihu/) · [GitHub](https://github.com/wei-wei-hu)
+Created by **Weiwei Hu** · [Website](https://weiweihu.carrd.co/) · [LinkedIn](https://www.linkedin.com/in/weiweihu/) · [GitHub](https://github.com/wei-wei-hu) · [Newsletter](https://behindprompt.substack.com/)
 
 Strategy and transformation leader focused on applying AI to business decisions, everyday workflows, and measurable outcomes.
 
-If you find the learning path useful, **star the repository** to help others discover it. You can also share an improvement through [CONTRIBUTING.md](./CONTRIBUTING.md) or [connect on LinkedIn](https://www.linkedin.com/in/weiweihu/).
+If you find the learning path useful, star the repository to help others discover it. You can also share an improvement through [CONTRIBUTING.md](./CONTRIBUTING.md) or [connect on LinkedIn](https://www.linkedin.com/in/weiweihu/).
 
 ## Disclaimer
 
