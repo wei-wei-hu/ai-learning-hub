@@ -29,6 +29,10 @@ All lesson content lives in [`data/lessons.json`](./data/lessons.json). Do not e
 - Use the levels `Beginner`, `Intermediate` or `Advanced`.
 - Use the types `Course`, `Docs`, `Guide`, `Article`, `Research`, `Policy`, `Cookbook`, `Repo`, `Track`, `Hub` or `Live/Video`.
 
+## License for contributions
+
+This course is copyrighted and all rights are reserved. By opening an issue or pull request, you grant the author a perpetual, worldwide, royalty-free license to use, modify and publish your contribution as part of the course, as described in [LICENSE](./LICENSE).
+
 ## Code of conduct
 
 Be kind, assume good intent, and keep discussion focused on helping learners.

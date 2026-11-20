@@ -1,21 +1,52 @@
-MIT License
+AI Learning Path
+Copyright (c) 2026 Weiwei Hu. All rights reserved.
 
-Copyright (c) 2026 Weiwei Hu
+This repository and everything in it, including the lesson text, learning
+goals, exercises, questions, curriculum structure, track design, data files,
+scripts, website code, visual design and documentation (together, "the Work"),
+are the property of Weiwei Hu and are protected by copyright law.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. WHAT YOU MAY DO
+   Without asking permission, you may:
+   a. Read and use the Work for your own personal, non-commercial learning.
+   b. Share links to this repository or to the published website.
+   c. Quote short excerpts for commentary or review, provided you credit
+      "Weiwei Hu, AI Learning Path" and link to
+      https://github.com/wei-wei-hu/ai-learning-path.
+   d. Fork this repository on GitHub only to the extent GitHub's Terms of
+      Service require, and only to propose changes back to this repository
+      through a pull request.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. WHAT YOU MAY NOT DO WITHOUT PRIOR WRITTEN PERMISSION
+   a. Copy, republish, mirror or redistribute the Work, in whole or in part,
+      in any format or on any platform.
+   b. Modify, translate, adapt or create derivative works, including other
+      courses, curricula, learning paths, books, slide decks or videos based
+      on the Work.
+   c. Use the Work, in whole or in part, for any commercial purpose, including
+      paid courses, training, consulting, coaching or products.
+   d. Remove or alter this notice, the author's name or attribution, or present
+      the Work as your own.
+   e. Use the Work to train, fine-tune or evaluate machine learning models, or
+      include it in datasets.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. CONTRIBUTIONS
+   By submitting an issue, pull request or other contribution, you grant
+   Weiwei Hu a perpetual, worldwide, royalty-free, irrevocable license to use,
+   modify and publish your contribution as part of the Work, and you confirm
+   that you have the right to grant this license.
+
+4. THIRD-PARTY MATERIAL
+   The Work links to material published by OpenAI, Anthropic and others. That
+   material is not part of the Work and remains the property of its owners
+   under their own terms. OpenAI, ChatGPT, Codex, Anthropic, Claude and other
+   names are trademarks of their respective owners. The Work is independent
+   and is not affiliated with, endorsed by or sponsored by OpenAI or Anthropic.
+
+5. NO WARRANTY
+   The Work is provided "as is", without warranty of any kind. The author is
+   not liable for any claim, damages or other liability arising from use of
+   the Work or of any linked material.
+
+For permission requests, contact Weiwei Hu on LinkedIn:
+https://www.linkedin.com/in/weiweihu/

@@ -4,7 +4,7 @@
 
 ### Learn AI and agents from the official OpenAI and Anthropic sources, in one ordered course
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-a99cf2)](./LICENSE)
+[![License: All rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2)](./LICENSE)
 [![Lessons](https://img.shields.io/badge/lessons-20-8fdcc4)](#curriculum)
 [![Tracks](https://img.shields.io/badge/tracks-4-f7b98a)](#four-tracks)
 [![Sources](https://img.shields.io/badge/sources-official%20only-f2a9cf)](#how-this-course-is-built)
@@ -104,15 +104,17 @@ open docs/index.html          # or serve the docs/ folder with any static server
 
 ## Contributing
 
-Found a broken link, a newer official resource, or a better exercise? Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first; the main rule is that every resource must come from an official OpenAI or Anthropic source.
+Found a broken link, a newer official resource, or a better exercise? Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first; the main rule is that every resource must come from an official OpenAI or Anthropic source. By contributing, you agree to the contribution terms in the [LICENSE](./LICENSE).
 
 ## About the author
 
-Created by **[Weiwei Hu](https://github.com/wei-wei-hu)**, Strategy & Transformation Leader, turning AI into better decisions, simplified workflows and measurable business value.
+Created by **Weiwei Hu** · [LinkedIn](https://www.linkedin.com/in/weiweihu/) · [GitHub](https://github.com/wei-wei-hu)
+
+Strategy & Transformation Leader, turning AI into better decisions, simplified workflows and measurable business value.
 
 Also by the author: **[Everyday AI Playbook](https://wei-wei-hu.github.io/everyday-ai-playbook/)**, a free collection of practical AI applications with prompts, examples and next steps.
 
-If this course helped you, please ⭐ the repo so more people can find it.
+If this course helped you, please ⭐ the repo so more people can find it, and [connect on LinkedIn](https://www.linkedin.com/in/weiweihu/) to follow new lessons.
 
 ## Disclaimer
 
@@ -120,4 +122,10 @@ This is an independent learning guide. It is not affiliated with, endorsed by, o
 
 ## License
 
-[MIT](./LICENSE) © 2026 Weiwei Hu
+**Copyright © 2026 Weiwei Hu. All rights reserved.**
+
+You may read and use this course for your own personal, non-commercial learning, share links to it, and quote short excerpts with credit to "Weiwei Hu, AI Learning Path" and a link to this repository.
+
+Without prior written permission, you may **not** copy, republish or redistribute this course; modify, translate or create derivative courses or materials from it; use it for any commercial purpose, including paid training or consulting; remove the author's attribution; or use it to train or evaluate AI models.
+
+Contributions are welcome under the terms in [LICENSE](./LICENSE). Linked OpenAI and Anthropic material belongs to its owners and is not covered by this license. For permission requests, contact [Weiwei Hu on LinkedIn](https://www.linkedin.com/in/weiweihu/).
