@@ -12,7 +12,7 @@
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
   <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-8fdcc4"></a>
   <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-f7b98a"></a>
-  <a href="#how-this-course-is-built"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
+  <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-8fb6ec"></a>
   <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a>
 </p>
@@ -90,7 +90,7 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## How this course is built
+## How it works
 
 - **Official sources only.** Every link goes to OpenAI or Anthropic: their academies, docs, cookbooks, blogs, research pages or GitHub organizations.
 - **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. All resources were selected and verified in November 2026.
