@@ -28,15 +28,19 @@
 
 ## Who this is for
 
-This course is for anyone who wants to learn AI from the people building it. Choose **AI at Work** if you use AI in your job, **Management** if you run a team that works with AI, **AI Leadership** if you drive AI adoption and governance, **Engineering** if you design and build AI systems, and **Safety & Governance** if you are responsible for AI risk, security or compliance. Not sure? Start with AI at Work.
+**AI Learning Path is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders.** Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
 
-AI is moving quickly. The best learning resources are often scattered across documentation, research papers, tutorials, engineering blogs, and open-source repositories. Knowing where to start—and what to study next—can be harder than finding another tutorial.
+| Learning Track | Who It's For | What You'll Learn |
+|---|---|---|
+| **AI at Work** | Professionals who want to use AI more effectively | Prompting, AI assistants, agents, and practical applications for everyday tasks |
+| **Management** | Managers leading teams that use AI | Improve team workflows, delegate tasks to AI, evaluate results, and support employees |
+| **AI Leadership** | Executives, founders, and transformation leaders | Identify AI opportunities, prioritize investments, manage risks, and lead adoption |
+| **Engineering** | Developers, architects, and technical teams | Develop AI applications and agents using APIs, SDKs, MCP, tools, and evaluations |
+| **Safety & Governance** | Security, risk, compliance, and AI governance professionals | Evaluate AI systems, understand risks, and establish appropriate safeguards |
 
-**AI Learning Path** brings together selected, publicly available resources from **OpenAI and Anthropic** into a guided, 22-lesson curriculum. Learn how language models work, use APIs and tools, create agents, evaluate their performance, and deploy them responsibly.
+**New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-Each lesson gives you official resources from both providers, a practical exercise, and questions to test what you learned. You can follow the full sequence or choose the lessons most relevant to your role.
-
-**What makes this useful:** one learning sequence, two leading AI providers, and practical work you can apply to real projects.
+All five tracks draw from the same 22-lesson curriculum, using official OpenAI and Anthropic learning resources.
 
 ## Your learning journey
 
