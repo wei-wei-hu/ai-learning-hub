@@ -17,7 +17,7 @@
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><strong>Start the interactive learning path →</strong></a>
 </p>
 
-<p align="center">Created by <a href="https://www.linkedin.com/in/weiweihu/">Weiwei Hu</a></p>
+<p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a></p>
 
 ---
 
@@ -119,7 +119,7 @@ This course is designed for curious beginners, software engineers, technical arc
 
 ## About the author
 
-Created by **Weiwei Hu** · [LinkedIn](https://www.linkedin.com/in/weiweihu/) · [GitHub](https://github.com/wei-wei-hu)
+Created by **Weiwei Hu** · [Website](https://weiweihu.carrd.co/) · [LinkedIn](https://www.linkedin.com/in/weiweihu/) · [GitHub](https://github.com/wei-wei-hu)
 
 Strategy and transformation leader focused on applying AI to business decisions, everyday workflows, and measurable outcomes.
 
