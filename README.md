@@ -2,7 +2,7 @@
 
 # AI Learning Path
 
-### Learn AI and agents from the official OpenAI and Anthropic sources, in one ordered course
+### Learn AI and agents from Experts: OpenAI and Anthropic
 
 [![License: All rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2)](./LICENSE)
 [![Lessons](https://img.shields.io/badge/lessons-20-8fdcc4)](#curriculum)
