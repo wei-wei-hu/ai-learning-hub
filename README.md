@@ -40,7 +40,7 @@ AI Learning Path is designed for anyone who wants to learn AI and AI agents, fro
 
 **New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-The [AI Learning Curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
+The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
@@ -55,11 +55,11 @@ The [AI Learning Curriculum](#ai-learning-curriculum) shows which tracks each le
 | [**5. Safety and governance**](./lessons/18-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/18-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/19-safety-security-and-governance/README.md) | An evaluation set of 20 real inputs with expected outcomes, plus a one-page risk checklist for one AI use case | Before launch of an internal AI assistant: test it on real questions and decide what needs human approval |
 | [**6. Lead and manage**](./lessons/20-managing-ai-enabled-teams/README.md) | [Managing AI-Enabled Teams](./lessons/20-managing-ai-enabled-teams/README.md) · [Leading AI Adoption](./lessons/21-leading-ai-adoption/README.md) | A tested team workflow with before-and-after measures, and a prioritized AI adoption plan | A team's recurring workflow: decide which steps AI handles, who reviews them, and compare time and error rates over two weeks |
 
-Each stage ends with a short checklist at the end of its last lesson, so you know when you are ready to move on. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [AI Learning Curriculum](#ai-learning-curriculum), and you can choose a [track](#who-this-is-for) to focus on your role.
+Each stage ends with a short checklist at the end of its last lesson, so you know when you are ready to move on. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [AI learning curriculum](#ai-learning-curriculum), and you can choose a [track](#who-this-is-for) to focus on your role.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## AI Learning Curriculum
+## AI learning curriculum
 
 <!-- CURRICULUM:START -->
 | # | Lesson | What you'll learn | Tracks |
