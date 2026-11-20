@@ -135,6 +135,10 @@ python3 scripts/build.py      # rebuild lessons, README tables and site data
 open docs/index.html          # or serve the docs/ folder with any static server
 ```
 
+## Share your feedback
+
+Tried a learning track? Tell me what worked and where you got stuck in this [3-minute feedback form](https://forms.gle/9DdkzDKoyQURQJJZ9).
+
 ## Contributing
 
 Found a broken link, a newer official resource, or a better exercise? Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first; the main rule is that every resource must come from an official OpenAI or Anthropic source. By contributing, you agree to the contribution terms in the [LICENSE](./LICENSE).
