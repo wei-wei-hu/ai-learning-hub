@@ -28,7 +28,7 @@
 
 ## Who this is for
 
-**AI Learning Path is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders.** Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
+AI Learning Path is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders. Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
 
 | Learning Track | Who It's For | What You'll Learn |
 |---|---|---|
