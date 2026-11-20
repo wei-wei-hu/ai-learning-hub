@@ -270,9 +270,11 @@ body,.bg{background:#fff}
 .socrow{margin:0}.socrow .soc{justify-content:center}
 .socrow .soc a{background:#fff;color:var(--ink);border-radius:16px;padding:13px 20px 13px 16px;box-shadow:none;font-weight:600}
 .socrow .soc a:hover{background:var(--char);color:#fff}
-#prov{background:var(--char);padding:8px;gap:6px;margin-top:22px}
-#prov .pv{color:#fff;font-weight:500}
-#prov .pv[aria-selected=true]{background:#fff!important;color:var(--ink)!important}
+#prov{margin-top:22px}
+.prov{background:var(--char);padding:8px;gap:6px}
+.prov .pv{color:#fff;font-weight:500}
+.prov .pv[aria-selected=true]{background:#fff!important;color:var(--ink)!important}
+.prov.mini{padding:6px}
 .bento{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
 .bcol{display:grid;gap:14px}
 .bento .tcard{border:0;margin:0;border-radius:32px;padding:22px;display:flex;align-items:center;gap:12px;min-height:118px}
@@ -337,7 +339,7 @@ body,.bg{background:#fff}
 
  <section id="track" hidden>
   <div class="tbar"><button class="back" id="back">← All tracks</button><span class="chip" id="pchip"></span></div>
-  <div class="prov glass mini" role="tablist" id="tprov"><button class="pv" role="tab" data-v="openai" aria-selected="false"><span class="dot"></span>OpenAI</button><button class="pv" role="tab" data-v="anthropic" aria-selected="false"><span class="dot"></span>Anthropic</button></div>
+  <div class="prov glass mini" role="tablist" id="tprov"><button class="pv" role="tab" data-v="openai" aria-selected="false"><span class="dot"></span>OpenAI</button><button class="pv" role="tab" data-v="anthropic" aria-selected="false"><span class="dot"></span>Anthropic</button><button class="pv" role="tab" data-v="course" aria-selected="false"><span class="dot"></span>Full course</button></div>
   <div class="top glass">
     <div class="ring"><svg viewBox="0 0 84 84"><circle class="tr" cx="42" cy="42" r="36"/><circle class="pg" id="pg" cx="42" cy="42" r="36"/></svg><b id="pct">0%</b></div>
     <div><h2 id="ttitle"></h2><p id="who" class="whot"></p><p id="tsum"></p></div>
@@ -484,7 +486,7 @@ document.getElementById('fchips').onclick=e=>{const b=e.target.closest('.fc');if
 document.getElementById('lessonList').onclick=e=>{const b=e.target.closest('.lrow');if(!b)return;lessonIdx=+b.dataset.l;show('lesson')};
 document.getElementById('lessonBody').onclick=e=>{if(e.target.closest('#markDone')){S['lesson.'+lessonIdx]=!S['lesson.'+lessonIdx];save();renderLesson();return}
  const nb=e.target.closest('.nb[data-go]');if(nb){lessonIdx=+nb.dataset.go;show('lesson')}};
-document.getElementById('tprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;prov=b.dataset.v;S._v=prov;lprov=null;save();render()};
+document.getElementById('tprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;if(b.dataset.v==='course'){hmode='course';S._h=hmode;save();show('home');return}prov=b.dataset.v;S._v=prov;lprov=null;save();render()};
 document.getElementById('lprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;lprov=b.dataset.v;if(lprov!=='both'){prov=lprov;S._v=prov;save()}renderLesson()};
 document.getElementById('cprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;lprov=b.dataset.v;if(lprov!=='both'){prov=lprov;S._v=prov;save()}renderCourse()};
 show('home');
