@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
-  <a href="#curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-8fdcc4"></a>
+  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-8fdcc4"></a>
   <a href="#five-tracks"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-f7b98a"></a>
   <a href="#how-this-course-is-built"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-8fb6ec"></a>
