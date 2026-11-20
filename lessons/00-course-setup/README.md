@@ -2,9 +2,9 @@
 
 [Course home](../../README.md) · [Lesson 01: AI Foundations →](../01-ai-foundations/README.md)
 
-> How the course works, the four tracks, and the free accounts you need.
+> How the course works, the five tracks, and the free accounts you need.
 
-**Tracks:** AI at Work, Management, AI Leadership, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI at Work, Management, AI Leadership, Engineering, Safety & Governance · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
@@ -40,7 +40,7 @@ OpenAI and Anthropic each publish courses, docs, cookbooks and research, but the
 
 ## Check yourself
 
-1. Which of the four tracks fits your role today, and which one would you take next?
+1. Which of the five tracks fits your role today, and which one would you take next?
 2. Where would you look first for a runnable code example from each provider?
 3. Why does it matter that every resource in this course comes from an official source?
 

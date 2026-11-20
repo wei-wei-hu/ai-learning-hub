@@ -4,7 +4,7 @@
 
 > Agents that operate screens, browsers and apps.
 
-**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering, Safety & Governance · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
