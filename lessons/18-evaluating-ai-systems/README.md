@@ -31,6 +31,10 @@ Without evals, every change to a prompt or model is a guess. Evals turn quality 
 | [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | Article | Intermediate | Rigorous evals for multi-turn agents |
 | [AI Fluency for Builders](https://anthropic.skilljar.com/) | Course | Intermediate | From problem to shipped solution |
 
+## OpenAI or Anthropic?
+
+OpenAI's courses give you a step-by-step method for evals, failure analysis and regression checks, which fits a single application with defined inputs and outputs. Anthropic's article focuses on agents that work across many turns, where a single right answer is harder to define. Use the first to set up your evaluation set and the second when you start grading agents.
+
 ## Try it
 
 1. Collect 20 real inputs for one AI feature you built in this course.

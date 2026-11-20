@@ -30,6 +30,10 @@ Most company questions depend on company documents a model has never seen. Retri
 | [Introducing Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) | Article | Intermediate | A method that improves retrieval accuracy |
 | [Claude Cookbooks: retrieval notebooks](https://github.com/anthropics/claude-cookbooks) | Repo | Intermediate | RAG recipes you can run |
 
+## OpenAI or Anthropic?
+
+OpenAI's file search gives you hosted retrieval over your files, which is the quicker way to a first working version. Anthropic's material teaches a retrieval method you assemble yourself, which takes more work and gives you more control over how documents are split and found. Begin with the hosted option, then move to your own pipeline if answer quality on your documents falls short.
+
 ## Try it
 
 1. Upload three policy or product documents to a file search tool.

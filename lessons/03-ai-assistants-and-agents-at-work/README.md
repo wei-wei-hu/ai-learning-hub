@@ -32,6 +32,10 @@ Most people meet AI through ChatGPT or Claude, not through code. The real value 
 | [Introduction to Claude Cowork](https://anthropic.skilljar.com/) | Course | Beginner | Hand Claude multi-step work on real files and projects |
 | [AI Fluency for your sector](https://anthropic.skilljar.com/) | Course | Beginner | Versions for small businesses, nonprofits, educators and creative work |
 
+## OpenAI or Anthropic?
+
+The skills are the same on both sides, so start with the assistant your organization already licenses. OpenAI Academy teaches this as repeatable workflows with review points. Anthropic's courses start from Claude's own features and add versions for specific sectors, which helps if you work in a small business, a nonprofit or education.
+
 ## Try it
 
 1. Pick three tasks you do every week, such as a summary, a draft and a small analysis.

@@ -73,7 +73,7 @@ def lesson_md(i, l):
 
 {resource_table(l['anthropic'])}
 
-## Try it
+{compare_md(l)}## Try it
 
 {tries}
 
@@ -86,6 +86,16 @@ def lesson_md(i, l):
 {nav(i)}
 
 *Track your progress in the [interactive learning path]({DATA['site']}).*
+"""
+
+
+def compare_md(l):
+    if not l.get("compare"):
+        return ""
+    return f"""## OpenAI or Anthropic?
+
+{l['compare']}
+
 """
 
 
