@@ -31,13 +31,6 @@ Each lesson gives you official resources from both providers, a practical exerci
 
 > **Start with the fundamentals. Practice with real tools. Learn when an agent is worth using—and how to evaluate one before relying on it.**
 
-## Start here
-
-| If you want to… | Go to |
-|---|---|
-| Follow a guided path with progress tracking | **[Interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/)** |
-| Read the course lesson by lesson | **[Lesson 00: Course Setup](./lessons/00-course-setup/README.md)** |
-| Jump to a topic | The [curriculum](#curriculum) below |
 
 ## Your learning journey
 
