@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <p align="center">
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img src="./docs/cover.png" alt="AI Learning Path: Learn AI and AI Agents with OpenAI and Anthropic. 20 lessons, 4 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
 </p>
@@ -21,6 +23,8 @@
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a></p>
 
+<p align="center"><a href="#your-learning-journey">Learning journey</a> · <a href="#four-tracks">Four tracks</a> · <a href="#curriculum">Curriculum</a> · <a href="#who-this-is-for">Who it's for</a> · <a href="#about-the-author">About</a> · <a href="#license">License</a></p>
+
 ---
 
 AI is moving quickly. The best learning resources are often scattered across documentation, research papers, tutorials, engineering blogs, and open-source repositories. Knowing where to start—and what to study next—can be harder than finding another tutorial.
@@ -35,24 +39,30 @@ Each lesson gives you official resources from both providers, a practical exerci
 
 | Stage | Lessons | Focus | What you can do afterward |
 |---|---|---|---|
-| **1. Understand AI** | 00–02 | Foundations, prompting, context | Explain model strengths and limitations; write more effective instructions |
-| **2. Connect AI to real work** | 03–07 | APIs, tools, structured outputs, retrieval, multimodal | Prototype applications that use external tools and information |
-| **3. Create agents** | 08–13 | Agent design, SDKs, multi-agent coordination, memory, MCP, skills | Design and prototype agent workflows with appropriate integrations |
-| **4. Operate advanced agents** | 14–16 | Coding agents, computer use, long-running tasks | Explore supervised automation and verify agent outputs |
-| **5. Evaluate and lead** | 17–19 | Evaluation, safety, governance, adoption | Define quality checks, operational safeguards, and an adoption plan |
+| [**1. Understand AI**](./lessons/00-course-setup/README.md) | [Course Setup](./lessons/00-course-setup/README.md) · [AI Foundations](./lessons/01-ai-foundations/README.md) · [Prompting and Context](./lessons/02-prompting-and-context/README.md) | Foundations, prompting, context | Explain model strengths and limitations; write more effective instructions |
+| [**2. Connect AI to real work**](./lessons/03-model-apis/README.md) | [Model APIs](./lessons/03-model-apis/README.md) · [Tool Use](./lessons/04-tool-use/README.md) · [Structured Outputs](./lessons/05-structured-outputs/README.md) · [Retrieval and RAG](./lessons/06-retrieval-and-rag/README.md) · [Multimodal](./lessons/07-multimodal/README.md) | APIs, tools, structured outputs, retrieval, multimodal | Prototype applications that use external tools and information |
+| [**3. Create agents**](./lessons/08-what-is-an-agent/README.md) | [What Makes an Agent](./lessons/08-what-is-an-agent/README.md) · [Agent Frameworks](./lessons/09-agent-frameworks/README.md) · [Multi-Agent Systems](./lessons/10-multi-agent-systems/README.md) · [Memory and Context](./lessons/11-memory-and-context-engineering/README.md) · [MCP and Integrations](./lessons/12-mcp-and-integrations/README.md) · [Skills and Plugins](./lessons/13-skills-and-plugins/README.md) | Agent design, SDKs, multi-agent coordination, memory, MCP, skills | Design and prototype agent workflows with appropriate integrations |
+| [**4. Operate advanced agents**](./lessons/14-coding-agents/README.md) | [Coding Agents](./lessons/14-coding-agents/README.md) · [Computer Use](./lessons/15-computer-use/README.md) · [Long-Running Agents](./lessons/16-long-running-and-managed-agents/README.md) | Coding agents, computer use, long-running tasks | Explore supervised automation and verify agent outputs |
+| [**5. Evaluate and lead**](./lessons/17-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/17-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/18-safety-security-and-governance/README.md) · [Leading AI Adoption](./lessons/19-leading-ai-adoption/README.md) | Evaluation, safety, governance, adoption | Define quality checks, operational safeguards, and an adoption plan |
 
-These stages describe learning goals. Some exercises may require programming experience, API access, or paid usage.
+These stages describe learning goals. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [Curriculum](#curriculum), and you can choose a [track](#four-tracks) to focus on your role.
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
 ## Four tracks
 
 Every lesson is tagged with the tracks it serves, so you can take only what fits your role.
 
-| Track | Who it is for |
-|---|---|
-| **Leadership** | Leaders who sponsor, govern and scale AI across an organization |
-| **Architecture** | Architects and technical leads designing AI systems, integrations and evals |
-| **Engineering** | Engineers writing AI and agent code, including coding agents |
-| **Research** | Anyone who wants to understand how frontier models behave and how they are kept safe |
+| Track | Who it is for | Start with |
+|---|---|---|
+| **Leadership** | Leaders who sponsor, govern and scale AI across an organization | [Lesson 01: AI Foundations](./lessons/01-ai-foundations/README.md) |
+| **Architecture** | Architects and technical leads designing AI systems, integrations and evals | [Lesson 03: Working with the Model APIs](./lessons/03-model-apis/README.md) |
+| **Engineering** | Engineers writing AI and agent code, including coding agents | [Lesson 03: Working with the Model APIs](./lessons/03-model-apis/README.md) |
+| **Research** | Anyone who wants to understand how frontier models behave and how they are kept safe | [Lesson 18: Safety, Security and Governance](./lessons/18-safety-security-and-governance/README.md) |
+
+The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
 ## Curriculum
 
@@ -80,6 +90,8 @@ Every lesson is tagged with the tracks it serves, so you can take only what fits
 | 18 | [Safety, Security and Governance](./lessons/18-safety-security-and-governance/README.md) | Guardrails, oversight and what frontier research teaches about risk | `Leadership` `Research` |
 | 19 | [Leading AI Adoption](./lessons/19-leading-ai-adoption/README.md) | Strategy, roadmaps and helping a whole organization use AI well | `Leadership` |
 <!-- CURRICULUM:END -->
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
 ## How this course is built
 
