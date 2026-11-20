@@ -98,7 +98,6 @@ The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [in
 - **Official sources only.** Every link goes to OpenAI or Anthropic: their academies, docs, cookbooks, blogs, research pages or GitHub organizations.
 - **Two providers, one order.** The lessons are organized by topic, so you see how each provider handles the same idea.
 - **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. Lessons are also reviewed by hand, because a working link does not prove the content is still current. Last full review: November 2026.
-- **One source of truth.** All lesson content lives in [`data/lessons.json`](./data/lessons.json). A small script builds the lesson pages, this curriculum table and the interactive site from it.
 
 ## Run it locally
 
