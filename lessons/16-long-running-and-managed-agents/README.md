@@ -21,7 +21,6 @@ In 2026 both providers launched hosted agent runtimes: OpenAI's Agents API and A
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Introducing the Agents API](https://openai.com/index/introducing-the-agents-api/) | Article | Intermediate | Managed Codex harness with sandbox choices |
-| [Agents API examples](https://developers.openai.com/cookbook/examples/agents_api/readme) | Cookbook | Advanced | Sessions and streaming |
 | [openai/symphony](https://github.com/openai/symphony) | Repo | Advanced | Run autonomous Codex agents from a Linear board |
 
 ## Learn from Anthropic

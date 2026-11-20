@@ -1098,13 +1098,6 @@
           "Managed Codex harness with sandbox choices"
         ],
         [
-          "Agents API examples",
-          "https://developers.openai.com/cookbook/examples/agents_api/readme",
-          "Cookbook",
-          "Advanced",
-          "Sessions and streaming"
-        ],
-        [
           "openai/symphony",
           "https://github.com/openai/symphony",
           "Repo",

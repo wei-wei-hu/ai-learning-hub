@@ -23,9 +23,13 @@
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a></p>
 
-<p align="center"><a href="#your-learning-journey">Learning journey</a> · <a href="#four-tracks">Four tracks</a> · <a href="#curriculum">Curriculum</a> · <a href="#who-this-is-for">Who it's for</a> · <a href="#about-the-author">About</a> · <a href="#license">License</a></p>
+<p align="center"><a href="#who-this-is-for">Who it's for</a> · <a href="#your-learning-journey">Learning journey</a> · <a href="#four-tracks">Four tracks</a> · <a href="#curriculum">Curriculum</a> · <a href="#about-the-author">About</a> · <a href="#license">License</a></p>
 
 ---
+
+## Who this is for
+
+This course is designed for curious beginners, software engineers, technical architects, and leaders responsible for adopting AI. Start with the **Leadership** track if you are focused on business decisions and governance; choose **Engineering** or **Architecture** for implementation depth. The **Research** track highlights model behavior and risk.
 
 AI is moving quickly. The best learning resources are often scattered across documentation, research papers, tutorials, engineering blogs, and open-source repositories. Knowing where to start—and what to study next—can be harder than finding another tutorial.
 
@@ -96,8 +100,7 @@ The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [in
 ## How this course is built
 
 - **Official sources only.** Every link goes to OpenAI or Anthropic: their academies, docs, cookbooks, blogs, research pages or GitHub organizations.
-- **Two providers, one order.** The lessons are organized by topic, so you see how each provider handles the same idea.
-- **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. Lessons are also reviewed by hand, because a working link does not prove the content is still current. Last full review: November 2026.
+- **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. All resources were selected and verified in November 2026.
 
 ## Run it locally
 
@@ -111,10 +114,6 @@ open docs/index.html          # or serve the docs/ folder with any static server
 ## Contributing
 
 Found a broken link, a newer official resource, or a better exercise? Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first; the main rule is that every resource must come from an official OpenAI or Anthropic source. By contributing, you agree to the contribution terms in the [LICENSE](./LICENSE).
-
-## Who this is for
-
-This course is designed for curious beginners, software engineers, technical architects, and leaders responsible for adopting AI. Start with the **Leadership** track if you are focused on business decisions and governance; choose **Engineering** or **Architecture** for implementation depth. The **Research** track highlights model behavior and risk.
 
 ## About the author
 
