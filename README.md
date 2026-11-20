@@ -6,7 +6,7 @@
 
 <h1 align="center">AI Learning Path</h1>
 
-<p align="center"><strong>22 free, structured lessons · Official learning resources · Hands-on practice · Five role-based tracks</strong></p>
+<p align="center"><strong>Free lessons · Official learning resources · Hands-on practice · Role-based tracks</strong></p>
 
 <p align="center">
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
