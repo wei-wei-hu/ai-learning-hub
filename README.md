@@ -10,11 +10,11 @@
 
 <p align="center">
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-555555"></a>
-  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-e0c24a"></a>
+  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-d98f88"></a>
   <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-8fb277"></a>
   <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-d99cc0"></a>
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-7fb3dd"></a>
-  <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-e0c24a"></a>
+  <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-d98f88"></a>
   <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-555555"></a>
 </p>
 
