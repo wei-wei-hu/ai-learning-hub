@@ -4,7 +4,7 @@
 
 > Run agents for hours in hosted harnesses and sandboxes.
 
-**Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

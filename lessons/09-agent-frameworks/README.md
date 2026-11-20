@@ -4,7 +4,7 @@
 
 > Build your first agent with each provider's official SDK.
 
-**Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

@@ -4,7 +4,7 @@
 
 > Let models call your code, search the web and act on real systems.
 
-**Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

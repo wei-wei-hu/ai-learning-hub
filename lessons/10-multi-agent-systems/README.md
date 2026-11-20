@@ -4,7 +4,7 @@
 
 > Handoffs, subagents and when splitting work across agents helps.
 
-**Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

@@ -4,7 +4,7 @@
 
 > Ground answers in your own documents and data.
 
-**Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

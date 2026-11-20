@@ -1,16 +1,16 @@
 <a id="top"></a>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img src="./docs/cover.png" alt="AI Learning Path: Learn AI and AI Agents with OpenAI and Anthropic. 20 lessons, 4 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img src="./docs/cover.png" alt="AI Learning Path: Learn AI and AI Agents with OpenAI and Anthropic. 21 lessons, 4 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
 </p>
 
 <h1 align="center">AI Learning Path</h1>
 
-<p align="center"><strong>20 free, structured lessons · Official learning resources · Hands-on practice · Four role-based tracks</strong></p>
+<p align="center"><strong>21 free, structured lessons · Official learning resources · Hands-on practice · Four role-based tracks</strong></p>
 
 <p align="center">
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
-  <a href="#curriculum"><img alt="Lessons: 20" src="https://img.shields.io/badge/lessons-20-8fdcc4"></a>
+  <a href="#curriculum"><img alt="Lessons: 21" src="https://img.shields.io/badge/lessons-21-8fdcc4"></a>
   <a href="#four-tracks"><img alt="Tracks: 4" src="https://img.shields.io/badge/tracks-4-f7b98a"></a>
   <a href="#how-this-course-is-built"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
   <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-8fb6ec"></a>
@@ -29,11 +29,11 @@
 
 ## Who this is for
 
-This course is designed for curious beginners, software engineers, technical architects, and leaders responsible for adopting AI. Start with the **Leadership** track if you are focused on business decisions and governance; choose **Engineering** or **Architecture** for implementation depth. The **Research** track highlights model behavior and risk.
+This course is designed for curious beginners, managers, engineers and the people leading AI adoption in their organizations. Choose **AI Leadership** if you drive AI adoption and governance, **Management** if you run a team that works with AI, **Engineering** if you design and build AI systems, and **Research** to understand how frontier models behave and how they are kept safe.
 
 AI is moving quickly. The best learning resources are often scattered across documentation, research papers, tutorials, engineering blogs, and open-source repositories. Knowing where to start—and what to study next—can be harder than finding another tutorial.
 
-**AI Learning Path** brings together selected, publicly available resources from **OpenAI and Anthropic** into a guided, 20-lesson curriculum. Learn how language models work, use APIs and tools, create agents, evaluate their performance, and deploy them responsibly.
+**AI Learning Path** brings together selected, publicly available resources from **OpenAI and Anthropic** into a guided, 21-lesson curriculum. Learn how language models work, use APIs and tools, create agents, evaluate their performance, and deploy them responsibly.
 
 Each lesson gives you official resources from both providers, a practical exercise, and questions to test what you learned. You can follow the full sequence or choose the lessons most relevant to your role.
 
@@ -47,7 +47,7 @@ Each lesson gives you official resources from both providers, a practical exerci
 | [**2. Connect AI to real work**](./lessons/03-model-apis/README.md) | [Model APIs](./lessons/03-model-apis/README.md) · [Tool Use](./lessons/04-tool-use/README.md) · [Structured Outputs](./lessons/05-structured-outputs/README.md) · [Retrieval and RAG](./lessons/06-retrieval-and-rag/README.md) · [Multimodal](./lessons/07-multimodal/README.md) | Prototype applications that use external tools and information |
 | [**3. Create agents**](./lessons/08-what-is-an-agent/README.md) | [What Makes an Agent](./lessons/08-what-is-an-agent/README.md) · [Agent Frameworks](./lessons/09-agent-frameworks/README.md) · [Multi-Agent Systems](./lessons/10-multi-agent-systems/README.md) · [Memory and Context](./lessons/11-memory-and-context-engineering/README.md) · [MCP and Integrations](./lessons/12-mcp-and-integrations/README.md) · [Skills and Plugins](./lessons/13-skills-and-plugins/README.md) | Design and prototype agent workflows with appropriate integrations |
 | [**4. Operate advanced agents**](./lessons/14-coding-agents/README.md) | [Coding Agents](./lessons/14-coding-agents/README.md) · [Computer Use](./lessons/15-computer-use/README.md) · [Long-Running Agents](./lessons/16-long-running-and-managed-agents/README.md) | Explore supervised automation and verify agent outputs |
-| [**5. Evaluate and lead**](./lessons/17-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/17-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/18-safety-security-and-governance/README.md) · [Leading AI Adoption](./lessons/19-leading-ai-adoption/README.md) | Define quality checks, operational safeguards, and an adoption plan |
+| [**5. Evaluate and lead**](./lessons/17-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/17-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/18-safety-security-and-governance/README.md) · [Managing AI-Enabled Teams](./lessons/19-managing-ai-enabled-teams/README.md) · [Leading AI Adoption](./lessons/20-leading-ai-adoption/README.md) | Define quality checks, safeguards, a team operating model and an adoption plan |
 
 These stages describe learning goals. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [Curriculum](#curriculum), and you can choose a [track](#four-tracks) to focus on your role.
 
@@ -57,12 +57,12 @@ These stages describe learning goals. Some exercises may require programming exp
 
 Every lesson is tagged with the tracks it serves, so you can take only what fits your role.
 
-| Track | Who it is for | Start with |
-|---|---|---|
-| **Leadership** | Leaders who sponsor, govern and scale AI across an organization | [Lesson 01: AI Foundations](./lessons/01-ai-foundations/README.md) |
-| **Architecture** | Architects and technical leads designing AI systems, integrations and evals | [Lesson 03: Working with the Model APIs](./lessons/03-model-apis/README.md) |
-| **Engineering** | Engineers writing AI and agent code, including coding agents | [Lesson 03: Working with the Model APIs](./lessons/03-model-apis/README.md) |
-| **Research** | Anyone who wants to understand how frontier models behave and how they are kept safe | [Lesson 18: Safety, Security and Governance](./lessons/18-safety-security-and-governance/README.md) |
+| Track | Who it is for |
+|---|---|
+| **AI Leadership** | People who lead AI adoption: transformation leads, AI champions and the executives who sponsor them |
+| **Management** | Managers whose teams work with AI every day |
+| **Engineering** | Architects and engineers who design, build and run AI systems |
+| **Research** | Anyone who wants to understand how frontier models behave and how they are kept safe |
 
 The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
 
@@ -73,26 +73,27 @@ The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [in
 <!-- CURRICULUM:START -->
 | # | Lesson | What you'll learn | Tracks |
 |---|---|---|---|
-| 00 | [Course Setup](./lessons/00-course-setup/README.md) | How the course works, the four tracks, and the free accounts you need | `Leadership` `Architecture` `Engineering` `Research` |
-| 01 | [AI Foundations](./lessons/01-ai-foundations/README.md) | How language models work, what they do well, and where they fail | `Leadership` `Architecture` `Engineering` `Research` |
-| 02 | [Prompting and Context](./lessons/02-prompting-and-context/README.md) | Write instructions models follow reliably, and give them the right context | `Architecture` `Engineering` |
-| 03 | [Working with the Model APIs](./lessons/03-model-apis/README.md) | Call models from code with the Responses API and the Messages API | `Architecture` `Engineering` |
-| 04 | [Tool Use and Function Calling](./lessons/04-tool-use/README.md) | Let models call your code, search the web and act on real systems | `Architecture` `Engineering` |
-| 05 | [Structured Outputs](./lessons/05-structured-outputs/README.md) | Generate schema-constrained JSON and handle validation failures | `Architecture` `Engineering` |
-| 06 | [Retrieval and Agentic RAG](./lessons/06-retrieval-and-rag/README.md) | Ground answers in your own documents and data | `Architecture` `Engineering` |
-| 07 | [Multimodal: Vision, Audio and Voice](./lessons/07-multimodal/README.md) | Work with images, speech and real-time voice | `Architecture` `Engineering` |
-| 08 | [What Makes an Agent](./lessons/08-what-is-an-agent/README.md) | Workflows versus agents, and when an agent is worth building | `Leadership` `Architecture` `Engineering` |
-| 09 | [Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK](./lessons/09-agent-frameworks/README.md) | Build your first agent with each provider's official SDK | `Architecture` `Engineering` |
-| 10 | [Multi-Agent Systems and Orchestration](./lessons/10-multi-agent-systems/README.md) | Handoffs, subagents and when splitting work across agents helps | `Architecture` `Engineering` |
-| 11 | [Memory and Context Engineering](./lessons/11-memory-and-context-engineering/README.md) | Keep agents on track across long tasks and many sessions | `Architecture` `Engineering` |
-| 12 | [Model Context Protocol and Integrations](./lessons/12-mcp-and-integrations/README.md) | Connect AI to your tools and data through the open MCP standard | `Architecture` `Engineering` |
-| 13 | [Skills and Plugins](./lessons/13-skills-and-plugins/README.md) | Package know-how so any agent can reuse it | `Architecture` `Engineering` |
-| 14 | [Coding Agents: Codex and Claude Code](./lessons/14-coding-agents/README.md) | Delegate real software work and verify the results | `Leadership` `Architecture` `Engineering` |
-| 15 | [Computer Use and Browser Agents](./lessons/15-computer-use/README.md) | Agents that operate screens, browsers and apps | `Architecture` `Engineering` `Research` |
-| 16 | [Long-Running and Managed Agents](./lessons/16-long-running-and-managed-agents/README.md) | Run agents for hours in hosted harnesses and sandboxes | `Architecture` `Engineering` |
-| 17 | [Evaluating AI Systems](./lessons/17-evaluating-ai-systems/README.md) | Prove quality with evals before and after you ship | `Leadership` `Architecture` `Engineering` |
-| 18 | [Safety, Security and Governance](./lessons/18-safety-security-and-governance/README.md) | Guardrails, oversight and what frontier research teaches about risk | `Leadership` `Research` |
-| 19 | [Leading AI Adoption](./lessons/19-leading-ai-adoption/README.md) | Strategy, roadmaps and helping a whole organization use AI well | `Leadership` |
+| 00 | [Course Setup](./lessons/00-course-setup/README.md) | How the course works, the four tracks, and the free accounts you need | `AI Leadership` `Management` `Engineering` `Research` |
+| 01 | [AI Foundations](./lessons/01-ai-foundations/README.md) | How language models work, what they do well, and where they fail | `AI Leadership` `Management` `Engineering` `Research` |
+| 02 | [Prompting and Context](./lessons/02-prompting-and-context/README.md) | Write instructions models follow reliably, and give them the right context | `Management` `Engineering` |
+| 03 | [Working with the Model APIs](./lessons/03-model-apis/README.md) | Call models from code with the Responses API and the Messages API | `Engineering` |
+| 04 | [Tool Use and Function Calling](./lessons/04-tool-use/README.md) | Let models call your code, search the web and act on real systems | `Engineering` |
+| 05 | [Structured Outputs](./lessons/05-structured-outputs/README.md) | Generate schema-constrained JSON and handle validation failures | `Engineering` |
+| 06 | [Retrieval and Agentic RAG](./lessons/06-retrieval-and-rag/README.md) | Ground answers in your own documents and data | `Engineering` |
+| 07 | [Multimodal: Vision, Audio and Voice](./lessons/07-multimodal/README.md) | Work with images, speech and real-time voice | `Engineering` |
+| 08 | [What Makes an Agent](./lessons/08-what-is-an-agent/README.md) | Workflows versus agents, and when an agent is worth building | `AI Leadership` `Management` `Engineering` |
+| 09 | [Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK](./lessons/09-agent-frameworks/README.md) | Build your first agent with each provider's official SDK | `Engineering` |
+| 10 | [Multi-Agent Systems and Orchestration](./lessons/10-multi-agent-systems/README.md) | Handoffs, subagents and when splitting work across agents helps | `Engineering` |
+| 11 | [Memory and Context Engineering](./lessons/11-memory-and-context-engineering/README.md) | Keep agents on track across long tasks and many sessions | `Engineering` |
+| 12 | [Model Context Protocol and Integrations](./lessons/12-mcp-and-integrations/README.md) | Connect AI to your tools and data through the open MCP standard | `Engineering` |
+| 13 | [Skills and Plugins](./lessons/13-skills-and-plugins/README.md) | Package know-how so any agent can reuse it | `Management` `Engineering` |
+| 14 | [Coding Agents: Codex and Claude Code](./lessons/14-coding-agents/README.md) | Delegate real software work and verify the results | `AI Leadership` `Engineering` |
+| 15 | [Computer Use and Browser Agents](./lessons/15-computer-use/README.md) | Agents that operate screens, browsers and apps | `Engineering` `Research` |
+| 16 | [Long-Running and Managed Agents](./lessons/16-long-running-and-managed-agents/README.md) | Run agents for hours in hosted harnesses and sandboxes | `Engineering` |
+| 17 | [Evaluating AI Systems](./lessons/17-evaluating-ai-systems/README.md) | Prove quality with evals before and after you ship | `AI Leadership` `Management` `Engineering` |
+| 18 | [Safety, Security and Governance](./lessons/18-safety-security-and-governance/README.md) | Guardrails, oversight and what frontier research teaches about risk | `AI Leadership` `Research` |
+| 19 | [Managing AI-Enabled Teams](./lessons/19-managing-ai-enabled-teams/README.md) | Redesign team workflows, set review standards and coach people as AI takes on more of the work | `Management` |
+| 20 | [Leading AI Adoption](./lessons/20-leading-ai-adoption/README.md) | Strategy, roadmaps and helping a whole organization use AI well | `AI Leadership` |
 <!-- CURRICULUM:END -->
 
 <p align="right"><a href="#top">↑ Back to top</a></p>

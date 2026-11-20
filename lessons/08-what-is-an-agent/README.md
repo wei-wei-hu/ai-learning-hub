@@ -4,7 +4,7 @@
 
 > Workflows versus agents, and when an agent is worth building.
 
-**Tracks:** Leadership, Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI Leadership, Management, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

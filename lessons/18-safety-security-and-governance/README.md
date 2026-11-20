@@ -1,10 +1,10 @@
 # Lesson 18: Safety, Security and Governance
 
-[← Lesson 17: Evaluating AI Systems](../17-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 19: Leading AI Adoption →](../19-leading-ai-adoption/README.md)
+[← Lesson 17: Evaluating AI Systems](../17-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 19: Managing AI-Enabled Teams →](../19-managing-ai-enabled-teams/README.md)
 
 > Guardrails, oversight and what frontier research teaches about risk.
 
-**Tracks:** Leadership, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI Leadership, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
@@ -48,6 +48,6 @@ As agents gain access to systems and data, mistakes and misuse get more expensiv
 
 ---
 
-[← Lesson 17: Evaluating AI Systems](../17-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 19: Leading AI Adoption →](../19-leading-ai-adoption/README.md)
+[← Lesson 17: Evaluating AI Systems](../17-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 19: Managing AI-Enabled Teams →](../19-managing-ai-enabled-teams/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

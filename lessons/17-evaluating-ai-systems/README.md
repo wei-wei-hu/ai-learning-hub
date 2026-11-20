@@ -4,7 +4,7 @@
 
 > Prove quality with evals before and after you ship.
 
-**Tracks:** Leadership, Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI Leadership, Management, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

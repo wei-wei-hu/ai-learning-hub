@@ -3,8 +3,8 @@
   "site": "https://wei-wei-hu.github.io/ai-learning-path/",
   "verified": "November 2026",
   "tracks": {
-    "L": "Leadership",
-    "A": "Architecture",
+    "L": "AI Leadership",
+    "M": "Management",
     "E": "Engineering",
     "R": "Research"
   },
@@ -15,7 +15,7 @@
       "summary": "How the course works, the four tracks, and the free accounts you need",
       "tracks": [
         "L",
-        "A",
+        "M",
         "E",
         "R"
       ],
@@ -88,7 +88,7 @@
       "summary": "How language models work, what they do well, and where they fail",
       "tracks": [
         "L",
-        "A",
+        "M",
         "E",
         "R"
       ],
@@ -153,7 +153,7 @@
       "title": "Prompting and Context",
       "summary": "Write instructions models follow reliably, and give them the right context",
       "tracks": [
-        "A",
+        "M",
         "E"
       ],
       "goals": [
@@ -217,7 +217,6 @@
       "title": "Working with the Model APIs",
       "summary": "Call models from code with the Responses API and the Messages API",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -288,7 +287,6 @@
       "title": "Tool Use and Function Calling",
       "summary": "Let models call your code, search the web and act on real systems",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -345,7 +343,6 @@
       "title": "Structured Outputs",
       "summary": "Generate schema-constrained JSON and handle validation failures",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -388,7 +385,6 @@
       "title": "Retrieval and Agentic RAG",
       "summary": "Ground answers in your own documents and data",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -445,7 +441,6 @@
       "title": "Multimodal: Vision, Audio and Voice",
       "summary": "Work with images, speech and real-time voice",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -510,7 +505,7 @@
       "summary": "Workflows versus agents, and when an agent is worth building",
       "tracks": [
         "L",
-        "A",
+        "M",
         "E"
       ],
       "goals": [
@@ -574,7 +569,6 @@
       "title": "Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK",
       "summary": "Build your first agent with each provider's official SDK",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -659,7 +653,6 @@
       "title": "Multi-Agent Systems and Orchestration",
       "summary": "Handoffs, subagents and when splitting work across agents helps",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -716,7 +709,6 @@
       "title": "Memory and Context Engineering",
       "summary": "Keep agents on track across long tasks and many sessions",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -773,7 +765,6 @@
       "title": "Model Context Protocol and Integrations",
       "summary": "Connect AI to your tools and data through the open MCP standard",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -844,7 +835,7 @@
       "title": "Skills and Plugins",
       "summary": "Package know-how so any agent can reuse it",
       "tracks": [
-        "A",
+        "M",
         "E"
       ],
       "goals": [
@@ -930,7 +921,6 @@
       "summary": "Delegate real software work and verify the results",
       "tracks": [
         "L",
-        "A",
         "E"
       ],
       "goals": [
@@ -1015,7 +1005,6 @@
       "title": "Computer Use and Browser Agents",
       "summary": "Agents that operate screens, browsers and apps",
       "tracks": [
-        "A",
         "E",
         "R"
       ],
@@ -1080,7 +1069,6 @@
       "title": "Long-Running and Managed Agents",
       "summary": "Run agents for hours in hosted harnesses and sandboxes",
       "tracks": [
-        "A",
         "E"
       ],
       "goals": [
@@ -1145,7 +1133,7 @@
       "summary": "Prove quality with evals before and after you ship",
       "tracks": [
         "L",
-        "A",
+        "M",
         "E"
       ],
       "goals": [
@@ -1290,7 +1278,77 @@
       ]
     },
     {
-      "slug": "19-leading-ai-adoption",
+      "slug": "19-managing-ai-enabled-teams",
+      "title": "Managing AI-Enabled Teams",
+      "summary": "Redesign team workflows, set review standards and coach people as AI takes on more of the work",
+      "tracks": [
+        "M"
+      ],
+      "goals": [
+        "Map a team workflow and decide which steps go to AI, which stay with people, and where review happens",
+        "Set quality standards for AI-assisted work that the whole team follows",
+        "Measure whether AI is helping and coach the team through the change"
+      ],
+      "why": "Most AI adoption happens one team at a time, and managers decide how it lands. A manager who redesigns the work, sets clear review standards and measures results gets far more from AI than one who only hands out tools. This lesson turns the earlier ideas into a plan for your own team.",
+      "openai": [
+        [
+          "Applied AI Foundations",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Beginner",
+          "Turn tasks into repeatable workflows with review points · 75–90 min"
+        ],
+        [
+          "Agents and Workflows",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Intermediate",
+          "Delegate structured tasks with checkpoints and oversight · 75–90 min"
+        ],
+        [
+          "Scope AI Solutions",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Beginner",
+          "Turn one opportunity into a solution plan · 30 min"
+        ]
+      ],
+      "anthropic": [
+        [
+          "AI Fluency: Framework & Foundations",
+          "https://anthropic.skilljar.com/",
+          "Course",
+          "Beginner",
+          "Collaborate with AI effectively, efficiently, ethically and safely"
+        ],
+        [
+          "Introduction to Claude Cowork",
+          "https://anthropic.skilljar.com/",
+          "Course",
+          "Beginner",
+          "Hand Claude multi-step work on real files"
+        ],
+        [
+          "Building agents with Skills",
+          "https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work",
+          "Article",
+          "Beginner",
+          "Package team know-how so agents can reuse it"
+        ]
+      ],
+      "try": [
+        "Pick one workflow your team runs every week, such as a weekly report or a customer reply process.",
+        "Map each step and mark it AI, person, or AI with human review; write the review checklist for the reviewed steps.",
+        "Run the new version for two weeks and compare time spent and error rate with the old one."
+      ],
+      "check": [
+        "Which steps in your team's work should never go to AI without review, and why?",
+        "What would a fair quality standard for AI-assisted work look like on your team?",
+        "How will you tell whether AI is helping your team, beyond how often people use it?"
+      ]
+    },
+    {
+      "slug": "20-leading-ai-adoption",
       "title": "Leading AI Adoption",
       "summary": "Strategy, roadmaps and helping a whole organization use AI well",
       "tracks": [

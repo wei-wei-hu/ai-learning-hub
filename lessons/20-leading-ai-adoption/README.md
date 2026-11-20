@@ -1,10 +1,10 @@
-# Lesson 19: Leading AI Adoption
+# Lesson 20: Leading AI Adoption
 
-[← Lesson 18: Safety, Security and Governance](../18-safety-security-and-governance/README.md) · [Course home](../../README.md)
+[← Lesson 19: Managing AI-Enabled Teams](../19-managing-ai-enabled-teams/README.md) · [Course home](../../README.md)
 
 > Strategy, roadmaps and helping a whole organization use AI well.
 
-**Tracks:** Leadership · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI Leadership · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
@@ -46,6 +46,6 @@ Tools are rarely the bottleneck; people, processes and priorities are. Both acad
 
 ---
 
-[← Lesson 18: Safety, Security and Governance](../18-safety-security-and-governance/README.md) · [Course home](../../README.md)
+[← Lesson 19: Managing AI-Enabled Teams](../19-managing-ai-enabled-teams/README.md) · [Course home](../../README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
