@@ -9,13 +9,13 @@
 <p align="center"><strong>Free lessons · Official learning resources · Hands-on practice · Role-based tracks</strong></p>
 
 <p align="center">
-  <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
-  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-8fdcc4"></a>
-  <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-f7b98a"></a>
-  <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
-  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-8fb6ec"></a>
-  <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-a99cf2"></a>
-  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a>
+  <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-b09ae6"></a>
+  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-f28c52"></a>
+  <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-f2bd3a"></a>
+  <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-b09ae6"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-93a8ea"></a>
+  <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-f28c52"></a>
+  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-1c1b1f"></a>
 </p>
 
 <p align="center">
