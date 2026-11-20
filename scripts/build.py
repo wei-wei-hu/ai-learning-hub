@@ -121,7 +121,6 @@ def main():
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")
     text = replace_between(text, "<!-- CURRICULUM:START -->", "<!-- CURRICULUM:END -->", curriculum_md())
-    text = replace_between(text, "<!-- TRACKS:START -->", "<!-- TRACKS:END -->", tracks_md())
     readme.write_text(text, encoding="utf-8")
 
     site = ROOT / "docs" / "index.html"

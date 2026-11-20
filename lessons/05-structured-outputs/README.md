@@ -2,7 +2,7 @@
 
 [← Lesson 04: Tool Use and Function Calling](../04-tool-use/README.md) · [Course home](../../README.md) · [Lesson 06: Retrieval and Agentic RAG →](../06-retrieval-and-rag/README.md)
 
-> Get valid JSON that matches your schema, every time.
+> Generate schema-constrained JSON and handle validation failures.
 
 **Tracks:** Architecture, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
