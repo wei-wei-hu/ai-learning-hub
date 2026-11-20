@@ -293,6 +293,9 @@ body,.bg{background:#fff}
 .lh{background:var(--c)}.lh .orb{background:#fff}.lh .sum{color:rgba(20,20,20,.65)}
 @media(max-width:1340px){.wrap{padding-top:22px}.topr{top:36px;right:44px}#track,#course,#lesson{padding-top:52px}}
 @media(max-width:600px){.wrap{margin:0;padding:14px 14px 24px}.topr{top:26px;right:26px}.hero{border-radius:36px;padding:62px 18px 26px}.bento{gap:10px}.bcol{gap:10px}.bento .tcard{padding:18px 16px;border-radius:28px;min-height:104px}.bt .tn{font-size:16px}.rg{flex-basis:58px;width:58px;height:58px}.b1 .rg{flex-basis:84px;width:84px;height:84px}.num{font-size:28px}.socrow .soc a{padding:11px 14px 11px 12px}}
+.b6{grid-column:1/-1}
+.bt.dark{color:#fff}.bt.dark .num,.bt.dark .upd{color:rgba(255,255,255,.8)}.bt.dark .rg .r0{stroke:rgba(255,255,255,.25)}
+.bignum{font-size:58px;font-weight:500;letter-spacing:-.04em;color:rgba(20,20,20,.72);line-height:1}
 </style>
 </head>
 <body>
@@ -404,12 +407,18 @@ function stat(p,k){let a=0,d=0;p.st.forEach((s,si)=>s[2].forEach((_,i)=>{a++;if(
 function renderHome(){
  P=DATA[prov].P;
  document.querySelectorAll('.pv').forEach(t=>t.setAttribute('aria-selected',t.dataset.v===prov));
- if(hmode==='course'){document.getElementById('cards').className='';setSel('prov','course');document.getElementById('homeRt').textContent='Choose a stage';
-  document.getElementById('cards').innerHTML=COURSE.stages.map((s,k)=>{const [c,c2,g]=k===5?['#555555','#ffffff','transparent']:COL[k%5];const n=s.last-s.first+1;let d=0;for(let i=s.first;i<=s.last;i++)if(lessonDone(i))d++;
-   return `<button class="tcard glass${k===5?' dark':''}" data-s="${k}" style="--c:${c};--c2:${c2};--glow:${g}"><span class="orb big">${k+1}</span>
-   <span class="tc"><span class="tn">${esc(s.name)}</span><span class="tw">${esc(s.project)}</span>
-   <span class="tm">${n} lessons${d?` · ${Math.round(d/n*100)}% done`:''}</span>
-   <span class="bar mini"><i style="width:${d/n*100}%"></i></span></span><span class="arrow">›</span></button>`}).join('');return}
+ if(hmode==='course'){document.getElementById('cards').className='bento';setSel('prov','course');document.getElementById('homeRt').textContent='Choose a stage';
+  const rg=(pct,c2,inner)=>`<span class="rg"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" class="r0"/><circle cx="22" cy="22" r="18" class="r1" stroke="${c2}" stroke-dasharray="113.1" stroke-dashoffset="${113.1*(1-pct)}"/></svg><span class="ri">${inner}</span></span>`;
+  const G=COURSE.stages.map((s,k)=>{const [c,c2]=k===5?['#555555','#ffffff']:COL[k%5];const n=s.last-s.first+1;let d=0;for(let i=s.first;i<=s.last;i++)if(lessonDone(i))d++;return {k,s,c,c2,n,d,pct:d/n}});
+  const st=(g,cls,body)=>`<button class="tcard bt ${cls}" data-s="${g.k}" style="--c:${g.c};--c2:${g.c2}" aria-label="Stage ${g.k+1}: ${esc(g.s.name)}">${body}</button>`;
+  const up=g=>g.d?`${g.d} of ${g.n} lessons done`:`Stage ${g.k+1}`;
+  const wide=g=>`<span class="bx"><span class="tn">${esc(g.s.name)}</span><span class="num sm">${g.n} <small>lessons</small></span><span class="upd">${up(g)}</span></span>${rg(g.pct,g.c2,g.k+1)}`;
+  document.getElementById('cards').innerHTML=
+   st(G[0],'b1',`<span class="bx"><span class="tn">${esc(G[0].s.name)}</span><span class="num">${G[0].n} <small>lessons</small></span><span class="upd">${up(G[0])}</span></span>${rg(G[0].pct,G[0].c2,1)}`)+
+   st(G[1],'b2',`<span class="tn">${esc(G[1].s.name)}</span><span class="upd">${G[1].n} lessons · ${up(G[1])}</span><svg class="wave" viewBox="0 0 200 40" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><path d="M4 16c20-12 36-6 50 6s26 14 40 2 22-16 36-2 22 16 34 4 20-14 32-14"/></svg>`)+
+   `<div class="bcol">`+st(G[2],'b3',wide(G[2]))+st(G[3],'b3',wide(G[3]))+`</div>`+
+   st(G[4],'b5',`<span class="tn">${esc(G[4].s.name)}</span><span class="bignum">5</span><span class="num sm">${G[4].n} <small>lessons</small></span>`)+
+   st(G[5],'b3 b6 dark',wide(G[5]));return}
  document.getElementById('homeRt').textContent='Choose a track';
  const ring=(pct,c2,inner)=>`<span class="rg"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" class="r0"/><circle cx="22" cy="22" r="18" class="r1" stroke="${c2}" stroke-dasharray="113.1" stroke-dashoffset="${113.1*(1-pct)}"/></svg><span class="ri">${inner}</span></span>`;
  const ico=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICO[k]}</svg>`;
