@@ -42,21 +42,6 @@
 
 All five tracks draw from the same 22-lesson curriculum, using official OpenAI and Anthropic learning resources.
 
-## Your learning journey
-
-| Stage | Lessons | What you finish with | Example scenario |
-|---|---|---|---|
-| [**1. Get started with AI**](./lessons/00-course-setup/README.md) | [Course Setup](./lessons/00-course-setup/README.md) · [AI Foundations](./lessons/01-ai-foundations/README.md) · [Prompting and Context](./lessons/02-prompting-and-context/README.md) · [AI Assistants and Agents at Work](./lessons/03-ai-assistants-and-agents-at-work/README.md) · [What Makes an Agent](./lessons/04-what-is-an-agent/README.md) | A reusable AI workflow for one task you do every week, with a saved prompt and a review step | An executive research assistant: turn a set of reports into a one-page brief you can check against the sources |
-| [**2. Build AI applications**](./lessons/05-model-apis/README.md) | [Model APIs](./lessons/05-model-apis/README.md) · [Tool Use](./lessons/06-tool-use/README.md) · [Structured Outputs](./lessons/07-structured-outputs/README.md) · [Retrieval and RAG](./lessons/08-retrieval-and-rag/README.md) · [Multimodal](./lessons/09-multimodal/README.md) | A small application that calls a model API, uses one tool and returns structured output | An automated weekly report: pull figures from a data source and produce the same report format every week |
-| [**3. Build agents**](./lessons/10-agent-frameworks/README.md) | [Agent Frameworks](./lessons/10-agent-frameworks/README.md) · [Multi-Agent Systems](./lessons/11-multi-agent-systems/README.md) · [Memory and Context](./lessons/12-memory-and-context-engineering/README.md) · [MCP and Integrations](./lessons/13-mcp-and-integrations/README.md) · [Skills and Plugins](./lessons/14-skills-and-plugins/README.md) | A working agent that uses at least one tool integration through MCP and one reusable skill | A customer support agent: look up an order, draft a reply and hand off to a person when it is unsure |
-| [**4. Run advanced agents**](./lessons/15-coding-agents/README.md) | [Coding Agents](./lessons/15-coding-agents/README.md) · [Computer Use](./lessons/16-computer-use/README.md) · [Long-Running Agents](./lessons/17-long-running-and-managed-agents/README.md) | One real task completed by a coding or long-running agent, with a written review of what it did | An AI-assisted software review: have a coding agent review a pull request and compare its findings with a human review |
-| [**5. Safety and governance**](./lessons/18-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/18-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/19-safety-security-and-governance/README.md) | An evaluation set of 20 real inputs with expected outcomes, plus a one-page risk checklist for one AI use case | Before launch of an internal AI assistant: test it on real questions and decide what needs human approval |
-| [**6. Lead and manage**](./lessons/20-managing-ai-enabled-teams/README.md) | [Managing AI-Enabled Teams](./lessons/20-managing-ai-enabled-teams/README.md) · [Leading AI Adoption](./lessons/21-leading-ai-adoption/README.md) | A tested team workflow with before-and-after measures, and a prioritized AI adoption plan | A team's recurring workflow: decide which steps AI handles, who reviews them, and compare time and error rates over two weeks |
-
-Each stage ends with a short checklist at the end of its last lesson, so you know when you are ready to move on. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [Curriculum](#curriculum), and you can choose a [track](#five-tracks) to focus on your role.
-
-<p align="right"><a href="#top">↑ Back to top</a></p>
-
 ## Five tracks
 
 Every lesson is tagged with the tracks it serves, so you can take only what fits your role.
@@ -70,6 +55,21 @@ Every lesson is tagged with the tracks it serves, so you can take only what fits
 | **Safety & Governance** | Risk, compliance, security and governance teams, and anyone responsible for using AI safely |
 
 The [Curriculum](#curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
+
+## Your learning journey
+
+| Stage | Lessons | What you finish with | Example scenario |
+|---|---|---|---|
+| [**1. Get started with AI**](./lessons/00-course-setup/README.md) | [Course Setup](./lessons/00-course-setup/README.md) · [AI Foundations](./lessons/01-ai-foundations/README.md) · [Prompting and Context](./lessons/02-prompting-and-context/README.md) · [AI Assistants and Agents at Work](./lessons/03-ai-assistants-and-agents-at-work/README.md) · [What Makes an Agent](./lessons/04-what-is-an-agent/README.md) | A reusable AI workflow for one task you do every week, with a saved prompt and a review step | An executive research assistant: turn a set of reports into a one-page brief you can check against the sources |
+| [**2. Build AI applications**](./lessons/05-model-apis/README.md) | [Model APIs](./lessons/05-model-apis/README.md) · [Tool Use](./lessons/06-tool-use/README.md) · [Structured Outputs](./lessons/07-structured-outputs/README.md) · [Retrieval and RAG](./lessons/08-retrieval-and-rag/README.md) · [Multimodal](./lessons/09-multimodal/README.md) | A small application that calls a model API, uses one tool and returns structured output | An automated weekly report: pull figures from a data source and produce the same report format every week |
+| [**3. Build agents**](./lessons/10-agent-frameworks/README.md) | [Agent Frameworks](./lessons/10-agent-frameworks/README.md) · [Multi-Agent Systems](./lessons/11-multi-agent-systems/README.md) · [Memory and Context](./lessons/12-memory-and-context-engineering/README.md) · [MCP and Integrations](./lessons/13-mcp-and-integrations/README.md) · [Skills and Plugins](./lessons/14-skills-and-plugins/README.md) | A working agent that uses at least one tool integration through MCP and one reusable skill | A customer support agent: look up an order, draft a reply and hand off to a person when it is unsure |
+| [**4. Run advanced agents**](./lessons/15-coding-agents/README.md) | [Coding Agents](./lessons/15-coding-agents/README.md) · [Computer Use](./lessons/16-computer-use/README.md) · [Long-Running Agents](./lessons/17-long-running-and-managed-agents/README.md) | One real task completed by a coding or long-running agent, with a written review of what it did | An AI-assisted software review: have a coding agent review a pull request and compare its findings with a human review |
+| [**5. Safety and governance**](./lessons/18-evaluating-ai-systems/README.md) | [Evaluating AI](./lessons/18-evaluating-ai-systems/README.md) · [Safety and Governance](./lessons/19-safety-security-and-governance/README.md) | An evaluation set of 20 real inputs with expected outcomes, plus a one-page risk checklist for one AI use case | Before launch of an internal AI assistant: test it on real questions and decide what needs human approval |
+| [**6. Lead and manage**](./lessons/20-managing-ai-enabled-teams/README.md) | [Managing AI-Enabled Teams](./lessons/20-managing-ai-enabled-teams/README.md) · [Leading AI Adoption](./lessons/21-leading-ai-adoption/README.md) | A tested team workflow with before-and-after measures, and a prioritized AI adoption plan | A team's recurring workflow: decide which steps AI handles, who reviews them, and compare time and error rates over two weeks |
+
+Each stage ends with a short checklist at the end of its last lesson, so you know when you are ready to move on. Some exercises may require programming experience, API access, or paid usage. Every lesson is listed in the [Curriculum](#curriculum), and you can choose a [track](#five-tracks) to focus on your role.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
