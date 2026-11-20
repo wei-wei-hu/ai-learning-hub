@@ -95,7 +95,7 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 - **Official sources only.** Every link goes to OpenAI or Anthropic: their academies, docs, cookbooks, blogs, research pages or GitHub organizations.
 - **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. All resources were selected and verified in November 2026.
 
-## Run it locally
+## Run the repository locally
 
 ```bash
 git clone https://github.com/wei-wei-hu/ai-learning-path.git
