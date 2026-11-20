@@ -1,0 +1,21 @@
+name: Broken link
+description: Report a link that no longer works or points to the wrong page
+labels: [broken-link]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson
+      placeholder: "e.g. Lesson 09: Agent Frameworks"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Broken link
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Official replacement (if you found one)

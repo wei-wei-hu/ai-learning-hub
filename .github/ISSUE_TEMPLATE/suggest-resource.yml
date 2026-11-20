@@ -1,0 +1,30 @@
+name: Suggest an official resource
+description: Propose a new OpenAI or Anthropic resource for a lesson
+labels: [new-resource]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      description: Must be published by OpenAI or Anthropic
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options: [OpenAI, Anthropic]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What does a learner get from it?
+    validations:
+      required: true
