@@ -121,8 +121,6 @@ Created by **Weiwei Hu** · [Website](https://weiweihu.carrd.co/) · [LinkedIn](
 
 Strategy and transformation leader focused on applying AI to business decisions, everyday workflows, and measurable outcomes.
 
-Also by the author: **[Everyday AI Playbook](https://wei-wei-hu.github.io/everyday-ai-playbook/)**, a free collection of practical AI applications with prompts, examples and next steps.
-
 If you find the learning path useful, **star the repository** to help others discover it. You can also share an improvement through [CONTRIBUTING.md](./CONTRIBUTING.md) or [connect on LinkedIn](https://www.linkedin.com/in/weiweihu/).
 
 ## Disclaimer
