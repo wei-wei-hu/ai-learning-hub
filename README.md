@@ -93,7 +93,7 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 
 ## How it works
 
-- **Official sources only.** Every link goes to OpenAI or Anthropic: their academies, docs, cookbooks, blogs, research pages or GitHub organizations.
+- **Official sources only.** Every link goes to OpenAI or Anthropic, including the academies, docs, cookbooks, blogs, and research pages.
 - **Maintained.** A GitHub Action checks every link each week and opens an issue when one breaks. All resources were selected and verified in November 2026.
 
 ## Run the repository locally
