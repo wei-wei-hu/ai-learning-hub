@@ -23,7 +23,6 @@
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://weiweihu.carrd.co/">Website</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a></p>
 
-<p align="center"><a href="#who-this-is-for">Who it's for</a> · <a href="#your-learning-journey">Learning journey</a> · <a href="#five-tracks">Five tracks</a> · <a href="#curriculum">Curriculum</a> · <a href="#about-the-author">About</a> · <a href="#license">License</a></p>
 
 ---
 
