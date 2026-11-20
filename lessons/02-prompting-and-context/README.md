@@ -1,10 +1,10 @@
 # Lesson 02: Prompting and Context
 
-[← Lesson 01: AI Foundations](../01-ai-foundations/README.md) · [Course home](../../README.md) · [Lesson 03: Working with the Model APIs →](../03-model-apis/README.md)
+[← Lesson 01: AI Foundations](../01-ai-foundations/README.md) · [Course home](../../README.md) · [Lesson 03: AI Assistants and Agents at Work →](../03-ai-assistants-and-agents-at-work/README.md)
 
 > Write instructions models follow reliably, and give them the right context.
 
-**Tracks:** Management, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI at Work, Management, AI Leadership, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 
@@ -45,6 +45,6 @@ Most poor AI output comes from vague instructions or missing context. Learning t
 
 ---
 
-[← Lesson 01: AI Foundations](../01-ai-foundations/README.md) · [Course home](../../README.md) · [Lesson 03: Working with the Model APIs →](../03-model-apis/README.md)
+[← Lesson 01: AI Foundations](../01-ai-foundations/README.md) · [Course home](../../README.md) · [Lesson 03: AI Assistants and Agents at Work →](../03-ai-assistants-and-agents-at-work/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

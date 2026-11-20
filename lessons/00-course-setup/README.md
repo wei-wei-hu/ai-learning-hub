@@ -4,7 +4,7 @@
 
 > How the course works, the four tracks, and the free accounts you need.
 
-**Tracks:** AI Leadership, Management, Engineering, Research · **Sources:** official OpenAI and Anthropic material, verified November 2026
+**Tracks:** AI at Work, Management, AI Leadership, Engineering · **Sources:** official OpenAI and Anthropic material, verified November 2026
 
 ## In this lesson
 

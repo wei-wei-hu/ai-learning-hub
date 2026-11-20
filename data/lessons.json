@@ -3,10 +3,10 @@
   "site": "https://wei-wei-hu.github.io/ai-learning-path/",
   "verified": "November 2026",
   "tracks": {
-    "L": "AI Leadership",
+    "W": "AI at Work",
     "M": "Management",
-    "E": "Engineering",
-    "R": "Research"
+    "L": "AI Leadership",
+    "E": "Engineering"
   },
   "lessons": [
     {
@@ -14,10 +14,10 @@
       "title": "Course Setup",
       "summary": "How the course works, the four tracks, and the free accounts you need",
       "tracks": [
-        "L",
+        "W",
         "M",
-        "E",
-        "R"
+        "L",
+        "E"
       ],
       "goals": [
         "Pick the track that matches your role",
@@ -87,10 +87,10 @@
       "title": "AI Foundations",
       "summary": "How language models work, what they do well, and where they fail",
       "tracks": [
-        "L",
+        "W",
         "M",
-        "E",
-        "R"
+        "L",
+        "E"
       ],
       "goals": [
         "Explain in plain words how a language model produces an answer",
@@ -153,7 +153,9 @@
       "title": "Prompting and Context",
       "summary": "Write instructions models follow reliably, and give them the right context",
       "tracks": [
+        "W",
         "M",
+        "L",
         "E"
       ],
       "goals": [
@@ -213,7 +215,145 @@
       ]
     },
     {
-      "slug": "03-model-apis",
+      "slug": "03-ai-assistants-and-agents-at-work",
+      "title": "AI Assistants and Agents at Work",
+      "summary": "Use ChatGPT and Claude for real work with your own files, and hand off multi-step tasks you can check",
+      "tracks": [
+        "W",
+        "M",
+        "L"
+      ],
+      "goals": [
+        "Use an AI assistant for research, writing and analysis with your own files",
+        "Hand a multi-step task to an agent feature and review what it did",
+        "Build a weekly routine around the tasks AI does well for you"
+      ],
+      "why": "Most people meet AI through ChatGPT or Claude, not through code. The real value comes from moving past one-off questions to repeatable tasks with your own files and a clear review step. Both academies built their most popular courses around this kind of everyday work.",
+      "openai": [
+        [
+          "Applied AI Foundations",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Beginner",
+          "Turn tasks into repeatable workflows with review points · 75–90 min"
+        ],
+        [
+          "Agents and Workflows",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Intermediate",
+          "Delegate structured tasks with checkpoints and oversight · 75–90 min"
+        ],
+        [
+          "OpenAI Academy",
+          "https://www.openai.com/academy",
+          "Hub",
+          "Beginner",
+          "The Apply AI at Work pathway and more"
+        ]
+      ],
+      "anthropic": [
+        [
+          "Claude 101",
+          "https://anthropic.skilljar.com/",
+          "Course",
+          "Beginner",
+          "Claude for everyday work and its core features"
+        ],
+        [
+          "Introduction to Claude Cowork",
+          "https://anthropic.skilljar.com/",
+          "Course",
+          "Beginner",
+          "Hand Claude multi-step work on real files and projects"
+        ],
+        [
+          "AI Fluency for your sector",
+          "https://anthropic.skilljar.com/",
+          "Course",
+          "Beginner",
+          "Versions for small businesses, nonprofits, educators and creative work"
+        ]
+      ],
+      "try": [
+        "Pick three tasks you do every week, such as a summary, a draft and a small analysis.",
+        "Do each one with an AI assistant using your own files, then do the longest one with an agent feature such as ChatGPT's agent mode or Claude Cowork.",
+        "Note the time each took and every correction you made, and keep the version that saved the most time for next week."
+      ],
+      "check": [
+        "Which task gave the best result, and what made it different from the others?",
+        "What did you have to correct, and what does that tell you about where review is needed?",
+        "Which of your tasks would you never hand off fully, and why?"
+      ]
+    },
+    {
+      "slug": "04-what-is-an-agent",
+      "title": "What Makes an Agent",
+      "summary": "Workflows versus agents, and when an agent is worth building",
+      "tracks": [
+        "W",
+        "M",
+        "L",
+        "E"
+      ],
+      "goals": [
+        "Tell a fixed workflow apart from an agent",
+        "Name the three parts of every agent: model, tools, instructions",
+        "Decide whether a use case needs an agent at all"
+      ],
+      "why": "Many teams build agents for jobs a simple workflow would do better. Both providers' foundational guides argue for starting simple and adding autonomy only when it earns its keep. This lesson gives you the vocabulary to make that call.",
+      "openai": [
+        [
+          "A practical guide to building agents",
+          "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+          "Guide",
+          "Beginner",
+          "When to build, core parts, orchestration, guardrails"
+        ],
+        [
+          "Building agents learning track",
+          "https://developers.openai.com/tracks/building-agents",
+          "Track",
+          "Beginner",
+          "OpenAI's structured agent track"
+        ],
+        [
+          "Agents and Workflows",
+          "https://academy.openai.com/pages/courses",
+          "Course",
+          "Intermediate",
+          "Delegate tasks to agents with oversight · 75–90 min"
+        ]
+      ],
+      "anthropic": [
+        [
+          "Building effective agents",
+          "https://www.anthropic.com/engineering/building-effective-agents",
+          "Article",
+          "Beginner",
+          "Workflows versus agents, and the common building blocks"
+        ],
+        [
+          "Building agents with Skills",
+          "https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work",
+          "Article",
+          "Beginner",
+          "Why general agents plus skills beat many specialized agents"
+        ]
+      ],
+      "try": [
+        "List five tasks your team wants to automate.",
+        "For each, decide: single prompt, fixed workflow, or agent, and write one sentence on why.",
+        "Pick the one that truly needs an agent and sketch its model, tools and instructions."
+      ],
+      "check": [
+        "What is the main risk of choosing an agent when a workflow would do?",
+        "What signals tell you a task needs open-ended decision making?",
+        "How would you explain the difference to a non-technical executive?"
+      ]
+    },
+    {
+      "slug": "05-model-apis",
       "title": "Working with the Model APIs",
       "summary": "Call models from code with the Responses API and the Messages API",
       "tracks": [
@@ -283,7 +423,7 @@
       ]
     },
     {
-      "slug": "04-tool-use",
+      "slug": "06-tool-use",
       "title": "Tool Use and Function Calling",
       "summary": "Let models call your code, search the web and act on real systems",
       "tracks": [
@@ -339,7 +479,7 @@
       ]
     },
     {
-      "slug": "05-structured-outputs",
+      "slug": "07-structured-outputs",
       "title": "Structured Outputs",
       "summary": "Generate schema-constrained JSON and handle validation failures",
       "tracks": [
@@ -381,7 +521,7 @@
       ]
     },
     {
-      "slug": "06-retrieval-and-rag",
+      "slug": "08-retrieval-and-rag",
       "title": "Retrieval and Agentic RAG",
       "summary": "Ground answers in your own documents and data",
       "tracks": [
@@ -437,7 +577,7 @@
       ]
     },
     {
-      "slug": "07-multimodal",
+      "slug": "09-multimodal",
       "title": "Multimodal: Vision, Audio and Voice",
       "summary": "Work with images, speech and real-time voice",
       "tracks": [
@@ -500,72 +640,7 @@
       ]
     },
     {
-      "slug": "08-what-is-an-agent",
-      "title": "What Makes an Agent",
-      "summary": "Workflows versus agents, and when an agent is worth building",
-      "tracks": [
-        "L",
-        "M",
-        "E"
-      ],
-      "goals": [
-        "Tell a fixed workflow apart from an agent",
-        "Name the three parts of every agent: model, tools, instructions",
-        "Decide whether a use case needs an agent at all"
-      ],
-      "why": "Many teams build agents for jobs a simple workflow would do better. Both providers' foundational guides argue for starting simple and adding autonomy only when it earns its keep. This lesson gives you the vocabulary to make that call.",
-      "openai": [
-        [
-          "A practical guide to building agents",
-          "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
-          "Guide",
-          "Beginner",
-          "When to build, core parts, orchestration, guardrails"
-        ],
-        [
-          "Building agents learning track",
-          "https://developers.openai.com/tracks/building-agents",
-          "Track",
-          "Beginner",
-          "OpenAI's structured agent track"
-        ],
-        [
-          "Agents and Workflows",
-          "https://academy.openai.com/pages/courses",
-          "Course",
-          "Intermediate",
-          "Delegate tasks to agents with oversight · 75–90 min"
-        ]
-      ],
-      "anthropic": [
-        [
-          "Building effective agents",
-          "https://www.anthropic.com/engineering/building-effective-agents",
-          "Article",
-          "Beginner",
-          "Workflows versus agents, and the common building blocks"
-        ],
-        [
-          "Building agents with Skills",
-          "https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work",
-          "Article",
-          "Beginner",
-          "Why general agents plus skills beat many specialized agents"
-        ]
-      ],
-      "try": [
-        "List five tasks your team wants to automate.",
-        "For each, decide: single prompt, fixed workflow, or agent, and write one sentence on why.",
-        "Pick the one that truly needs an agent and sketch its model, tools and instructions."
-      ],
-      "check": [
-        "What is the main risk of choosing an agent when a workflow would do?",
-        "What signals tell you a task needs open-ended decision making?",
-        "How would you explain the difference to a non-technical executive?"
-      ]
-    },
-    {
-      "slug": "09-agent-frameworks",
+      "slug": "10-agent-frameworks",
       "title": "Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK",
       "summary": "Build your first agent with each provider's official SDK",
       "tracks": [
@@ -639,17 +714,17 @@
       ],
       "try": [
         "Complete both quickstarts.",
-        "Give each agent the get_order_status tool from Lesson 4.",
+        "Give each agent the get_order_status tool from Lesson 6.",
         "Ask a question that needs two tool calls and compare the traces."
       ],
       "check": [
-        "What does the SDK do for you that you did by hand in Lesson 4?",
+        "What does the SDK do for you that you did by hand in Lesson 6?",
         "Where would you add a guardrail in each SDK?",
         "What did the traces reveal that the final answer hid?"
       ]
     },
     {
-      "slug": "10-multi-agent-systems",
+      "slug": "11-multi-agent-systems",
       "title": "Multi-Agent Systems and Orchestration",
       "summary": "Handoffs, subagents and when splitting work across agents helps",
       "tracks": [
@@ -705,7 +780,7 @@
       ]
     },
     {
-      "slug": "11-memory-and-context-engineering",
+      "slug": "12-memory-and-context-engineering",
       "title": "Memory and Context Engineering",
       "summary": "Keep agents on track across long tasks and many sessions",
       "tracks": [
@@ -761,7 +836,7 @@
       ]
     },
     {
-      "slug": "12-mcp-and-integrations",
+      "slug": "13-mcp-and-integrations",
       "title": "Model Context Protocol and Integrations",
       "summary": "Connect AI to your tools and data through the open MCP standard",
       "tracks": [
@@ -831,10 +906,11 @@
       ]
     },
     {
-      "slug": "13-skills-and-plugins",
+      "slug": "14-skills-and-plugins",
       "title": "Skills and Plugins",
       "summary": "Package know-how so any agent can reuse it",
       "tracks": [
+        "W",
         "M",
         "E"
       ],
@@ -916,7 +992,7 @@
       ]
     },
     {
-      "slug": "14-coding-agents",
+      "slug": "15-coding-agents",
       "title": "Coding Agents: Codex and Claude Code",
       "summary": "Delegate real software work and verify the results",
       "tracks": [
@@ -1001,12 +1077,11 @@
       ]
     },
     {
-      "slug": "15-computer-use",
+      "slug": "16-computer-use",
       "title": "Computer Use and Browser Agents",
       "summary": "Agents that operate screens, browsers and apps",
       "tracks": [
-        "E",
-        "R"
+        "E"
       ],
       "goals": [
         "Explain the screenshot → action loop",
@@ -1065,7 +1140,7 @@
       ]
     },
     {
-      "slug": "16-long-running-and-managed-agents",
+      "slug": "17-long-running-and-managed-agents",
       "title": "Long-Running and Managed Agents",
       "summary": "Run agents for hours in hosted harnesses and sandboxes",
       "tracks": [
@@ -1128,12 +1203,12 @@
       ]
     },
     {
-      "slug": "17-evaluating-ai-systems",
+      "slug": "18-evaluating-ai-systems",
       "title": "Evaluating AI Systems",
       "summary": "Prove quality with evals before and after you ship",
       "tracks": [
-        "L",
         "M",
+        "L",
         "E"
       ],
       "goals": [
@@ -1193,12 +1268,12 @@
       ]
     },
     {
-      "slug": "18-safety-security-and-governance",
+      "slug": "19-safety-security-and-governance",
       "title": "Safety, Security and Governance",
       "summary": "Guardrails, oversight and what frontier research teaches about risk",
       "tracks": [
         "L",
-        "R"
+        "E"
       ],
       "goals": [
         "Map the main risks of agents with real access",
@@ -1267,7 +1342,7 @@
         ]
       ],
       "try": [
-        "Take the agent you designed in Lesson 16.",
+        "Take the agent you designed in Lesson 17.",
         "List every action it can take and rate each as low, medium or high impact.",
         "Add a human approval step for every high-impact action and a log for the rest."
       ],
@@ -1278,7 +1353,7 @@
       ]
     },
     {
-      "slug": "19-managing-ai-enabled-teams",
+      "slug": "20-managing-ai-enabled-teams",
       "title": "Managing AI-Enabled Teams",
       "summary": "Redesign team workflows, set review standards and coach people as AI takes on more of the work",
       "tracks": [
@@ -1348,7 +1423,7 @@
       ]
     },
     {
-      "slug": "20-leading-ai-adoption",
+      "slug": "21-leading-ai-adoption",
       "title": "Leading AI Adoption",
       "summary": "Strategy, roadmaps and helping a whole organization use AI well",
       "tracks": [
