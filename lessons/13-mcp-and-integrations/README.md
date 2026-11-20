@@ -32,9 +32,11 @@ MCP is the shared standard both providers support for connecting models to outsi
 | [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) | Article | Advanced | Call tools through code to save context |
 | [modelcontextprotocol.io](https://modelcontextprotocol.io) | Docs | Intermediate | The open standard's official site |
 
-## OpenAI or Anthropic?
+## Which approach should you explore?
 
-MCP is an open standard, so a server you write once can serve both. Anthropic's courses teach you to write servers and clients. OpenAI's Apps SDK uses MCP to put your app inside ChatGPT. Write the server first, then choose the front end by where your users already work.
+MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's Apps SDK focuses on integrating applications into ChatGPT. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server.
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 ## Try it
 

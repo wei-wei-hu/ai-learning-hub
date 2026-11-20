@@ -34,9 +34,11 @@ Coding agents are where agentic AI is most mature today. OpenAI's harness engine
 | [Claude Code docs](https://code.claude.com/docs/en/overview) | Docs | Beginner | Setup, commands, settings |
 | [Claude Code: best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices) | Article | Intermediate | Habits from Anthropic's engineers |
 
-## OpenAI or Anthropic?
+## Which approach should you explore?
 
-Codex and Claude Code cover the same job, and both run from the terminal and in an editor. Preference here depends heavily on your codebase and how your team reviews changes. Give both the same real task from your own repository, review the two results the way you would review a colleague's work, and keep the one that needed fewer corrections.
+Codex and Claude Code cover the same job, and both run from the terminal and in an editor. Preference here depends heavily on your codebase and how your team reviews changes. Give both the same real task from your own repository, then compare correctness, test results, maintainability, review effort and cost.
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 ## Try it
 

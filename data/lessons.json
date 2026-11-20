@@ -288,7 +288,7 @@
     "What did you have to correct, and what does that tell you about where review is needed?",
     "Which of your tasks would you never hand off fully, and why?"
    ],
-   "compare": "The skills are the same on both sides, so start with the assistant your organization already licenses. OpenAI Academy teaches this as repeatable workflows with review points. Anthropic's courses start from Claude's own features and add versions for specific sectors, which helps if you work in a small business, a nonprofit or education."
+   "compare": "The skills are the same on both sides, so start with the assistant your organization already licenses, and check its data-handling requirements and available integrations before you rely on it. OpenAI Academy teaches this as repeatable workflows with review points. Anthropic's courses start from Claude's own features and add versions for specific sectors, which helps if you work in a small business, a nonprofit or education."
   },
   {
    "slug": "04-what-is-an-agent",
@@ -580,7 +580,7 @@
     "What makes retrieval 'agentic' rather than a single search?",
     "How would you prove to a stakeholder that your RAG answers are reliable?"
    ],
-   "compare": "OpenAI's file search gives you hosted retrieval over your files, which is the quicker way to a first working version. Anthropic's material teaches a retrieval method you assemble yourself, which takes more work and gives you more control over how documents are split and found. Begin with the hosted option, then move to your own pipeline if answer quality on your documents falls short."
+   "compare": "Start with OpenAI's hosted file search if you want to prototype retrieval quickly with minimal infrastructure. Explore Anthropic's contextual retrieval techniques and cookbook examples when you need more control over document processing, retrieval quality, or integration with existing systems. Test both approaches against representative questions from your own documents before deciding."
   },
   {
    "slug": "09-multimodal",
@@ -728,7 +728,7 @@
     "Where would you add a guardrail in each SDK?",
     "What did the traces reveal that the final answer hid?"
    ],
-   "compare": "The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guardrails and tracing, which suits workflows where several agents pass work to each other. The Claude Agent SDK packages the agent loop behind Claude Code as a library, which suits agents that read files and run commands. Choose by the kind of work your agent does, then run the quickstart for that SDK first."
+   "compare": "The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guardrails and tracing, which suits workflows where several agents pass work to each other. The Claude Agent SDK packages the agent loop behind Claude Code as a library, which suits agents that read files and run commands. Choose by the kind of work your agent does, then check where it will be deployed and which of your existing systems it has to connect to before you commit."
   },
   {
    "slug": "11-multi-agent-systems",
@@ -911,7 +911,7 @@
     "What should you check before connecting a third-party MCP server?",
     "Which internal system would you expose through MCP first, and why?"
    ],
-   "compare": "MCP is an open standard, so a server you write once can serve both. Anthropic's courses teach you to write servers and clients. OpenAI's Apps SDK uses MCP to put your app inside ChatGPT. Write the server first, then choose the front end by where your users already work."
+   "compare": "MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's Apps SDK focuses on integrating applications into ChatGPT. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server."
   },
   {
    "slug": "14-skills-and-plugins",
@@ -1083,7 +1083,7 @@
     "Why are tests the most important input you can give a coding agent?",
     "What changes for an engineering manager when agents write most of the code?"
    ],
-   "compare": "Codex and Claude Code cover the same job, and both run from the terminal and in an editor. Preference here depends heavily on your codebase and how your team reviews changes. Give both the same real task from your own repository, review the two results the way you would review a colleague's work, and keep the one that needed fewer corrections."
+   "compare": "Codex and Claude Code cover the same job, and both run from the terminal and in an editor. Preference here depends heavily on your codebase and how your team reviews changes. Give both the same real task from your own repository, then compare correctness, test results, maintainability, review effort and cost."
   },
   {
    "slug": "16-computer-use",
@@ -1277,7 +1277,7 @@
     "When is a model grader trustworthy, and when do you need a person?",
     "What eval result would make you stop a launch?"
    ],
-   "compare": "OpenAI's courses give you a step-by-step method for evals, failure analysis and regression checks, which fits a single application with defined inputs and outputs. Anthropic's article focuses on agents that work across many turns, where a single right answer is harder to define. Use the first to set up your evaluation set and the second when you start grading agents."
+   "compare": "Start with OpenAI's evaluation courses to learn how to create test datasets, measure quality, and identify regressions. Anthropic's agent evaluation guidance adds useful techniques for assessing multi-step tasks, tool use, and outcomes that are difficult to grade with a single expected answer. Combine these approaches when evaluating production agents, and include human review for high-impact decisions."
   },
   {
    "slug": "19-safety-security-and-governance",

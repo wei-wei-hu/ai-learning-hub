@@ -92,9 +92,11 @@ def lesson_md(i, l):
 def compare_md(l):
     if not l.get("compare"):
         return ""
-    return f"""## OpenAI or Anthropic?
+    return f"""## Which approach should you explore?
 
 {l['compare']}
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 """
 

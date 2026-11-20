@@ -30,9 +30,11 @@ Most company questions depend on company documents a model has never seen. Retri
 | [Introducing Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) | Article | Intermediate | A method that improves retrieval accuracy |
 | [Claude Cookbooks: retrieval notebooks](https://github.com/anthropics/claude-cookbooks) | Repo | Intermediate | RAG recipes you can run |
 
-## OpenAI or Anthropic?
+## Which approach should you explore?
 
-OpenAI's file search gives you hosted retrieval over your files, which is the quicker way to a first working version. Anthropic's material teaches a retrieval method you assemble yourself, which takes more work and gives you more control over how documents are split and found. Begin with the hosted option, then move to your own pipeline if answer quality on your documents falls short.
+Start with OpenAI's hosted file search if you want to prototype retrieval quickly with minimal infrastructure. Explore Anthropic's contextual retrieval techniques and cookbook examples when you need more control over document processing, retrieval quality, or integration with existing systems. Test both approaches against representative questions from your own documents before deciding.
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 ## Try it
 

@@ -34,9 +34,11 @@ The SDKs handle the loop, tool execution and state so you can focus on the job. 
 | [Building agents with the Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) | Article | Intermediate | Design notes behind the SDK |
 | [anthropics/claude-agent-sdk-demos](https://github.com/anthropics/claude-agent-sdk-demos) | Repo | Intermediate | Example agents to run and read |
 
-## OpenAI or Anthropic?
+## Which approach should you explore?
 
-The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guardrails and tracing, which suits workflows where several agents pass work to each other. The Claude Agent SDK packages the agent loop behind Claude Code as a library, which suits agents that read files and run commands. Choose by the kind of work your agent does, then run the quickstart for that SDK first.
+The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guardrails and tracing, which suits workflows where several agents pass work to each other. The Claude Agent SDK packages the agent loop behind Claude Code as a library, which suits agents that read files and run commands. Choose by the kind of work your agent does, then check where it will be deployed and which of your existing systems it has to connect to before you commit.
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 ## Try it
 

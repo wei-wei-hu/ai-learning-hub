@@ -31,9 +31,11 @@ Without evals, every change to a prompt or model is a guess. Evals turn quality 
 | [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | Article | Intermediate | Rigorous evals for multi-turn agents |
 | [AI Fluency for Builders](https://anthropic.skilljar.com/) | Course | Intermediate | From problem to shipped solution |
 
-## OpenAI or Anthropic?
+## Which approach should you explore?
 
-OpenAI's courses give you a step-by-step method for evals, failure analysis and regression checks, which fits a single application with defined inputs and outputs. Anthropic's article focuses on agents that work across many turns, where a single right answer is harder to define. Use the first to set up your evaluation set and the second when you start grading agents.
+Start with OpenAI's evaluation courses to learn how to create test datasets, measure quality, and identify regressions. Anthropic's agent evaluation guidance adds useful techniques for assessing multi-step tasks, tool use, and outcomes that are difficult to grade with a single expected answer. Combine these approaches when evaluating production agents, and include human review for high-impact decisions.
+
+*These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 
 ## Try it
 
