@@ -83,15 +83,6 @@ Every lesson is tagged with the tracks it serves, so you can take only what fits
 | 19 | [Leading AI Adoption](./lessons/19-leading-ai-adoption/README.md) | Strategy, roadmaps and helping a whole organization use AI well | `Leadership` |
 <!-- CURRICULUM:END -->
 
-## How each lesson works
-
-Every lesson follows the same structure, so you always know what comes next.
-
-1. **In this lesson:** three concrete learning goals
-2. **Why it matters:** the practical reason to learn it
-3. **Learn from OpenAI** and **Learn from Anthropic:** official courses, docs, articles and repos, each labeled by type and level
-4. **Try it:** a short exercise you can finish in under an hour
-5. **Check yourself:** three questions to test your understanding
 
 ## How this course is built
 
