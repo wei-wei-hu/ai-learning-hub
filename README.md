@@ -1,19 +1,21 @@
-<div align="center">
+<h1 align="center">AI Learning Path</h1>
 
-# AI Learning Path
+<h3 align="center">Learn AI and agents from Experts: OpenAI and Anthropic</h3>
 
-### Learn AI and agents from Experts: OpenAI and Anthropic
+<p align="center">
+  <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2"></a>
+  <a href="#curriculum"><img alt="Lessons: 20" src="https://img.shields.io/badge/lessons-20-8fdcc4"></a>
+  <a href="#four-tracks"><img alt="Tracks: 4" src="https://img.shields.io/badge/tracks-4-f7b98a"></a>
+  <a href="#how-this-course-is-built"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-f2a9cf"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-8fb6ec"></a>
+  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a>
+</p>
 
-[![License: All rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-a99cf2)](./LICENSE)
-[![Lessons](https://img.shields.io/badge/lessons-20-8fdcc4)](#curriculum)
-[![Tracks](https://img.shields.io/badge/tracks-4-f7b98a)](#four-tracks)
-[![Sources](https://img.shields.io/badge/sources-official%20only-f2a9cf)](#how-this-course-is-built)
-[![Interactive site](https://img.shields.io/badge/site-live-8fb6ec)](https://wei-wei-hu.github.io/ai-learning-path/)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
+<p align="center">
+  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><strong>Start the interactive learning path →</strong></a>
+</p>
 
-**[Start the interactive learning path →](https://wei-wei-hu.github.io/ai-learning-path/)**
-
-</div>
+<p align="center">Created by <a href="https://www.linkedin.com/in/weiweihu/">Weiwei Hu</a></p>
 
 ---
 
