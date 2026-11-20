@@ -238,6 +238,8 @@ footer{color:var(--sub);border-top:1px solid var(--line);padding-top:20px}
 .fb:hover{color:#fff;background:#e57537;box-shadow:0 10px 22px rgba(238,130,70,.5)}
 .fb:focus-visible{outline:2px solid #1c1b1f}
 button:focus-visible,a:focus-visible{outline:2px solid #7c5fd6;outline-offset:2px}
+.pvc{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:17px;font-weight:600;color:var(--ink);padding:13px 6px;border-radius:999px;cursor:pointer;background:#fff;border:1px solid var(--line);transition:all .25s}.pvc .dot{width:12px;height:12px;border-radius:50%;background:#b09ae6}.pvc:hover{border-color:#d9d2c9}
+@media(max-width:600px){#prov{gap:6px}#prov .pv,#prov .pvc{font-size:14px;gap:6px;padding:12px 4px}}
 @media(max-width:1100px){.wrap{position:relative;padding-top:70px}.fb{position:absolute;top:20px;right:24px}section>*:first-child{margin-top:0}}
 @media(max-width:600px){.wrap{margin:10px;padding:62px 16px 24px;border-radius:34px}.fb{top:16px;right:16px}.kicker{font-size:10px;gap:8px}.kicker span+span{padding-left:8px}}
 </style>
@@ -255,13 +257,11 @@ button:focus-visible,a:focus-visible{outline:2px solid #7c5fd6;outline-offset:2p
   <div class="prov glass" role="tablist" id="prov">
     <button class="pv" role="tab" data-v="openai" aria-selected="true"><span class="dot"></span>OpenAI</button>
     <button class="pv" role="tab" data-v="anthropic" aria-selected="false"><span class="dot"></span>Anthropic</button>
+    <button class="pvc" type="button" id="openCourse"><span class="dot"></span>22 lessons</button>
   </div>
   <p class="rt">Choose a track</p>
   <div id="cards"></div>
-  <p class="rt">Or follow the full course</p>
-  <button class="tcard glass course-card" id="openCourse" style="--c:#93a8ea;--c2:#cdd8f8;--glow:rgba(110,140,220,.3)">
-   <span class="orb big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></span>
-   <span class="tc"><span class="tn">22-lesson course</span><span class="tw">From everyday AI use to building agents and leading adoption, with OpenAI and Anthropic resources in every lesson.</span><span class="tm" id="courseMeta"></span><span class="bar mini"><i id="courseBar"></i></span></span><span class="arrow">›</span></button>
+  <span hidden><span id="courseMeta"></span><i id="courseBar"></i></span>
  </section>
 
  <section id="course" hidden>
