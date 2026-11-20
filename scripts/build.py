@@ -80,13 +80,41 @@ def lesson_md(i, l):
 ## Check yourself
 
 {checks}
-
+{stage_md(i)}
 ---
 
 {nav(i)}
 
 *Track your progress in the [interactive learning path]({DATA['site']}).*
 """
+
+
+def stage_md(i):
+    for k, s in enumerate(DATA.get("stages", []), 1):
+        if s["last"] == i:
+            items = "\n".join(f"- [ ] {c}" for c in s["checklist"])
+            return f"""
+## Stage {k} project
+
+This lesson completes **Stage {k}: {s['name']}**. Before you move on, finish one piece of work.
+
+**What to produce:** {s['project']}.
+
+**Example scenario:** {s['scenario']}.
+
+**You are ready for the next stage when:**
+
+{items}
+"""
+    return ""
+
+
+def projects_md():
+    out = ["| Stage | What you finish with | Example scenario |", "|---|---|---|"]
+    for k, s in enumerate(DATA.get("stages", []), 1):
+        last = LESSONS[s["last"]]
+        out.append(f"| [**{k}. {s['name']}**](./lessons/{last['slug']}/README.md#stage-{k}-project) | {s['project']} | {s['scenario']} |")
+    return "\n".join(out)
 
 
 def curriculum_md():
@@ -121,11 +149,12 @@ def main():
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")
     text = replace_between(text, "<!-- CURRICULUM:START -->", "<!-- CURRICULUM:END -->", curriculum_md())
+    text = replace_between(text, "<!-- PROJECTS:START -->", "<!-- PROJECTS:END -->", projects_md())
     readme.write_text(text, encoding="utf-8")
 
     site = ROOT / "docs" / "index.html"
     html = site.read_text(encoding="utf-8")
-    payload = json.dumps({"repo": DATA["repo"], "tracks": TRACKS, "lessons": LESSONS}, ensure_ascii=False)
+    payload = json.dumps({"repo": DATA["repo"], "tracks": TRACKS, "lessons": LESSONS, "stages": DATA.get("stages", [])}, ensure_ascii=False)
     html = replace_between(html, "/*LESSONS:START*/", "/*LESSONS:END*/", f"const COURSE={payload};")
     site.write_text(html, encoding="utf-8")
 

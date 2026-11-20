@@ -46,6 +46,20 @@ As agents gain access to systems and data, mistakes and misuse get more expensiv
 2. Which actions should never be fully automated in your organization?
 3. How would you explain your agent's safeguards to a risk committee?
 
+## Stage 5 project
+
+This lesson completes **Stage 5: Safety and governance**. Before you move on, finish one piece of work.
+
+**What to produce:** An evaluation set of 20 real inputs with expected outcomes, plus a one-page risk checklist for one AI use case.
+
+**Example scenario:** Before launch of an internal AI assistant: test it on real questions and decide what needs human approval.
+
+**You are ready for the next stage when:**
+
+- [ ] You can rerun your evaluation after any prompt or model change
+- [ ] You have written down who approves what the AI is allowed to do
+- [ ] You know which failures would stop a launch
+
 ---
 
 [← Lesson 18: Evaluating AI Systems](../18-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 20: Managing AI-Enabled Teams →](../20-managing-ai-enabled-teams/README.md)

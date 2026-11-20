@@ -43,6 +43,20 @@ In 2026 both providers launched hosted agent runtimes: OpenAI's Agents API and A
 2. When would compliance push you toward a self-hosted sandbox?
 3. How would you know a long-running agent has gone off track?
 
+## Stage 4 project
+
+This lesson completes **Stage 4: Run advanced agents**. Before you move on, finish one piece of work.
+
+**What to produce:** One real task completed by a coding or long-running agent, with a written review of what it did.
+
+**Example scenario:** An AI-assisted software review: have a coding agent review a pull request and compare its findings with a human review.
+
+**You are ready for the next stage when:**
+
+- [ ] You have reviewed an agent's full work log, not only its final answer
+- [ ] You set limits on what the agent could access before it started
+- [ ] You can name one task you would not hand to an agent yet, and why
+
 ---
 
 [← Lesson 16: Computer Use and Browser Agents](../16-computer-use/README.md) · [Course home](../../README.md) · [Lesson 18: Evaluating AI Systems →](../18-evaluating-ai-systems/README.md)

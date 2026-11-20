@@ -46,6 +46,20 @@ Skills capture how your team does a job, so an agent can repeat it consistently.
 2. What belongs in a skill versus a one-off prompt?
 3. How would you share and version skills across a team?
 
+## Stage 3 project
+
+This lesson completes **Stage 3: Build agents**. Before you move on, finish one piece of work.
+
+**What to produce:** A working agent that uses at least one tool integration through MCP and one reusable skill.
+
+**Example scenario:** A customer support agent: look up an order, draft a reply and hand off to a person when it is unsure.
+
+**You are ready for the next stage when:**
+
+- [ ] Your agent completes a multi-step task without you guiding each step
+- [ ] It connects to at least one real tool or data source
+- [ ] You can explain what it remembers between steps and why
+
 ---
 
 [← Lesson 13: Model Context Protocol and Integrations](../13-mcp-and-integrations/README.md) · [Course home](../../README.md) · [Lesson 15: Coding Agents: Codex and Claude Code →](../15-coding-agents/README.md)

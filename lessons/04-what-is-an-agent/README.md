@@ -43,6 +43,20 @@ Many teams build agents for jobs a simple workflow would do better. Both provide
 2. What signals tell you a task needs open-ended decision making?
 3. How would you explain the difference to a non-technical executive?
 
+## Stage 1 project
+
+This lesson completes **Stage 1: Get started with AI**. Before you move on, finish one piece of work.
+
+**What to produce:** A reusable AI workflow for one task you do every week, with a saved prompt and a review step.
+
+**Example scenario:** An executive research assistant: turn a set of reports into a one-page brief you can check against the sources.
+
+**You are ready for the next stage when:**
+
+- [ ] You can write a prompt that gives the same quality of result three times in a row
+- [ ] You have handed one multi-step task to an assistant and checked what it did
+- [ ] You can explain when a task needs an agent and when a single prompt is enough
+
 ---
 
 [← Lesson 03: AI Assistants and Agents at Work](../03-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 05: Working with the Model APIs →](../05-model-apis/README.md)

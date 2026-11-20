@@ -53,6 +53,23 @@ These stages describe learning goals. Some exercises may require programming exp
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
+## What you will finish with
+
+Each stage ends with one piece of work you can use, plus a short checklist that tells you when you are ready to move on. The checklist sits at the end of the last lesson in each stage.
+
+<!-- PROJECTS:START -->
+| Stage | What you finish with | Example scenario |
+|---|---|---|
+| [**1. Get started with AI**](./lessons/04-what-is-an-agent/README.md#stage-1-project) | A reusable AI workflow for one task you do every week, with a saved prompt and a review step | An executive research assistant: turn a set of reports into a one-page brief you can check against the sources |
+| [**2. Build AI applications**](./lessons/09-multimodal/README.md#stage-2-project) | A small application that calls a model API, uses one tool and returns structured output | An automated weekly report: pull figures from a data source and produce the same report format every week |
+| [**3. Build agents**](./lessons/14-skills-and-plugins/README.md#stage-3-project) | A working agent that uses at least one tool integration through MCP and one reusable skill | A customer support agent: look up an order, draft a reply and hand off to a person when it is unsure |
+| [**4. Run advanced agents**](./lessons/17-long-running-and-managed-agents/README.md#stage-4-project) | One real task completed by a coding or long-running agent, with a written review of what it did | An AI-assisted software review: have a coding agent review a pull request and compare its findings with a human review |
+| [**5. Safety and governance**](./lessons/19-safety-security-and-governance/README.md#stage-5-project) | An evaluation set of 20 real inputs with expected outcomes, plus a one-page risk checklist for one AI use case | Before launch of an internal AI assistant: test it on real questions and decide what needs human approval |
+| [**6. Lead and manage**](./lessons/21-leading-ai-adoption/README.md#stage-6-project) | A tested team workflow with before-and-after measures, and a prioritized AI adoption plan | A team's recurring workflow: decide which steps AI handles, who reviews them, and compare time and error rates over two weeks |
+<!-- PROJECTS:END -->
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
+
 ## Five tracks
 
 Every lesson is tagged with the tracks it serves, so you can take only what fits your role.

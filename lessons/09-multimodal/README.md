@@ -43,6 +43,20 @@ A large share of business information lives in screenshots, scanned forms, chart
 2. When is a chained speech pipeline better than a real-time voice model?
 3. Which workflow in your team starts with a document or a phone call?
 
+## Stage 2 project
+
+This lesson completes **Stage 2: Build AI applications**. Before you move on, finish one piece of work.
+
+**What to produce:** A small application that calls a model API, uses one tool and returns structured output.
+
+**Example scenario:** An automated weekly report: pull figures from a data source and produce the same report format every week.
+
+**You are ready for the next stage when:**
+
+- [ ] Your application runs end to end from a single command
+- [ ] Its output follows a fixed schema every time
+- [ ] It answers from your own documents and shows where each answer came from
+
 ---
 
 [← Lesson 08: Retrieval and Agentic RAG](../08-retrieval-and-rag/README.md) · [Course home](../../README.md) · [Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK →](../10-agent-frameworks/README.md)

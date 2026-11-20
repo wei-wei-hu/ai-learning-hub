@@ -44,6 +44,20 @@ Tools are rarely the bottleneck; people, processes and priorities are. Both acad
 2. How will you measure adoption beyond logins?
 3. What would make you stop or expand a pilot after 90 days?
 
+## Stage 6 project
+
+This lesson completes **Stage 6: Lead and manage**. Before you move on, finish one piece of work.
+
+**What to produce:** A tested team workflow with before-and-after measures, and a prioritized AI adoption plan.
+
+**Example scenario:** A team's recurring workflow: decide which steps AI handles, who reviews them, and compare time and error rates over two weeks.
+
+**You are ready for the next stage when:**
+
+- [ ] One team workflow has run with AI for two weeks with a named reviewer
+- [ ] You measured time and error rates before and after
+- [ ] Your adoption plan ranks use cases by value and risk
+
 ---
 
 [← Lesson 20: Managing AI-Enabled Teams](../20-managing-ai-enabled-teams/README.md) · [Course home](../../README.md)
