@@ -11,7 +11,7 @@
  },
  "lessons": [
   {
-   "slug": "00-course-setup",
+   "slug": "01-course-setup",
    "title": "Course Setup",
    "summary": "How the course works, the five tracks, and the free accounts you need",
    "tracks": [
@@ -85,7 +85,7 @@
    ]
   },
   {
-   "slug": "01-ai-foundations",
+   "slug": "02-ai-foundations",
    "title": "AI Foundations",
    "summary": "How language models work, what they do well, and where they fail",
    "tracks": [
@@ -152,7 +152,7 @@
    ]
   },
   {
-   "slug": "02-prompting-and-context",
+   "slug": "03-prompting-and-context",
    "title": "Prompting and Context",
    "summary": "Write instructions models follow reliably, and give them the right context",
    "tracks": [
@@ -218,7 +218,7 @@
    ]
   },
   {
-   "slug": "03-ai-assistants-and-agents-at-work",
+   "slug": "04-ai-assistants-and-agents-at-work",
    "title": "AI Assistants and Agents at Work",
    "summary": "Use ChatGPT and Claude for real work with your own files, and hand off multi-step tasks you can check",
    "tracks": [
@@ -291,7 +291,7 @@
    "compare": "The skills are the same on both sides, so start with the assistant your organization already licenses, and check its data-handling requirements and available integrations before you rely on it. OpenAI Academy teaches this as repeatable workflows with review points. Anthropic's courses start from Claude's own features and add versions for specific sectors, which helps if you work in a small business, a nonprofit or education."
   },
   {
-   "slug": "04-what-is-an-agent",
+   "slug": "05-what-is-an-agent",
    "title": "What Makes an Agent",
    "summary": "Workflows versus agents, and when an agent is worth building",
    "tracks": [
@@ -358,7 +358,7 @@
    ]
   },
   {
-   "slug": "05-model-apis",
+   "slug": "06-model-apis",
    "title": "Working with the Model APIs",
    "summary": "Call models from code with the Responses API and the Messages API",
    "tracks": [
@@ -428,7 +428,7 @@
    ]
   },
   {
-   "slug": "06-tool-use",
+   "slug": "07-tool-use",
    "title": "Tool Use and Function Calling",
    "summary": "Let models call your code, search the web and act on real systems",
    "tracks": [
@@ -484,7 +484,7 @@
    ]
   },
   {
-   "slug": "07-structured-outputs",
+   "slug": "08-structured-outputs",
    "title": "Structured Outputs",
    "summary": "Generate schema-constrained JSON and handle validation failures",
    "tracks": [
@@ -526,7 +526,7 @@
    ]
   },
   {
-   "slug": "08-retrieval-and-rag",
+   "slug": "09-retrieval-and-rag",
    "title": "Retrieval and Agentic RAG",
    "summary": "Ground answers in your own documents and data",
    "tracks": [
@@ -583,7 +583,7 @@
    "compare": "Start with OpenAI's hosted file search if you want to prototype retrieval quickly with minimal infrastructure. Explore Anthropic's contextual retrieval techniques and cookbook examples when you need more control over document processing, retrieval quality, or integration with existing systems. Test both approaches against representative questions from your own documents before deciding."
   },
   {
-   "slug": "09-multimodal",
+   "slug": "10-multimodal",
    "title": "Multimodal: Vision, Audio and Voice",
    "summary": "Work with images, speech and real-time voice",
    "tracks": [
@@ -646,7 +646,7 @@
    ]
   },
   {
-   "slug": "10-agent-frameworks",
+   "slug": "11-agent-frameworks",
    "title": "Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK",
    "summary": "Build your first agent with each provider's official SDK",
    "tracks": [
@@ -731,7 +731,7 @@
    "compare": "The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guardrails and tracing, which suits workflows where several agents pass work to each other. The Claude Agent SDK packages the agent loop behind Claude Code as a library, which suits agents that read files and run commands. Choose by the kind of work your agent does, then check where it will be deployed and which of your existing systems it has to connect to before you commit."
   },
   {
-   "slug": "11-multi-agent-systems",
+   "slug": "12-multi-agent-systems",
    "title": "Multi-Agent Systems and Orchestration",
    "summary": "Handoffs, subagents and when splitting work across agents helps",
    "tracks": [
@@ -787,7 +787,7 @@
    ]
   },
   {
-   "slug": "12-memory-and-context-engineering",
+   "slug": "13-memory-and-context-engineering",
    "title": "Memory and Context Engineering",
    "summary": "Keep agents on track across long tasks and many sessions",
    "tracks": [
@@ -843,7 +843,7 @@
    ]
   },
   {
-   "slug": "13-mcp-and-integrations",
+   "slug": "14-mcp-and-integrations",
    "title": "Model Context Protocol and Integrations",
    "summary": "Connect AI to your tools and data through the open MCP standard",
    "tracks": [
@@ -914,7 +914,7 @@
    "compare": "MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's Apps SDK focuses on integrating applications into ChatGPT. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server."
   },
   {
-   "slug": "14-skills-and-plugins",
+   "slug": "15-skills-and-plugins",
    "title": "Skills and Plugins",
    "summary": "Package know-how so any agent can reuse it",
    "tracks": [
@@ -1000,7 +1000,7 @@
    ]
   },
   {
-   "slug": "15-coding-agents",
+   "slug": "16-coding-agents",
    "title": "Coding Agents: Codex and Claude Code",
    "summary": "Delegate real software work and verify the results",
    "tracks": [
@@ -1086,7 +1086,7 @@
    "compare": "Codex and Claude Code cover the same job, and both run from the terminal and in an editor. Preference here depends heavily on your codebase and how your team reviews changes. Give both the same real task from your own repository, then compare correctness, test results, maintainability, review effort and cost."
   },
   {
-   "slug": "16-computer-use",
+   "slug": "17-computer-use",
    "title": "Computer Use and Browser Agents",
    "summary": "Agents that operate screens, browsers and apps",
    "tracks": [
@@ -1150,7 +1150,7 @@
    ]
   },
   {
-   "slug": "17-long-running-and-managed-agents",
+   "slug": "18-long-running-and-managed-agents",
    "title": "Long-Running and Managed Agents",
    "summary": "Run agents for hours in hosted harnesses and sandboxes",
    "tracks": [
@@ -1213,7 +1213,7 @@
    ]
   },
   {
-   "slug": "18-evaluating-ai-systems",
+   "slug": "19-evaluating-ai-systems",
    "title": "Evaluating AI Systems",
    "summary": "Prove quality with evals before and after you ship",
    "tracks": [
@@ -1280,7 +1280,7 @@
    "compare": "Start with OpenAI's evaluation courses to learn how to create test datasets, measure quality, and identify regressions. Anthropic's agent evaluation guidance adds useful techniques for assessing multi-step tasks, tool use, and outcomes that are difficult to grade with a single expected answer. Combine these approaches when evaluating production agents, and include human review for high-impact decisions."
   },
   {
-   "slug": "19-safety-security-and-governance",
+   "slug": "20-safety-security-and-governance",
    "title": "Safety, Security and Governance",
    "summary": "Guardrails, oversight and what frontier research teaches about risk",
    "tracks": [
@@ -1366,7 +1366,7 @@
    ]
   },
   {
-   "slug": "20-managing-ai-enabled-teams",
+   "slug": "21-managing-ai-enabled-teams",
    "title": "Managing AI-Enabled Teams",
    "summary": "Redesign team workflows, set review standards and coach people as AI takes on more of the work",
    "tracks": [
@@ -1436,7 +1436,7 @@
    ]
   },
   {
-   "slug": "21-leading-ai-adoption",
+   "slug": "22-leading-ai-adoption",
    "title": "Leading AI Adoption",
    "summary": "Strategy, roadmaps and helping a whole organization use AI well",
    "tracks": [
