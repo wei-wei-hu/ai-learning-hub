@@ -23,6 +23,8 @@ Tools are rarely the bottleneck; people, processes and priorities are. Both acad
 | [AI Leadership](https://academy.openai.com/pages/courses) | Course | Intermediate | Strategy, governance, roadmap, adoption · 180 min |
 | [Scope AI Solutions](https://academy.openai.com/pages/courses) | Course | Beginner | Turn an opportunity into a solution plan · 30 min |
 | [Scale Codex Across Governed Teams and Systems](https://academy.openai.com/pages/courses) | Course | Advanced | Parallel work, governance, safe integration · 100 min |
+| [From assistance to execution: How enterprises put AI to work](https://openai.com/index/how-enterprises-put-ai-to-work/) | Research | Intermediate | Two studies on agent adoption, with guidance on permissions and governance |
+| [Businesses in ChatGPT](https://openai.com/index/introducing-businesses-chatgpt/) | Announcement | Intermediate | How customers find and talk to companies inside ChatGPT (beta) |
 
 ## Learn from Anthropic
 

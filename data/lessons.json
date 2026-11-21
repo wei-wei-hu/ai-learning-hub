@@ -253,6 +253,13 @@
      "Hub",
      "Beginner",
      "The Apply AI at Work pathway and more"
+    ],
+    [
+     "ChatGPT for Sales",
+     "https://openai.com/index/introducing-chatgpt-for-sales/",
+     "Announcement",
+     "Beginner",
+     "A role example: account research, meeting prep, CRM updates and follow-ups"
     ]
    ],
    "anthropic": [
@@ -1399,6 +1406,20 @@
      "Course",
      "Beginner",
      "Turn one opportunity into a solution plan · 30 min"
+    ],
+    [
+     "Customer stories",
+     "https://openai.com/business/customer-stories/",
+     "Case studies",
+     "Beginner",
+     "How teams at named companies put AI into daily work"
+    ],
+    [
+     "Gondola builds more with Codex",
+     "https://openai.com/business/customer-stories/gondola/",
+     "Case study",
+     "Beginner",
+     "A small team using Codex to prototype and ChatGPT for daily operations"
     ]
    ],
    "anthropic": [
@@ -1469,6 +1490,20 @@
      "Course",
      "Advanced",
      "Parallel work, governance, safe integration · 100 min"
+    ],
+    [
+     "From assistance to execution: How enterprises put AI to work",
+     "https://openai.com/index/how-enterprises-put-ai-to-work/",
+     "Research",
+     "Intermediate",
+     "Two studies on agent adoption, with guidance on permissions and governance"
+    ],
+    [
+     "Businesses in ChatGPT",
+     "https://openai.com/index/introducing-businesses-chatgpt/",
+     "Announcement",
+     "Intermediate",
+     "How customers find and talk to companies inside ChatGPT (beta)"
     ]
    ],
    "anthropic": [

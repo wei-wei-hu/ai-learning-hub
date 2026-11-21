@@ -23,6 +23,8 @@ Most AI adoption happens one team at a time, and managers decide how it lands. A
 | [Applied AI Foundations](https://academy.openai.com/pages/courses) | Course | Beginner | Turn tasks into repeatable workflows with review points · 75–90 min |
 | [Agents and Workflows](https://academy.openai.com/pages/courses) | Course | Intermediate | Delegate structured tasks with checkpoints and oversight · 75–90 min |
 | [Scope AI Solutions](https://academy.openai.com/pages/courses) | Course | Beginner | Turn one opportunity into a solution plan · 30 min |
+| [Customer stories](https://openai.com/business/customer-stories/) | Case studies | Beginner | How teams at named companies put AI into daily work |
+| [Gondola builds more with Codex](https://openai.com/business/customer-stories/gondola/) | Case study | Beginner | A small team using Codex to prototype and ChatGPT for daily operations |
 
 ## Learn from Anthropic
 

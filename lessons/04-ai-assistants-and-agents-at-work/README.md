@@ -23,6 +23,7 @@ Most people meet AI through ChatGPT or Claude, not through code. The real value 
 | [Applied AI Foundations](https://academy.openai.com/pages/courses) | Course | Beginner | Turn tasks into repeatable workflows with review points · 75–90 min |
 | [Agents and Workflows](https://academy.openai.com/pages/courses) | Course | Intermediate | Delegate structured tasks with checkpoints and oversight · 75–90 min |
 | [OpenAI Academy](https://www.openai.com/academy) | Hub | Beginner | The Apply AI at Work pathway and more |
+| [ChatGPT for Sales](https://openai.com/index/introducing-chatgpt-for-sales/) | Announcement | Beginner | A role example: account research, meeting prep, CRM updates and follow-ups |
 
 ## Learn from Anthropic
 
