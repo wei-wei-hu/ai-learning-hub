@@ -463,14 +463,14 @@ function renderLesson(){
  const cards=(arr,ci)=>arr.map((r,k)=>{const [cc,cc2]=COL[ci];return `<div class="stepc" style="--c:${cc};--c2:${cc2}"><span class="slabel">Resource ${k+1} of ${arr.length}</span><b class="st-t">${esc(r[0])}</b><span class="st-n">${esc(r[4]||'')}</span><span class="tags"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span></span><span class="st-b"><a class="st-open" href="${r[1]}" target="_blank" rel="noopener">Open ↗</a></span></div>`}).join('');
  const row=(id,name,arr,ci)=>`<p class="rt">Learn from ${name}: swipe the resources</p><div class="swipe steps" id="${id}">${cards(arr,ci)}</div><div class="swnav" id="${id}Nav"></div>`;
  document.getElementById('lessonBody').innerHTML=`<div class="lh glass" style="--c:${c};--c2:${c2};--glow:${g}"><span class="orb">${i+1}</span><h2>${esc(l.title)}</h2><p class="sum">${esc(l.summary)}.</p><div class="tags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</div></div>
+ ${lp()!=='anthropic'?row('resO','OpenAI',l.openai,3):''}
+ ${lp()!=='openai'?row('resA','Anthropic',l.anthropic,0):''}
  <div class="sec glass"><h3>In this lesson</h3><ul>${l.goals.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
  <div class="sec glass"><h3>Why it matters</h3><p>${esc(l.why)}</p></div>
  <div class="sec glass"><h3>Try it</h3><ol>${l.try.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>
  <div class="sec glass"><h3>Check yourself</h3><ol>${l.check.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>
  ${l.compare?`<div class="sec glass"><h3>Which approach should you explore?</h3><p>${esc(l.compare)}</p><p><em>These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.</em></p></div>`:''}
  ${sg?`<div class="sec glass"><h3>Stage ${sk+1} project</h3><p><b>What to produce:</b> ${esc(sg.project)}.</p><p><b>Example scenario:</b> ${esc(sg.scenario)}.</p><p><b>You are ready for the next stage when:</b></p><ul>${sg.checklist.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
- ${lp()!=='anthropic'?row('resO','OpenAI',l.openai,3):''}
- ${lp()!=='openai'?row('resA','Anthropic',l.anthropic,0):''}
  <button class="donebtn ${d?'is-done':''}" id="markDone">${d?'Completed ✓ · tap to undo':'Mark lesson complete'}</button>
  <div class="lnav" style="--c:${c};--c2:${c2};--glow:${g}">${i>0?`<button class="nb" data-go="${i-1}">← Previous</button>`:'<span></span>'}${i<n-1?`<button class="nb next" data-go="${i+1}">Next lesson →</button>`:`<button class="nb next" data-home>Finish ✓</button>`}</div>`;
  if(secFor!==i){secFor=i;secIdx=0;secIdxA=0}
