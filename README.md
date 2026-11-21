@@ -41,7 +41,7 @@ AI Learning Path is designed for anyone who wants to learn AI and AI agents, fro
 
 **New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) turns each track into a step-by-step path with progress tracking.
+The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) lets you swipe through tracks, stages and lessons, pick what to take next, and track your progress.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
