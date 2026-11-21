@@ -338,6 +338,9 @@ body,.bg{background:#fff}
 #track .rt{margin-top:22px}
 @media(max-width:600px){.stepc{flex-basis:270px;width:270px}}
 @media(prefers-reduced-motion:reduce){.stepc{transition:none}}
+.swipe .lrow{min-height:440px}.swipe .lrow.done{background:var(--c)}
+.swipe .lrow .ltags{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:10px 0 14px}.swipe .lrow .tag{background:rgba(255,255,255,.75)}
+.swipe .lrow .sdesc{-webkit-line-clamp:4;min-height:78px}
 </style>
 </head>
 <body>
@@ -369,7 +372,9 @@ body,.bg{background:#fff}
   <p class="lede" id="clede">Twenty-two lessons that build on each other. Each one pairs official OpenAI and Anthropic resources with a short exercise.</p>
   <div class="prov glass mini" role="tablist" id="cprov"><button class="pv" role="tab" data-v="openai" aria-selected="false"><span class="dot"></span>OpenAI</button><button class="pv" role="tab" data-v="anthropic" aria-selected="false"><span class="dot"></span>Anthropic</button><button class="pv" role="tab" data-v="both" aria-selected="false"><span class="dot"></span>Both</button></div>
   <div class="fchips" id="fchips"></div>
+  <p class="rt">Swipe to choose a lesson</p>
   <div id="lessonList"></div>
+  <div id="lessonNav" class="swnav"></div>
  </section>
 
  <section id="lesson" hidden>
@@ -423,9 +428,13 @@ function renderCourse(){
  setSel('cprov',lp());const sg=sfilter===null?null:COURSE.stages[sfilter];
  document.getElementById('ctitle').textContent=sg?sg.name:'The course';document.getElementById('clede').textContent=sg?'You finish with: '+sg.project.charAt(0).toLowerCase()+sg.project.slice(1)+'.':CLEDE;document.getElementById('fchips').hidden=!!sg;
  document.getElementById('fchips').innerHTML=[['all','All lessons'],...Object.entries(COURSE.tracks)].map(([k,v])=>`<button class="fc" data-f="${k}" aria-pressed="${lfilter===k}">${v}</button>`).join('');
- document.getElementById('lessonList').innerHTML=COURSE.lessons.map((l,i)=>{if(sg?(i<sg.first||i>sg.last):(lfilter!=='all'&&!l.tracks.includes(lfilter)))return'';const [c,c2,g]=COL[i%4];const d=lessonDone(i);
-  return `<button class="lrow glass ${d?'done':''}" data-l="${i}" style="--c:${c};--c2:${c2};--glow:${g}"><span class="orb">${d?tick:String(i).padStart(2,'0')}</span>
-  <span class="tc"><span class="tn">${esc(l.title)}</span><span class="tw">${esc(l.summary)}</span><span class="ltags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</span></span><span class="arrow">›</span></button>`}).join('');
+ const L=COURSE.lessons.map((l,i)=>({l,i})).filter(({l,i})=>sg?(i>=sg.first&&i<=sg.last):(lfilter==='all'||l.tracks.includes(lfilter)));
+ const w=document.getElementById('lessonList');w.className='swipe';
+ w.innerHTML=L.map(({l,i},n)=>{const [c,c2]=COL[n%5];const d=lessonDone(i);
+  return `<button class="tcard sc lrow ${d?'done':''}" data-l="${i}" style="--c:${c};--c2:${c2}" aria-label="${esc(l.title)}"><span class="slabel">Lesson ${n+1} of ${L.length}</span>
+  <span class="plate sm"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${d?0:339.3}"/></svg><span class="pin"><b>${d?'✓':String(i).padStart(2,'0')}</b></span></span>
+  <span class="tn">${esc(l.title)}</span><span class="sdesc">${esc(l.summary)}</span><span class="ltags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</span><span class="scta">Open lesson</span></button>`}).join('');
+ let st=L.findIndex(({i})=>!lessonDone(i));swipeInit(w,document.getElementById('lessonNav'),st<0?0:st);
 }
 function resList(rows){return rows.map(([t,u,ty,lv,note])=>`<div class="res"><span class="tt"><b>${esc(t)}</b><small>${esc(note)}</small><span class="tags"><span class="tag">${ty}</span><span class="tag">${lv}</span></span></span><a class="open" href="${u}" target="_blank" rel="noopener">Open</a></div>`).join('')}
 function renderLesson(){
