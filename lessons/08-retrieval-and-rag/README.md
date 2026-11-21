@@ -1,6 +1,6 @@
-# Lesson 08: Retrieval and Agentic RAG
+# Lesson 8: Retrieval and Agentic RAG
 
-[← Lesson 07: Structured Outputs](../07-structured-outputs/README.md) · [Course home](../../README.md) · [Lesson 09: Multimodal: Vision, Audio and Voice →](../09-multimodal/README.md)
+[← Lesson 7: Structured Outputs](../07-structured-outputs/README.md) · [Course home](../../README.md) · [Lesson 9: Multimodal: Vision, Audio and Voice →](../09-multimodal/README.md)
 
 > Ground answers in your own documents and data.
 
@@ -50,6 +50,6 @@ Start with OpenAI's hosted file search if you want to prototype retrieval quickl
 
 ---
 
-[← Lesson 07: Structured Outputs](../07-structured-outputs/README.md) · [Course home](../../README.md) · [Lesson 09: Multimodal: Vision, Audio and Voice →](../09-multimodal/README.md)
+[← Lesson 7: Structured Outputs](../07-structured-outputs/README.md) · [Course home](../../README.md) · [Lesson 9: Multimodal: Vision, Audio and Voice →](../09-multimodal/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

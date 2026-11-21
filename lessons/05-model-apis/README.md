@@ -1,6 +1,6 @@
-# Lesson 05: Working with the Model APIs
+# Lesson 5: Working with the Model APIs
 
-[← Lesson 04: What Makes an Agent](../04-what-is-an-agent/README.md) · [Course home](../../README.md) · [Lesson 06: Tool Use and Function Calling →](../06-tool-use/README.md)
+[← Lesson 4: What Makes an Agent](../04-what-is-an-agent/README.md) · [Course home](../../README.md) · [Lesson 6: Tool Use and Function Calling →](../06-tool-use/README.md)
 
 > Call models from code with the Responses API and the Messages API.
 
@@ -46,6 +46,6 @@ Every product, agent and integration in this course sits on top of these two API
 
 ---
 
-[← Lesson 04: What Makes an Agent](../04-what-is-an-agent/README.md) · [Course home](../../README.md) · [Lesson 06: Tool Use and Function Calling →](../06-tool-use/README.md)
+[← Lesson 4: What Makes an Agent](../04-what-is-an-agent/README.md) · [Course home](../../README.md) · [Lesson 6: Tool Use and Function Calling →](../06-tool-use/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

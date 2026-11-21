@@ -19,7 +19,7 @@ TRACKS = DATA["tracks"]
 
 
 def num(i):
-    return f"{i:02d}"
+    return str(i)
 
 
 def track_names(codes):

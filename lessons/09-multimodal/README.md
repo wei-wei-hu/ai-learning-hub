@@ -1,6 +1,6 @@
-# Lesson 09: Multimodal: Vision, Audio and Voice
+# Lesson 9: Multimodal: Vision, Audio and Voice
 
-[← Lesson 08: Retrieval and Agentic RAG](../08-retrieval-and-rag/README.md) · [Course home](../../README.md) · [Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK →](../10-agent-frameworks/README.md)
+[← Lesson 8: Retrieval and Agentic RAG](../08-retrieval-and-rag/README.md) · [Course home](../../README.md) · [Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK →](../10-agent-frameworks/README.md)
 
 > Work with images, speech and real-time voice.
 
@@ -59,6 +59,6 @@ This lesson completes **Stage 2: Build AI applications**. Before you move on, fi
 
 ---
 
-[← Lesson 08: Retrieval and Agentic RAG](../08-retrieval-and-rag/README.md) · [Course home](../../README.md) · [Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK →](../10-agent-frameworks/README.md)
+[← Lesson 8: Retrieval and Agentic RAG](../08-retrieval-and-rag/README.md) · [Course home](../../README.md) · [Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK →](../10-agent-frameworks/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

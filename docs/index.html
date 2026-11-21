@@ -432,7 +432,7 @@ function renderCourse(){
  const w=document.getElementById('lessonList');w.className='swipe';
  w.innerHTML=L.map(({l,i},n)=>{const [c,c2]=COL[n%5];const d=lessonDone(i);
   return `<button class="tcard sc lrow ${d?'done':''}" data-l="${i}" style="--c:${c};--c2:${c2}" aria-label="${esc(l.title)}"><span class="slabel">Lesson ${n+1} of ${L.length}</span>
-  <span class="plate sm"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${d?0:339.3}"/></svg><span class="pin"><b>${d?'✓':String(i).padStart(2,'0')}</b></span></span>
+  <span class="plate sm"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${d?0:339.3}"/></svg><span class="pin"><b>${d?'✓':String(i)}</b></span></span>
   <span class="tn">${esc(l.title)}</span><span class="sdesc">${esc(l.summary)}</span><span class="ltags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</span><span class="scta">Open lesson</span></button>`}).join('');
  let st=L.findIndex(({i})=>!lessonDone(i));swipeInit(w,document.getElementById('lessonNav'),st<0?0:st);
 }
@@ -441,7 +441,7 @@ function renderLesson(){
  setSel('lprov',lp());
  const i=lessonIdx,l=COURSE.lessons[i],n=COURSE.lessons.length,[c,c2,g]=COL[i%4],d=lessonDone(i);
  document.getElementById('lnum').textContent=`Lesson ${String(i).padStart(2,"0")} · ${n} total`;
- document.getElementById('lessonBody').innerHTML=`<div class="lh glass" style="--c:${c};--c2:${c2};--glow:${g}"><span class="orb">${String(i).padStart(2,'0')}</span><h2>${esc(l.title)}</h2><p class="sum">${esc(l.summary)}.</p><div class="tags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</div></div>
+ document.getElementById('lessonBody').innerHTML=`<div class="lh glass" style="--c:${c};--c2:${c2};--glow:${g}"><span class="orb">${String(i)}</span><h2>${esc(l.title)}</h2><p class="sum">${esc(l.summary)}.</p><div class="tags">${l.tracks.map(t=>`<span class="tag">${COURSE.tracks[t]}</span>`).join('')}</div></div>
  <div class="sec glass"><h3>In this lesson</h3><ul>${l.goals.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
  <div class="sec glass"><h3>Why it matters</h3><p>${esc(l.why)}</p></div>
  ${lp()!=='anthropic'?`<div class="sec glass" style="--pc:#c7e4fb"><h3><span class="dot"></span>Learn from OpenAI</h3>${resList(l.openai)}</div>`:''}

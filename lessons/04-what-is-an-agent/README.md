@@ -1,6 +1,6 @@
-# Lesson 04: What Makes an Agent
+# Lesson 4: What Makes an Agent
 
-[← Lesson 03: AI Assistants and Agents at Work](../03-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 05: Working with the Model APIs →](../05-model-apis/README.md)
+[← Lesson 3: AI Assistants and Agents at Work](../03-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 5: Working with the Model APIs →](../05-model-apis/README.md)
 
 > Workflows versus agents, and when an agent is worth building.
 
@@ -59,6 +59,6 @@ This lesson completes **Stage 1: Get started with AI**. Before you move on, fini
 
 ---
 
-[← Lesson 03: AI Assistants and Agents at Work](../03-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 05: Working with the Model APIs →](../05-model-apis/README.md)
+[← Lesson 3: AI Assistants and Agents at Work](../03-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 5: Working with the Model APIs →](../05-model-apis/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

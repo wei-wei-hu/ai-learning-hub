@@ -1,6 +1,6 @@
-# Lesson 07: Structured Outputs
+# Lesson 7: Structured Outputs
 
-[← Lesson 06: Tool Use and Function Calling](../06-tool-use/README.md) · [Course home](../../README.md) · [Lesson 08: Retrieval and Agentic RAG →](../08-retrieval-and-rag/README.md)
+[← Lesson 6: Tool Use and Function Calling](../06-tool-use/README.md) · [Course home](../../README.md) · [Lesson 8: Retrieval and Agentic RAG →](../08-retrieval-and-rag/README.md)
 
 > Generate schema-constrained JSON and handle validation failures.
 
@@ -42,6 +42,6 @@ Business systems need fields, not paragraphs. Structured outputs let AI feed spr
 
 ---
 
-[← Lesson 06: Tool Use and Function Calling](../06-tool-use/README.md) · [Course home](../../README.md) · [Lesson 08: Retrieval and Agentic RAG →](../08-retrieval-and-rag/README.md)
+[← Lesson 6: Tool Use and Function Calling](../06-tool-use/README.md) · [Course home](../../README.md) · [Lesson 8: Retrieval and Agentic RAG →](../08-retrieval-and-rag/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

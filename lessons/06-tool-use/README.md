@@ -1,6 +1,6 @@
-# Lesson 06: Tool Use and Function Calling
+# Lesson 6: Tool Use and Function Calling
 
-[← Lesson 05: Working with the Model APIs](../05-model-apis/README.md) · [Course home](../../README.md) · [Lesson 07: Structured Outputs →](../07-structured-outputs/README.md)
+[← Lesson 5: Working with the Model APIs](../05-model-apis/README.md) · [Course home](../../README.md) · [Lesson 7: Structured Outputs →](../07-structured-outputs/README.md)
 
 > Let models call your code, search the web and act on real systems.
 
@@ -44,6 +44,6 @@ Tools are what turn a model from a writer into a worker. Nearly every agent fail
 
 ---
 
-[← Lesson 05: Working with the Model APIs](../05-model-apis/README.md) · [Course home](../../README.md) · [Lesson 07: Structured Outputs →](../07-structured-outputs/README.md)
+[← Lesson 5: Working with the Model APIs](../05-model-apis/README.md) · [Course home](../../README.md) · [Lesson 7: Structured Outputs →](../07-structured-outputs/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

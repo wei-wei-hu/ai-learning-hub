@@ -1,6 +1,6 @@
-# Lesson 00: Course Setup
+# Lesson 0: Course Setup
 
-[Course home](../../README.md) · [Lesson 01: AI Foundations →](../01-ai-foundations/README.md)
+[Course home](../../README.md) · [Lesson 1: AI Foundations →](../01-ai-foundations/README.md)
 
 > How the course works, the five tracks, and the free accounts you need.
 
@@ -46,6 +46,6 @@ OpenAI and Anthropic each publish courses, docs, cookbooks and research, but the
 
 ---
 
-[Course home](../../README.md) · [Lesson 01: AI Foundations →](../01-ai-foundations/README.md)
+[Course home](../../README.md) · [Lesson 1: AI Foundations →](../01-ai-foundations/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

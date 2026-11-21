@@ -1,6 +1,6 @@
 # Lesson 10: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK
 
-[← Lesson 09: Multimodal: Vision, Audio and Voice](../09-multimodal/README.md) · [Course home](../../README.md) · [Lesson 11: Multi-Agent Systems and Orchestration →](../11-multi-agent-systems/README.md)
+[← Lesson 9: Multimodal: Vision, Audio and Voice](../09-multimodal/README.md) · [Course home](../../README.md) · [Lesson 11: Multi-Agent Systems and Orchestration →](../11-multi-agent-systems/README.md)
 
 > Build your first agent with each provider's official SDK.
 
@@ -54,6 +54,6 @@ The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guar
 
 ---
 
-[← Lesson 09: Multimodal: Vision, Audio and Voice](../09-multimodal/README.md) · [Course home](../../README.md) · [Lesson 11: Multi-Agent Systems and Orchestration →](../11-multi-agent-systems/README.md)
+[← Lesson 9: Multimodal: Vision, Audio and Voice](../09-multimodal/README.md) · [Course home](../../README.md) · [Lesson 11: Multi-Agent Systems and Orchestration →](../11-multi-agent-systems/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

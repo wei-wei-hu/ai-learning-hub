@@ -1,6 +1,6 @@
-# Lesson 01: AI Foundations
+# Lesson 1: AI Foundations
 
-[← Lesson 00: Course Setup](../00-course-setup/README.md) · [Course home](../../README.md) · [Lesson 02: Prompting and Context →](../02-prompting-and-context/README.md)
+[← Lesson 0: Course Setup](../00-course-setup/README.md) · [Course home](../../README.md) · [Lesson 2: Prompting and Context →](../02-prompting-and-context/README.md)
 
 > How language models work, what they do well, and where they fail.
 
@@ -45,6 +45,6 @@ Every later lesson assumes you know what a model can and cannot do. Leaders need
 
 ---
 
-[← Lesson 00: Course Setup](../00-course-setup/README.md) · [Course home](../../README.md) · [Lesson 02: Prompting and Context →](../02-prompting-and-context/README.md)
+[← Lesson 0: Course Setup](../00-course-setup/README.md) · [Course home](../../README.md) · [Lesson 2: Prompting and Context →](../02-prompting-and-context/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*

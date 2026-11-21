@@ -65,16 +65,16 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 <!-- CURRICULUM:START -->
 | # | Lesson | What you'll learn | Tracks |
 |---|---|---|---|
-| 00 | [Course Setup](./lessons/00-course-setup/README.md) | How the course works, the five tracks, and the free accounts you need | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
-| 01 | [AI Foundations](./lessons/01-ai-foundations/README.md) | How language models work, what they do well, and where they fail | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
-| 02 | [Prompting and Context](./lessons/02-prompting-and-context/README.md) | Write instructions models follow reliably, and give them the right context | `AI at Work` `Management` `AI Leadership` `Engineering` |
-| 03 | [AI Assistants and Agents at Work](./lessons/03-ai-assistants-and-agents-at-work/README.md) | Use ChatGPT and Claude for real work with your own files, and hand off multi-step tasks you can check | `AI at Work` `Management` `AI Leadership` |
-| 04 | [What Makes an Agent](./lessons/04-what-is-an-agent/README.md) | Workflows versus agents, and when an agent is worth building | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
-| 05 | [Working with the Model APIs](./lessons/05-model-apis/README.md) | Call models from code with the Responses API and the Messages API | `Engineering` |
-| 06 | [Tool Use and Function Calling](./lessons/06-tool-use/README.md) | Let models call your code, search the web and act on real systems | `Engineering` |
-| 07 | [Structured Outputs](./lessons/07-structured-outputs/README.md) | Generate schema-constrained JSON and handle validation failures | `Engineering` |
-| 08 | [Retrieval and Agentic RAG](./lessons/08-retrieval-and-rag/README.md) | Ground answers in your own documents and data | `Engineering` |
-| 09 | [Multimodal: Vision, Audio and Voice](./lessons/09-multimodal/README.md) | Work with images, speech and real-time voice | `Engineering` |
+| 0 | [Course Setup](./lessons/00-course-setup/README.md) | How the course works, the five tracks, and the free accounts you need | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
+| 1 | [AI Foundations](./lessons/01-ai-foundations/README.md) | How language models work, what they do well, and where they fail | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
+| 2 | [Prompting and Context](./lessons/02-prompting-and-context/README.md) | Write instructions models follow reliably, and give them the right context | `AI at Work` `Management` `AI Leadership` `Engineering` |
+| 3 | [AI Assistants and Agents at Work](./lessons/03-ai-assistants-and-agents-at-work/README.md) | Use ChatGPT and Claude for real work with your own files, and hand off multi-step tasks you can check | `AI at Work` `Management` `AI Leadership` |
+| 4 | [What Makes an Agent](./lessons/04-what-is-an-agent/README.md) | Workflows versus agents, and when an agent is worth building | `AI at Work` `Management` `AI Leadership` `Engineering` `Safety & Governance` |
+| 5 | [Working with the Model APIs](./lessons/05-model-apis/README.md) | Call models from code with the Responses API and the Messages API | `Engineering` |
+| 6 | [Tool Use and Function Calling](./lessons/06-tool-use/README.md) | Let models call your code, search the web and act on real systems | `Engineering` |
+| 7 | [Structured Outputs](./lessons/07-structured-outputs/README.md) | Generate schema-constrained JSON and handle validation failures | `Engineering` |
+| 8 | [Retrieval and Agentic RAG](./lessons/08-retrieval-and-rag/README.md) | Ground answers in your own documents and data | `Engineering` |
+| 9 | [Multimodal: Vision, Audio and Voice](./lessons/09-multimodal/README.md) | Work with images, speech and real-time voice | `Engineering` |
 | 10 | [Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK](./lessons/10-agent-frameworks/README.md) | Build your first agent with each provider's official SDK | `Engineering` |
 | 11 | [Multi-Agent Systems and Orchestration](./lessons/11-multi-agent-systems/README.md) | Handoffs, subagents and when splitting work across agents helps | `Engineering` |
 | 12 | [Memory and Context Engineering](./lessons/12-memory-and-context-engineering/README.md) | Keep agents on track across long tasks and many sessions | `Engineering` |

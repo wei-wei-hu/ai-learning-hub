@@ -1,6 +1,6 @@
-# Lesson 03: AI Assistants and Agents at Work
+# Lesson 3: AI Assistants and Agents at Work
 
-[← Lesson 02: Prompting and Context](../02-prompting-and-context/README.md) · [Course home](../../README.md) · [Lesson 04: What Makes an Agent →](../04-what-is-an-agent/README.md)
+[← Lesson 2: Prompting and Context](../02-prompting-and-context/README.md) · [Course home](../../README.md) · [Lesson 4: What Makes an Agent →](../04-what-is-an-agent/README.md)
 
 > Use ChatGPT and Claude for real work with your own files, and hand off multi-step tasks you can check.
 
@@ -52,6 +52,6 @@ The skills are the same on both sides, so start with the assistant your organiza
 
 ---
 
-[← Lesson 02: Prompting and Context](../02-prompting-and-context/README.md) · [Course home](../../README.md) · [Lesson 04: What Makes an Agent →](../04-what-is-an-agent/README.md)
+[← Lesson 2: Prompting and Context](../02-prompting-and-context/README.md) · [Course home](../../README.md) · [Lesson 4: What Makes an Agent →](../04-what-is-an-agent/README.md)
 
 *Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
