@@ -298,6 +298,30 @@ body,.bg{background:#fff}
 .b6{grid-column:1/-1}
 .bt.dark{color:#fff}.bt.dark .num,.bt.dark .upd{color:rgba(255,255,255,.8)}.bt.dark .rg .r0{stroke:rgba(255,255,255,.25)}
 .bignum{font-size:58px;font-weight:500;letter-spacing:-.04em;color:rgba(20,20,20,.72);line-height:1}
+/* swipe carousel */
+.swipe{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px calc(50% - 150px) 18px;margin:0 -34px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.swipe::-webkit-scrollbar{display:none}
+.swipe .sc{flex:0 0 300px;width:300px;scroll-snap-align:center;border:0;margin:0;border-radius:44px;padding:26px 24px 24px;background:var(--c);display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;min-height:430px;transform:scale(.9);opacity:.55;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s}
+.swipe .sc.on{transform:scale(1);opacity:1}
+.slabel{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:rgba(20,20,20,.55)}
+.plate{position:relative;width:170px;height:170px;margin:18px 0 20px;display:grid;place-items:center;border-radius:50%;background:#fff;box-shadow:0 14px 26px rgba(40,40,40,.14)}
+.plate svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.plate circle{fill:none;stroke-width:6;stroke-linecap:round}.plate .r0{stroke:rgba(20,20,20,.06)}
+.pin{position:relative;display:grid;place-items:center;color:var(--ink)}
+.pin svg{position:static;transform:none;width:64px;height:64px}
+.pin b{font-size:64px;font-weight:500;letter-spacing:-.04em;line-height:1}
+.sc .tn{font-size:24px;font-weight:600;letter-spacing:-.025em;line-height:1.15}
+.sdesc{font-size:13.5px;line-height:1.45;color:rgba(20,20,20,.68);margin-top:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:58px}
+.smeta{font-size:11.5px;color:rgba(20,20,20,.5);letter-spacing:.02em;margin-top:8px}
+.scta{margin-top:auto;background:#fff;color:var(--ink);border-radius:16px;padding:13px 30px;font-size:15px;font-weight:600}
+.sc.dark .slabel,.sc.dark .sdesc,.sc.dark .smeta{color:rgba(255,255,255,.75)}
+.sc:hover .scta{background:var(--ink);color:#fff}
+.swnav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:2px}
+.sw-arrow{width:44px;height:44px;border-radius:50%;border:0;background:#f4f4f4;color:var(--ink);font-size:26px;line-height:1;cursor:pointer;font-family:inherit}
+.sw-arrow:hover{background:var(--char);color:#fff}
+.dots{display:flex;gap:8px}.dots i{width:9px;height:9px;border-radius:50%;background:#ddd;cursor:pointer;transition:all .25s}.dots i.on{width:26px;background:var(--char)}
+@media(max-width:600px){.swipe{margin:0 -14px;padding:12px calc(50% - 135px) 16px;gap:12px}.swipe .sc{flex-basis:270px;width:270px;min-height:410px}.plate{width:150px;height:150px}}
+@media(prefers-reduced-motion:reduce){.swipe .sc{transition:none}}
 </style>
 </head>
 <body>
@@ -319,6 +343,7 @@ body,.bg{background:#fff}
   </div>
   <p class="rt" id="homeRt">Choose a track</p>
   <div id="cards"></div>
+  <div id="swnav" class="swnav"></div>
   <span hidden><span id="courseMeta"></span><i id="courseBar"></i></span>
  </section>
 
@@ -409,33 +434,29 @@ function stat(p,k){let a=0,d=0;p.st.forEach((s,si)=>s[2].forEach((_,i)=>{a++;if(
 function renderHome(){
  P=DATA[prov].P;
  document.querySelectorAll('.pv').forEach(t=>t.setAttribute('aria-selected',t.dataset.v===prov));
- if(hmode==='course'){document.getElementById('cards').className='bento';setSel('prov','course');document.getElementById('homeRt').textContent='Choose a stage';
-  const rg=(pct,c2,inner)=>`<span class="rg"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" class="r0"/><circle cx="22" cy="22" r="18" class="r1" stroke="${c2}" stroke-dasharray="113.1" stroke-dashoffset="${113.1*(1-pct)}"/></svg><span class="ri">${inner}</span></span>`;
-  const G=COURSE.stages.map((s,k)=>{const [c,c2]=k===5?['#555555','#ffffff']:COL[k%5];const n=s.last-s.first+1;let d=0;for(let i=s.first;i<=s.last;i++)if(lessonDone(i))d++;return {k,s,c,c2,n,d,pct:d/n}});
-  const st=(g,cls,body)=>`<button class="tcard bt ${cls}" data-s="${g.k}" style="--c:${g.c};--c2:${g.c2}" aria-label="Stage ${g.k+1}: ${esc(g.s.name)}">${body}</button>`;
-  const up=g=>g.d?`${g.d} of ${g.n} lessons done`:`Stage ${g.k+1}`;
-  const wide=g=>`<span class="bx"><span class="tn">${esc(g.s.name)}</span><span class="num sm">${g.n} <small>lessons</small></span><span class="upd">${up(g)}</span></span>${rg(g.pct,g.c2,g.k+1)}`;
-  document.getElementById('cards').innerHTML=
-   st(G[0],'b1',`<span class="bx"><span class="tn">${esc(G[0].s.name)}</span><span class="num">${G[0].n} <small>lessons</small></span><span class="upd">${up(G[0])}</span></span>${rg(G[0].pct,G[0].c2,1)}`)+
-   st(G[1],'b2',`<span class="tn">${esc(G[1].s.name)}</span><span class="upd">${G[1].n} lessons · ${up(G[1])}</span><svg class="wave" viewBox="0 0 200 40" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><path d="M4 16c20-12 36-6 50 6s26 14 40 2 22-16 36-2 22 16 34 4 20-14 32-14"/></svg>`)+
-   `<div class="bcol">`+st(G[2],'b3',wide(G[2]))+st(G[3],'b3',wide(G[3]))+`</div>`+
-   st(G[4],'b5',`<span class="tn">${esc(G[4].s.name)}</span><span class="bignum">5</span><span class="num sm">${G[4].n} <small>lessons</small></span>`)+
-   st(G[5],'b3 b6 dark',wide(G[5]));return}
- document.getElementById('homeRt').textContent='Choose a track';
- const ring=(pct,c2,inner)=>`<span class="rg"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" class="r0"/><circle cx="22" cy="22" r="18" class="r1" stroke="${c2}" stroke-dasharray="113.1" stroke-dashoffset="${113.1*(1-pct)}"/></svg><span class="ri">${inner}</span></span>`;
- const ico=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICO[k]}</svg>`;
- const T=TR.map(([k,name,ci])=>{const p=P[k];const [c,c2]=COL[ci];const [a,d]=stat(p,prov+'.'+k);return {k,name,c,c2,a,d,p,pct:a?d/a:0}});
- const tile=(t,cls,body)=>`<button class="tcard bt ${cls}" data-t="${t.k}" style="--c:${t.c};--c2:${t.c2}" aria-label="${t.name}">${body}</button>`;
- const upd=t=>t.d?`${t.d} of ${t.a} steps done`:`${t.p.st.length} stages`;
- document.getElementById('cards').className='bento';
- document.getElementById('cards').innerHTML=
-  tile(T[0],'b1',`<span class="bx"><span class="tn">${T[0].name}</span><span class="num">${T[0].a} <small>steps</small></span><span class="upd">${upd(T[0])}</span></span>${ring(T[0].pct,T[0].c2,Math.round(T[0].pct*100)+'%')}`)+
-  tile(T[1],'b2',`<span class="tn">${T[1].name}</span><span class="upd">${T[1].a} steps · ${upd(T[1])}</span><svg class="wave" viewBox="0 0 200 40" preserveAspectRatio="none" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><path d="M4 16c20-12 36-6 50 6s26 14 40 2 22-16 36-2 22 16 34 4 20-14 32-14"/></svg>`)+
-  `<div class="bcol">`+
-  tile(T[2],'b3',`<span class="bx"><span class="tn">${T[2].name}</span><span class="num sm">${T[2].a} <small>steps</small></span><span class="upd">${upd(T[2])}</span></span>${ring(T[2].pct,T[2].c2,ico(T[2].k))}`)+
-  tile(T[3],'b3',`<span class="bx"><span class="tn">${T[3].name}</span><span class="num sm">${T[3].a} <small>steps</small></span><span class="upd">${upd(T[3])}</span></span>${ring(T[3].pct,T[3].c2,ico(T[3].k))}`)+
-  `</div>`+
-  tile(T[4],'b5',`<span class="tn">${T[4].name}</span><span class="bigico">${ico(T[4].k)}</span><span class="num sm">${T[4].a} <small>steps</small></span>`);
+ const ico=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICO[k]}</svg>`;
+ const plate=(pct,c2,inner)=>`<span class="plate"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${339.3*(1-pct)}"/></svg><span class="pin">${inner}</span></span>`;
+ let items;
+ if(hmode==='course'){setSel('prov','course');document.getElementById('homeRt').textContent='Swipe to choose a stage';
+  items=COURSE.stages.map((s,k)=>{const [c,c2]=k===5?['#555555','#ffffff']:COL[k%5];const n=s.last-s.first+1;let d=0;for(let i=s.first;i<=s.last;i++)if(lessonDone(i))d++;
+   return {attr:`data-s="${k}"`,c,c2,dark:k===5,label:`Stage ${k+1} of 6`,name:s.name,desc:'You finish with: '+s.project.charAt(0).toLowerCase()+s.project.slice(1)+'.',meta:`${n} lessons${d?` · ${d} done`:''}`,pct:d/n,inner:`<b>${k+1}</b>`,cta:'Open stage'}});
+ }else{document.getElementById('homeRt').textContent='Swipe to choose a track';
+  items=TR.map(([k,name,ci],i)=>{const p=P[k];const [c,c2]=COL[ci];const [a,d]=stat(p,prov+'.'+k);
+   return {attr:`data-t="${k}"`,c,c2,dark:false,label:`Track ${i+1} of 5`,name,desc:p.who,meta:`${p.st.length} stages · ${a} steps${d?` · ${Math.round(d/a*100)}% done`:''}`,pct:a?d/a:0,inner:ico(k),cta:'Open track'}});
+ }
+ const el=document.getElementById('cards');el.className='swipe';
+ el.innerHTML=items.map((t,i)=>`<button class="tcard sc${t.dark?' dark':''}" ${t.attr} data-i="${i}" style="--c:${t.c};--c2:${t.c2}" aria-label="${esc(t.name)}">
+  <span class="slabel">${t.label}</span>${plate(t.pct,t.c2,t.inner)}
+  <span class="tn">${esc(t.name)}</span><span class="sdesc">${esc(t.desc)}</span><span class="smeta">${t.meta}</span><span class="scta">${t.cta}</span></button>`).join('');
+ const nav=document.getElementById('swnav');
+ nav.innerHTML=`<button class="sw-arrow" data-d="-1" aria-label="Previous">‹</button><span class="dots">${items.map((_,i)=>`<i data-i="${i}"></i>`).join('')}</span><button class="sw-arrow" data-d="1" aria-label="Next">›</button>`;
+ const cards=[...el.children],dots=[...nav.querySelectorAll('.dots i')];let cur=0;
+ const mark=()=>{const mid=el.scrollLeft+el.clientWidth/2;let best=0,bd=1e9;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft+c.offsetWidth/2-mid);if(d<bd){bd=d;best=i}});cur=best;cards.forEach((c,i)=>c.classList.toggle('on',i===best));dots.forEach((d,i)=>d.classList.toggle('on',i===best))};
+ const go=i=>{i=Math.max(0,Math.min(cards.length-1,i));el.scrollTo({left:cards[i].offsetLeft+cards[i].offsetWidth/2-el.clientWidth/2,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+ el.onscroll=()=>requestAnimationFrame(mark);
+ nav.onclick=e=>{const a=e.target.closest('.sw-arrow');if(a){go(cur+ +a.dataset.d);return}const d=e.target.closest('.dots i');if(d)go(+d.dataset.i)};
+ el.onkeydown=e=>{if(e.key==='ArrowRight'){go(cur+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(cur-1);e.preventDefault()}};
+ el.scrollLeft=0;requestAnimationFrame(()=>{go(0);mark()});
 }
 function show(v){view=v;['home','track','course','lesson'].forEach(id=>document.getElementById(id).hidden=id!==v);window.scrollTo({top:0});if(v==='home'){renderHome();renderCourseMeta()}else if(v==='track')render();else if(v==='course')renderCourse();else renderLesson()}
 function render(){
