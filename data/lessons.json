@@ -207,7 +207,7 @@
     ]
    ],
    "try": [
-    "Take the weekly task from Lesson 1 and write a prompt with five labeled parts: role, task, context, output format, one example.",
+    "Take the weekly task from Lesson 2 and write a prompt with five labeled parts: role, task, context, output format, one example.",
     "Run it three times and compare the outputs for consistency.",
     "Save the version that works as a template with placeholders."
    ],
@@ -418,7 +418,7 @@
    ],
    "try": [
     "Install the official Python SDK for each provider.",
-    "Send the same prompt template from Lesson 2 to both APIs and print the responses.",
+    "Send the same prompt template from Lesson 3 to both APIs and print the responses.",
     "Log token usage for each call and estimate what 1,000 calls a day would cost."
    ],
    "check": [
@@ -720,11 +720,11 @@
    ],
    "try": [
     "Complete both quickstarts.",
-    "Give each agent the get_order_status tool from Lesson 6.",
+    "Give each agent the get_order_status tool from Lesson 7.",
     "Ask a question that needs two tool calls and compare the traces."
    ],
    "check": [
-    "What does the SDK do for you that you did by hand in Lesson 6?",
+    "What does the SDK do for you that you did by hand in Lesson 7?",
     "Where would you add a guardrail in each SDK?",
     "What did the traces reveal that the final answer hid?"
    ],
@@ -1355,7 +1355,7 @@
     ]
    ],
    "try": [
-    "Take the agent you designed in Lesson 17.",
+    "Take the agent you designed in Lesson 18.",
     "List every action it can take and rate each as low, medium or high impact.",
     "Add a human approval step for every high-impact action and a log for the rest."
    ],

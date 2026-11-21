@@ -36,7 +36,7 @@ As agents gain access to systems and data, mistakes and misuse get more expensiv
 
 ## Try it
 
-1. Take the agent you designed in Lesson 17.
+1. Take the agent you designed in Lesson 18.
 2. List every action it can take and rate each as low, medium or high impact.
 3. Add a human approval step for every high-impact action and a log for the rest.
 

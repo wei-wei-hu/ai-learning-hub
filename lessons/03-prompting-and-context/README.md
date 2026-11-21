@@ -33,7 +33,7 @@ Most poor AI output comes from vague instructions or missing context. Learning t
 
 ## Try it
 
-1. Take the weekly task from Lesson 1 and write a prompt with five labeled parts: role, task, context, output format, one example.
+1. Take the weekly task from Lesson 2 and write a prompt with five labeled parts: role, task, context, output format, one example.
 2. Run it three times and compare the outputs for consistency.
 3. Save the version that works as a template with placeholders.
 

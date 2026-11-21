@@ -43,12 +43,12 @@ The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guar
 ## Try it
 
 1. Complete both quickstarts.
-2. Give each agent the get_order_status tool from Lesson 6.
+2. Give each agent the get_order_status tool from Lesson 7.
 3. Ask a question that needs two tool calls and compare the traces.
 
 ## Check yourself
 
-1. What does the SDK do for you that you did by hand in Lesson 6?
+1. What does the SDK do for you that you did by hand in Lesson 7?
 2. Where would you add a guardrail in each SDK?
 3. What did the traces reveal that the final answer hid?
 

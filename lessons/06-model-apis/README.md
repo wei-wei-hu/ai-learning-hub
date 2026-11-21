@@ -35,7 +35,7 @@ Every product, agent and integration in this course sits on top of these two API
 ## Try it
 
 1. Install the official Python SDK for each provider.
-2. Send the same prompt template from Lesson 2 to both APIs and print the responses.
+2. Send the same prompt template from Lesson 3 to both APIs and print the responses.
 3. Log token usage for each call and estimate what 1,000 calls a day would cost.
 
 ## Check yourself
