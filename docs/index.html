@@ -322,6 +322,22 @@ body,.bg{background:#fff}
 .dots{display:flex;gap:8px}.dots i{width:9px;height:9px;border-radius:50%;background:#ddd;cursor:pointer;transition:all .25s}.dots i.on{width:26px;background:var(--char)}
 @media(max-width:600px){.swipe{margin:0 -14px;padding:12px calc(50% - 135px) 16px;gap:12px}.swipe .sc{flex-basis:270px;width:270px;min-height:410px}.plate{width:150px;height:150px}}
 @media(prefers-reduced-motion:reduce){.swipe .sc{transition:none}}
+.swipe .stg{min-height:330px;cursor:pointer}
+.plate.sm{width:120px;height:120px;margin:14px 0 16px}.plate.sm .pin b{font-size:46px}
+.swipe.steps{padding-top:8px}
+.stepc{flex:0 0 300px;width:300px;scroll-snap-align:center;background:var(--cream);border-radius:36px;padding:24px 22px 22px;display:flex;flex-direction:column;gap:10px;min-height:290px;text-align:left;transform:scale(.92);opacity:.55;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s;border-top:10px solid var(--c)}
+.stepc.on{transform:scale(1);opacity:1}
+.st-t{font-size:19px;font-weight:600;letter-spacing:-.02em;line-height:1.25}
+.st-n{font-size:13.5px;line-height:1.5;color:var(--sub)}
+.stepc .tags{display:flex;flex-wrap:wrap;gap:6px}.stepc .tag{background:#fff}
+.st-b{margin-top:auto;display:flex;gap:10px}
+.st-open,.st-done{flex:1;text-align:center;border:0;border-radius:16px;padding:13px 10px;font-family:inherit;font-size:14.5px;font-weight:600;cursor:pointer;text-decoration:none}
+.st-open{background:var(--char);color:#fff}.st-open:hover{background:#3d3d3d;color:#fff}
+.st-done{background:#fff;color:var(--ink)}
+.stepc.done{background:#f3f7ef}.stepc.done .st-done{background:var(--sage)}
+#track .rt{margin-top:22px}
+@media(max-width:600px){.stepc{flex-basis:270px;width:270px}}
+@media(prefers-reduced-motion:reduce){.stepc{transition:none}}
 </style>
 </head>
 <body>
@@ -431,6 +447,21 @@ const TR=[['work','AI at Work',0],['mgmt','Management',1],['exec','AI Leadership
 const ICO={safe:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>',exec:'<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/>',mgmt:'<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/>',eng:'<path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/>',work:'<rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/><path d="M3 13h18"/>'};
 let view='home';
 function stat(p,k){let a=0,d=0;p.st.forEach((s,si)=>s[2].forEach((_,i)=>{a++;if(S[`${k}.${si}.${i}`])d++}));return[a,d]}
+function swipeInit(el,nav,start,onChange){
+ const cards=[...el.children];if(!cards.length){nav.innerHTML='';return}
+ nav.innerHTML=`<button class="sw-arrow" data-d="-1" aria-label="Previous">‹</button><span class="dots">${cards.map((_,i)=>`<i data-i="${i}"></i>`).join('')}</span><button class="sw-arrow" data-d="1" aria-label="Next">›</button>`;
+ const dots=[...nav.querySelectorAll('.dots i')];let c=-1,tm;
+ const mark=()=>{const mid=el.scrollLeft+el.clientWidth/2;let best=0,bd=1e9;cards.forEach((x,i)=>{const d=Math.abs(x.offsetLeft+x.offsetWidth/2-mid);if(d<bd){bd=d;best=i}});
+  cards.forEach((x,i)=>x.classList.toggle('on',i===best));dots.forEach((d,i)=>d.classList.toggle('on',i===best));
+  if(best!==c){c=best;if(onChange){clearTimeout(tm);tm=setTimeout(()=>onChange(c),220)}}};
+ const go=(i,jump)=>{i=Math.max(0,Math.min(cards.length-1,i));el.scrollTo({left:cards[i].offsetLeft+cards[i].offsetWidth/2-el.clientWidth/2,behavior:(jump||matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth'})};
+ el.onscroll=()=>requestAnimationFrame(mark);
+ nav.onclick=e=>{const a=e.target.closest('.sw-arrow');if(a){go(c+ +a.dataset.d);return}const d=e.target.closest('.dots i');if(d)go(+d.dataset.i)};
+ el.onkeydown=e=>{if(e.key==='ArrowRight'){go(c+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(c-1);e.preventDefault()}};
+ c=start||0;cards.forEach((x,i)=>x.classList.toggle('on',i===c));dots.forEach((d,i)=>d.classList.toggle('on',i===c));
+ requestAnimationFrame(()=>go(c,true));
+ el._go=go;
+}
 function renderHome(){
  P=DATA[prov].P;
  document.querySelectorAll('.pv').forEach(t=>t.setAttribute('aria-selected',t.dataset.v===prov));
@@ -449,14 +480,7 @@ function renderHome(){
   <span class="slabel">${t.label}</span>${plate(t.pct,t.c2,t.inner)}
   <span class="tn">${esc(t.name)}</span><span class="sdesc">${esc(t.desc)}</span><span class="smeta">${t.meta}</span><span class="scta">${t.cta}</span></button>`).join('');
  const nav=document.getElementById('swnav');
- nav.innerHTML=`<button class="sw-arrow" data-d="-1" aria-label="Previous">‹</button><span class="dots">${items.map((_,i)=>`<i data-i="${i}"></i>`).join('')}</span><button class="sw-arrow" data-d="1" aria-label="Next">›</button>`;
- const cards=[...el.children],dots=[...nav.querySelectorAll('.dots i')];let cur=0;
- const mark=()=>{const mid=el.scrollLeft+el.clientWidth/2;let best=0,bd=1e9;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft+c.offsetWidth/2-mid);if(d<bd){bd=d;best=i}});cur=best;cards.forEach((c,i)=>c.classList.toggle('on',i===best));dots.forEach((d,i)=>d.classList.toggle('on',i===best))};
- const go=i=>{i=Math.max(0,Math.min(cards.length-1,i));el.scrollTo({left:cards[i].offsetLeft+cards[i].offsetWidth/2-el.clientWidth/2,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
- el.onscroll=()=>requestAnimationFrame(mark);
- nav.onclick=e=>{const a=e.target.closest('.sw-arrow');if(a){go(cur+ +a.dataset.d);return}const d=e.target.closest('.dots i');if(d)go(+d.dataset.i)};
- el.onkeydown=e=>{if(e.key==='ArrowRight'){go(cur+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(cur-1);e.preventDefault()}};
- el.scrollLeft=0;requestAnimationFrame(()=>{go(0);mark()});
+ swipeInit(el,nav,0);
 }
 function show(v){view=v;['home','track','course','lesson'].forEach(id=>document.getElementById(id).hidden=id!==v);window.scrollTo({top:0});if(v==='home'){renderHome();renderCourseMeta()}else if(v==='track')render();else if(v==='course')renderCourse();else renderLesson()}
 function render(){
@@ -468,37 +492,36 @@ function render(){
  if(!S._o)S._o={};
  if(S._o[K]===undefined){const f=p.st.findIndex((s,si)=>s[2].some((_,i)=>!S[`${K}.${si}.${i}`]));S._o[K]=f<0?0:f}
  const open=S._o[K],n=p.st.length;
- document.getElementById('stages').innerHTML=p.st.map((s,si)=>{
-  const [c,c2,g]=COL[si%5];
-  const items=s[2].map((t,i)=>[t,`${K}.${si}.${i}`]);
-  const d=items.filter(([,k])=>S[k]).length;all+=items.length;done+=d;
-  const shown=essOnly?items.filter(([t])=>t[5]==='E'):items;
-  const isOpen=si===open;
-  return `<div class="stage glass ${isOpen?'is-open':''}" id="stage-${si}" style="--c:${c};--c2:${c2};--glow:${g}">
-  <button class="shead" data-s="${si}" aria-expanded="${isOpen}"><h3><span class="orb">${d===items.length?tick:si+1}</span>${s[0]}</h3><span class="right"><span class="badge">${d}/${items.length}</span><span class="chev">${chev}</span></span></button>
-  <div class="bar mini"><i style="width:${d/items.length*100}%"></i></div>
-  ${isOpen?`<div class="sbody ${anim?'anim':''}"><p class="sdesc">${s[1]}</p>
-  ${shown.map(([t,k])=>`<div class="task ${S[k]?'done':''}" data-k="${k}"><span class="tk">${tick}</span>
-   <span class="tt"><b>${t[0]}</b><small>${t[1]}</small>
-   <span class="tags"><span class="tag ${t[5]}">${PR[t[5]]}</span><span class="tag">${t[3]}</span><span class="tag">${t[4]}</span>${t[6]?`<span class="tag">${t[6]}</span>`:''}</span></span>
-   <a class="open" href="${t[2]}" target="_blank" rel="noopener">Open</a></div>`).join('')}
-  <div class="nav">${si>0?`<button class="nb" data-go="${si-1}">← Previous</button>`:'<span></span>'}${si<n-1?`<button class="nb next" data-go="${si+1}">Next stage →</button>`:`<button class="nb next" data-go="-1">Done ✓</button>`}</div></div>`:''}
-  </div>`}).join('');
+ const sel=Math.max(0,Math.min(n-1,open<0?0:open));
+ const stg=p.st.map((s,si)=>{const items=s[2].map((t,i)=>[t,`${K}.${si}.${i}`]);const d=items.filter(([,k])=>S[k]).length;all+=items.length;done+=d;return {s,si,items,d}});
+ const stepsHtml=si=>{const g=stg[si];const [c,c2]=COL[si%5];const shown=essOnly?g.items.filter(([t])=>t[5]==='E'):g.items;
+  return shown.map(([t,k],i)=>`<div class="stepc ${S[k]?'done':''}" style="--c:${c};--c2:${c2}">
+   <span class="slabel">Step ${i+1} of ${shown.length}</span>
+   <b class="st-t">${t[0]}</b><span class="st-n">${t[1]}</span>
+   <span class="tags"><span class="tag ${t[5]}">${PR[t[5]]}</span><span class="tag">${t[3]}</span><span class="tag">${t[4]}</span>${t[6]?`<span class="tag">${t[6]}</span>`:''}</span>
+   <span class="st-b"><a class="st-open" href="${t[2]}" target="_blank" rel="noopener">Open ↗</a><button class="st-done" data-k="${k}">${S[k]?'Done ✓':'Mark done'}</button></span></div>`).join('')};
+ const paintSteps=(si,start)=>{const w=document.getElementById('stepSw');w.innerHTML=stepsHtml(si);document.getElementById('stepRt').textContent=`${stg[si].s[0]}: swipe the steps`;swipeInit(w,document.getElementById('stepNav'),start||0,i=>{stepIdx=i})};
+ document.getElementById('stages').innerHTML=`<p class="rt">Swipe to choose a stage</p><div class="swipe" id="stSw">`+stg.map(({s,si,items,d})=>{const [c,c2]=COL[si%5];
+   return `<div class="tcard sc stg" data-si="${si}" style="--c:${c};--c2:${c2}"><span class="slabel">Stage ${si+1} of ${n}</span>
+   <span class="plate sm"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${339.3*(1-d/items.length)}"/></svg><span class="pin"><b>${d===items.length?'✓':si+1}</b></span></span>
+   <span class="tn">${s[0]}</span><span class="sdesc">${s[1]}</span><span class="smeta">${d} of ${items.length} steps done</span></div>`}).join('')+
+  `</div><div class="swnav" id="stNav"></div><p class="rt" id="stepRt"></p><div class="swipe steps" id="stepSw"></div><div class="swnav" id="stepNav"></div>`;
+ swipeInit(document.getElementById('stSw'),document.getElementById('stNav'),sel,i=>{if(S._o[K]!==i){S._o[K]=i;save();stepIdx=0;paintSteps(i,0)}});
+ paintSteps(sel,stepIdx);
  const r=all?done/all:0;pg.style.strokeDashoffset=C*(1-r);
  document.getElementById('pct').textContent=Math.round(r*100)+'%';
  document.getElementById('ttitle').textContent=p.t;
  document.getElementById('tsum').textContent=done===all?'Track complete. Nicely done.':`${done} of ${all} steps done · ${p.st.length} stages`;
 }
-document.getElementById('cards').onclick=e=>{const b=e.target.closest('.tcard');if(!b)return;if(b.dataset.s!==undefined){sfilter=+b.dataset.s;show('course');return}cur=b.dataset.t;S._t=cur;save();show('track')};
+document.getElementById('cards').onclick=e=>{const b=e.target.closest('.tcard');if(!b)return;if(b.dataset.s!==undefined){sfilter=+b.dataset.s;show('course');return}cur=b.dataset.t;S._t=cur;stepIdx=0;save();show('track')};
 document.getElementById('back').onclick=()=>show('home');
 document.getElementById('prov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;if(b.dataset.v==='course'){hmode='course'}else{hmode='tracks';prov=b.dataset.v;S._v=prov;lprov=null}S._h=hmode;save();renderHome()};
 document.getElementById('ess').onclick=()=>{essOnly=!essOnly;S._e=essOnly;save();render()};
-let anim=false;
+let anim=false,stepIdx=0;
 function go(i){const K=prov+'.'+cur;S._o[K]=i;save();anim=true;render();anim=false;if(i>=0){const el=document.getElementById('stage-'+i);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}}
 document.getElementById('stages').onclick=e=>{if(e.target.closest('a'))return;
- const h=e.target.closest('.shead');if(h){const i=+h.dataset.s;const K=prov+'.'+cur;go(S._o[K]===i?-1:i);return}
- const nb=e.target.closest('.nb');if(nb){go(+nb.dataset.go);return}
- const t=e.target.closest('.task');if(!t)return;S[t.dataset.k]=!S[t.dataset.k];save();render()};
+ const sc=e.target.closest('.stg');if(sc){document.getElementById('stSw')._go(+sc.dataset.si);return}
+ const t=e.target.closest('.st-done');if(!t)return;S[t.dataset.k]=!S[t.dataset.k];save();render()};
 document.getElementById('reset').onclick=()=>{Object.keys(S).forEach(k=>{if(k.startsWith(prov+'.'+cur+'.'))delete S[k]});save();render()};
 document.getElementById('toCourse').onclick=()=>show('course');
 document.getElementById('ghLink').href=COURSE.repo;document.getElementById('footGh').href=COURSE.repo;
