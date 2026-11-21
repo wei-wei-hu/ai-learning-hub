@@ -359,6 +359,8 @@ body,.bg{background:#fff}
 .stagehead .tn{font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
 .sdesc2{font-size:13.5px;line-height:1.45;color:rgba(20,20,20,.68)}
 #track .rt{margin:16px 0 6px}
+.stagehead.plain{background:#f4f4f4;margin-top:30px}
+#trkLs .lrow{min-height:400px}
 </style>
 </head>
 <body>
@@ -537,7 +539,10 @@ function render(){
    <span class="st-b"><a class="st-open" href="${t[2]}" target="_blank" rel="noopener">Open ↗</a><button class="st-done" data-k="${k}">${S[k]?'Done ✓':'Mark done'}</button></span></div>`).join('')};
  document.getElementById('stages').innerHTML=stg.map(({s,si,items,d})=>{const [c,c2]=COL[si%5];
    return `<div class="stagehead" style="--c:${c};--c2:${c2}"><span class="orb">${d===items.length?'✓':si+1}</span><span class="shx"><span class="slabel">Stage ${si+1} of ${n}</span><b class="tn">${s[0]}</b><span class="sdesc2">${s[1]}</span><span class="smeta">${d} of ${items.length} steps done</span></span></div>
-   <p class="rt">Swipe the resources</p><div class="swipe steps" id="stp${si}">${stepsHtml(si)}</div><div class="swnav" id="stp${si}Nav"></div>`}).join('');
+   <p class="rt">Swipe the resources</p><div class="swipe steps" id="stp${si}">${stepsHtml(si)}</div><div class="swnav" id="stp${si}Nav"></div>`}).join('')+(()=>{const tl={work:'W',mgmt:'M',exec:'L',eng:'E',safe:'S'}[cur];const TLs=COURSE.lessons.map((l,i)=>({l,i})).filter(({l})=>l.tracks.includes(tl));if(!TLs.length)return'';
+   return `<div class="stagehead plain"><span class="shx"><span class="slabel">From the full course</span><b class="tn">Lessons in this track</b><span class="sdesc2">${TLs.length} lessons with goals, exercises and resources from both providers.</span></span></div><p class="rt">Swipe to choose a lesson</p><div class="swipe" id="trkLs">`+TLs.map(({l,i},k)=>{const [c,c2]=COL[k%5];const dn=lessonDone(i);
+    return `<button class="tcard sc lrow ${dn?'done':''}" data-l="${i}" style="--c:${c};--c2:${c2}" aria-label="${esc(l.title)}"><span class="slabel">Lesson ${k+1} of ${TLs.length}</span><span class="plate sm"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle cx="60" cy="60" r="54" class="r1" stroke="${c2}" stroke-dasharray="339.3" stroke-dashoffset="${dn?0:339.3}"/></svg><span class="pin"><b>${dn?'✓':i+1}</b></span></span><span class="tn">${esc(l.title)}</span><span class="sdesc">${esc(l.summary)}</span><span class="scta">Open lesson</span></button>`}).join('')+`</div><div class="swnav" id="trkLsNav"></div>`})();
+ {const w=document.getElementById('trkLs');if(w){const TL=[...w.children];let st=TL.findIndex(x=>!x.classList.contains('done'));swipeInit(w,document.getElementById('trkLsNav'),st<0?0:st)}}
  stg.forEach(({si})=>{const w=document.getElementById('stp'+si);const key=K+'.'+si;swipeInit(w,document.getElementById('stp'+si+'Nav'),Math.min(stepPos[key]||0,Math.max(0,w.children.length-1)),k=>{stepPos[key]=k})});
  const r=all?done/all:0;pg.style.strokeDashoffset=C*(1-r);
  document.getElementById('pct').textContent=Math.round(r*100)+'%';
@@ -552,6 +557,7 @@ let anim=false,stepIdx=0;const stepPos={};
 function go(i){const K=prov+'.'+cur;S._o[K]=i;save();anim=true;render();anim=false;if(i>=0){const el=document.getElementById('stage-'+i);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}}
 document.getElementById('stages').onclick=e=>{if(e.target.closest('a'))return;
  const sc=e.target.closest('.stg');if(sc){document.getElementById('stSw')._go(+sc.dataset.si);return}
+ const lr=e.target.closest('.lrow');if(lr){lessonIdx=+lr.dataset.l;const sx=COURSE.stages.findIndex(s=>lessonIdx>=s.first&&lessonIdx<=s.last);sfilter=sx<0?null:sx;show('lesson');return}
  const t=e.target.closest('.st-done');if(!t)return;S[t.dataset.k]=!S[t.dataset.k];save();render()};
 document.getElementById('reset').onclick=()=>{Object.keys(S).forEach(k=>{if(k.startsWith(prov+'.'+cur+'.'))delete S[k]});save();render()};
 document.getElementById('toCourse').onclick=()=>show('course');
