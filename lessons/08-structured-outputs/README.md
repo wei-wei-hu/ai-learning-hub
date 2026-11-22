@@ -44,4 +44,4 @@ Business systems need fields, not paragraphs. Structured outputs let AI feed spr
 
 [← Lesson 7: Tool Use and Function Calling](../07-tool-use/README.md) · [Course home](../../README.md) · [Lesson 9: Retrieval and Agentic RAG →](../09-retrieval-and-rag/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*

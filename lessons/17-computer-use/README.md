@@ -47,4 +47,4 @@ Many systems have no API, so agents need to use them the way people do. That pow
 
 [← Lesson 16: Coding Agents: Codex and Claude Code](../16-coding-agents/README.md) · [Course home](../../README.md) · [Lesson 18: Long-Running and Managed Agents →](../18-long-running-and-managed-agents/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*

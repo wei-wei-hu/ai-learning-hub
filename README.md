@@ -1,10 +1,10 @@
 <a id="top"></a>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img src="./docs/cover.png" alt="AI Learning Path: Learn AI and AI Agents with OpenAI and Anthropic. 22 lessons, 5 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img src="./docs/cover.png" alt="AI Learning Hub: Learn AI and AI Agents with OpenAI and Anthropic. 22 lessons, 5 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
 </p>
 
-<h1 align="center">AI Learning Path</h1>
+<h1 align="center">AI Learning Hub</h1>
 
 <p align="center"><strong>Free lessons · Official learning resources · Hands-on practice · Role-based tracks</strong></p>
 
@@ -13,13 +13,13 @@
   <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-e0c24a"></a>
   <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-8fb277"></a>
   <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-d99cc0"></a>
-  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-7fb3dd"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-7fb3dd"></a>
   <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-e0c24a"></a>
   <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-555555"></a>
 </p>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-path/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
 </p>
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Newsletter</a></p>
@@ -27,9 +27,20 @@
 
 ---
 
+## Upcoming AI Talks
+
+Free AI talks, keynotes and webinars from OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA and more, picked and checked every week. All times are Pacific.
+
+- **Free:** the full list in your inbox every Monday, with top picks marked.
+- **Paid ($8 a month or $80 a year):** next week's list 3 days early, one-click calendar links, catch-up summaries and a monthly conference look-ahead.
+
+[See this week's talks and sign up →](https://wei-wei-hu.github.io/ai-learning-hub/talks/) · How it runs: [talks/README.md](./talks/README.md)
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
+
 ## Who this is for
 
-AI Learning Path is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders. Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
+AI Learning Hub is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders. Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
 
 | Learning Track | Who It's For | What You'll Learn |
 |---|---|---|
@@ -41,7 +52,7 @@ AI Learning Path is designed for anyone who wants to learn AI and AI agents, fro
 
 **New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-path/) lets you swipe through tracks, stages and lessons, pick what to take next, and track your progress.
+The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-hub/) lets you swipe through tracks, stages and lessons, pick what to take next, and track your progress.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
@@ -99,8 +110,8 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 ## Run the repository locally
 
 ```bash
-git clone https://github.com/wei-wei-hu/ai-learning-path.git
-cd ai-learning-path
+git clone https://github.com/wei-wei-hu/ai-learning-hub.git
+cd ai-learning-hub
 python3 scripts/build.py      # rebuild lessons, README tables and site data
 open docs/index.html          # or serve the docs/ folder with any static server
 ```
@@ -129,7 +140,7 @@ This is an independent learning guide. It is not affiliated with, endorsed by, o
 
 **Copyright © 2026 Weiwei Hu. All rights reserved.**
 
-You may read and use this course for your own personal, non-commercial learning, share links to it, and quote short excerpts with credit to "Weiwei Hu, AI Learning Path" and a link to this repository.
+You may read and use this course for your own personal, non-commercial learning, share links to it, and quote short excerpts with credit to "Weiwei Hu, AI Learning Hub" and a link to this repository.
 
 Without prior written permission, you may **not** copy, republish or redistribute this course; modify, translate or create derivative courses or materials from it; use it for any commercial purpose, including paid training or consulting; remove the author's attribution; or use it to train or evaluate AI models.
 

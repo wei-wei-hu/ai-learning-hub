@@ -64,4 +64,4 @@ This lesson completes **Stage 5: Safety and governance**. Before you move on, fi
 
 [← Lesson 19: Evaluating AI Systems](../19-evaluating-ai-systems/README.md) · [Course home](../../README.md) · [Lesson 21: Managing AI-Enabled Teams →](../21-managing-ai-enabled-teams/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*

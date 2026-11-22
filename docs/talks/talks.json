@@ -1,0 +1,111 @@
+{
+ "updated": "2026-11-16",
+ "talks": [
+  {
+   "date": "2026-11-17",
+   "sort": "2",
+   "start": "10:00 AM",
+   "format": "livestream",
+   "host": "Microsoft",
+   "top": true,
+   "tags": [
+    "Free stream"
+   ],
+   "title": "Microsoft Ignite 2026 Opening Keynote",
+   "short": "Microsoft Ignite Keynote",
+   "url": "https://ignite.microsoft.com/en-US/home",
+   "desc": "Satya Nadella and Microsoft leaders share what's next for Copilot and AI at work. Ignite runs Nov 17–20 in San Francisco."
+  },
+  {
+   "date": "2026-11-17",
+   "start": "8:00 AM",
+   "end": "9:00 AM",
+   "host": "Anthropic",
+   "top": true,
+   "title": "Claude for Manufacturing: Put Your Plant's Know-How to Work",
+   "short": "Claude for Manufacturing",
+   "url": "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work",
+   "desc": "Where AI in manufacturing is heading, and how plant teams can start safely.",
+   "sort": "1"
+  },
+  {
+   "date": "2026-11-17",
+   "sort": "3",
+   "start": "10:00 AM",
+   "end": "11:00 AM",
+   "format": "livestream",
+   "host": "OpenAI Academy",
+   "title": "Performance Reviews: Using ChatGPT to Write Better Evaluations",
+   "short": "Performance Reviews with ChatGPT",
+   "url": "https://academy.openai.com/public/events/performance-reviews-using-chatgpt-to-write-better-evaluations-v5uf3v0jr2",
+   "desc": "Turn a year of accomplishments into clear review feedback."
+  },
+  {
+   "date": "2026-11-30",
+   "start": "8:00 AM",
+   "format": "livestream",
+   "host": "Anthropic at re:Invent",
+   "title": "Anthropic at AWS re:Invent 2026",
+   "short": "Anthropic at AWS re:Invent",
+   "url": "https://anthropic.com/events/anthropic-at-aws-re-invent-2026",
+   "desc": "Anthropic's sessions and demos from Las Vegas, streamed online."
+  },
+  {
+   "date": "2026-11-30",
+   "sort": "2",
+   "start": "7:30 PM",
+   "end": "8:45 PM",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Developer Keynote",
+   "short": "re:Invent Developer Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "The evening keynote for builders, streamed free from Las Vegas."
+  },
+  {
+   "date": "2026-12-01",
+   "start": "8:30 AM",
+   "end": "10:30 AM",
+   "host": "AWS",
+   "top": true,
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent CEO Keynote with Matt Garman",
+   "short": "re:Invent CEO Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "Amazon's biggest AI announcements of the year, in one keynote."
+  },
+  {
+   "date": "2026-12-02",
+   "start": "8:30 AM",
+   "end": "10:00 AM",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Data and AI Keynote",
+   "short": "re:Invent Data and AI Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "How AWS sees data and AI coming together for businesses. Useful for leaders deciding how teams will use company data with AI next year."
+  }
+ ],
+ "courses": [
+  {
+   "host": "Anthropic Academy",
+   "title": "AI Fluency: Framework & Foundations",
+   "url": "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
+   "desc": "Learn to work with AI effectively, efficiently, ethically and safely.",
+   "meta": "Free · certificate"
+  },
+  {
+   "host": "Hugging Face",
+   "title": "AI Agents Course",
+   "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+   "desc": "From beginner to building your own AI agents, at about 3 to 4 hours a week.",
+   "meta": "Free · certificate"
+  }
+ ]
+}

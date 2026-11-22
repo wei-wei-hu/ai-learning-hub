@@ -56,4 +56,4 @@ Codex and Claude Code cover the same job, and both run from the terminal and in 
 
 [← Lesson 15: Skills and Plugins](../15-skills-and-plugins/README.md) · [Course home](../../README.md) · [Lesson 17: Computer Use and Browser Agents →](../17-computer-use/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*

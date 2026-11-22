@@ -1,0 +1,72 @@
+{
+ "updated": "2026-11-16",
+ "talks": [
+  {
+   "date": "2026-11-30",
+   "start": "8:00 AM",
+   "format": "livestream",
+   "host": "Anthropic at re:Invent",
+   "title": "Anthropic at AWS re:Invent 2026",
+   "short": "Anthropic at AWS re:Invent",
+   "url": "https://anthropic.com/events/anthropic-at-aws-re-invent-2026",
+   "desc": "Anthropic's sessions and demos from Las Vegas, streamed online."
+  },
+  {
+   "date": "2026-11-30",
+   "sort": "2",
+   "start": "7:30 PM",
+   "end": "8:45 PM",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Developer Keynote",
+   "short": "re:Invent Developer Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "The evening keynote for builders, streamed free from Las Vegas."
+  },
+  {
+   "date": "2026-12-01",
+   "start": "8:30 AM",
+   "end": "10:30 AM",
+   "host": "AWS",
+   "top": true,
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent CEO Keynote with Matt Garman",
+   "short": "re:Invent CEO Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "Amazon's biggest AI announcements of the year, in one keynote."
+  },
+  {
+   "date": "2026-12-02",
+   "start": "8:30 AM",
+   "end": "10:00 AM",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Data and AI Keynote",
+   "short": "re:Invent Data and AI Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "How AWS sees data and AI coming together for businesses. Useful for leaders deciding how teams will use company data with AI next year."
+  }
+ ],
+ "courses": [
+  {
+   "host": "Anthropic Academy",
+   "title": "AI Fluency: Framework & Foundations",
+   "url": "https://anthropic.skilljar.com/ai-fluency-framework-foundations",
+   "desc": "Learn to work with AI effectively, efficiently, ethically and safely.",
+   "meta": "Free · certificate"
+  },
+  {
+   "host": "Hugging Face",
+   "title": "AI Agents Course",
+   "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+   "desc": "From beginner to building your own AI agents, at about 3 to 4 hours a week.",
+   "meta": "Free · certificate"
+  }
+ ]
+}

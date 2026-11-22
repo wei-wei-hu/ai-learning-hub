@@ -47,4 +47,4 @@ Every later lesson assumes you know what a model can and cannot do. Leaders need
 
 [← Lesson 1: Course Setup](../01-course-setup/README.md) · [Course home](../../README.md) · [Lesson 3: Prompting and Context →](../03-prompting-and-context/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*

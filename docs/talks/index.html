@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Upcoming AI Talks · AI Learning Hub</title>
+<meta name="description" content="Free AI talks and webinars, curated weekly for you. All times PST. From AI Learning Hub by Weiwei Hu.">
+<meta property="og:title" content="Upcoming AI Talks · AI Learning Hub">
+<meta property="og:url" content="https://wei-wei-hu.github.io/ai-learning-hub/talks/">
+<link rel="canonical" href="https://wei-wei-hu.github.io/ai-learning-hub/talks/">
+<meta property="og:description" content="Free AI talks and webinars, curated weekly for you.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%2216%22 fill=%22%23E4F27A%22/%3E%3Ctext x=%2216%22 y=%2221%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23151515%22%3EAI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  /* AI Learning Hub: Upcoming AI Talks */
+  --ink:#151515; --text:#4A4A50; --muted:#7C7F88; --line:#E6E2EA; --card:#fff;
+  --bg1:#F6F0E4; --bg2:#F0EAEE; --bg3:#E4DDF4;
+  /* color blocks from the design references */
+  --lime:#E4F27A; --lime-2:#F4FAC8; --lime-ink:#4B5600;
+  --lav:#E6E0F8; --lav-ink:#5A4A9A;
+  --sage:#D7E6D9; --sage-ink:#2F5A3E;
+  --sky:#CFE3F1; --sky-2:#EAF3FA; --sky-ink:#2C5877;
+  --slab:"Roboto Slab",Rockwell,Georgia,serif; --body:Karla,"Helvetica Neue",system-ui,sans-serif;
+  --shadow:0 16px 40px -18px rgba(60,40,80,.28);
+}
+*{box-sizing:border-box}
+html{background:var(--bg1);scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:var(--body);color:var(--ink);font-size:16px;line-height:1.55;background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 45%,var(--bg3) 100%);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1104px;margin:0 auto;padding:22px 32px 56px;overflow:hidden}
+@media (max-width:600px){.wrap{padding-left:16px;padding-right:16px}}
+h1,h2,h3{font-family:var(--slab);margin:0;color:var(--ink)}
+h1 b,h2 b,h3 b{font-weight:700}
+
+/* nav */
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:44px;height:44px;border-radius:50%;background:#151515;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06);flex:none}
+.brand span{font-family:var(--slab);font-weight:300;font-size:24px}
+.brand .wm b{font-weight:700}
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 18px;border-radius:999px;font:500 14px var(--body);text-decoration:none;white-space:nowrap;cursor:pointer;background:#fff;color:#151515;border:1px solid #151515;transition:transform .15s}
+.pill:hover{transform:translateY(-1px)}
+.pill.dark{background:#151515;color:#fff}
+.pill.lime{background:var(--lime);border-color:var(--lime)}
+.pill.big{height:52px;padding:0 24px;font-size:15px}
+.pill i{font-style:normal}
+.nav{display:grid;grid-template-columns:repeat(2,minmax(0,190px));gap:8px}
+.nav .short{display:none}
+@media (max-width:600px){.brand span:not(.logo){display:none}}
+@media (max-width:720px){.nav{grid-template-columns:repeat(2,auto)}.nav .long{display:none}.nav .short{display:inline}}
+@media (max-width:480px){.nav{gap:6px}.nav .pill{padding:0 11px;font-size:13px;height:40px}}
+@media (max-width:720px){.nav .hide-sm{display:none}.brand span{font-size:20px}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:36px;align-items:center;padding:48px 0 30px}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:28px;padding-top:32px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:#4A3C3A;margin:0 0 16px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#2FB67A;box-shadow:0 0 0 4px rgba(47,182,122,.18)}
+.hero h1{font-weight:300;font-size:clamp(44px,7vw,76px);line-height:1.03;letter-spacing:-.01em}
+.lede{font-size:18px;color:var(--text);max-width:520px;margin:18px 0 24px}
+.signup{display:flex;gap:6px;background:#fff;border:1px solid #151515;padding:5px;border-radius:999px;max-width:500px}
+.signup input{flex:1 1 180px;min-width:0;border:0;background:transparent;font:inherit;font-size:16px;padding:0 16px;outline:none}
+.signup .pill{border:0}
+.signup:focus-within{box-shadow:0 0 0 3px var(--lime)}
+@media (max-width:480px){.signup{flex-direction:column;border-radius:26px}.signup input{flex:none;padding:12px 14px}.signup .pill{width:100%}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#signup-msg{margin:10px 4px 0;font-size:15px;color:var(--text)}
+.sub-link{display:inline-block;margin-top:14px;font-size:15px;font-weight:600;border-bottom:1.5px solid currentColor;text-decoration:none}
+
+/* hero collage: layered floating cards */
+.collage{position:relative;height:400px}
+.fc{position:absolute;border-radius:28px;padding:20px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9)}
+.fc small{display:block;font-size:13px;color:var(--muted)}
+.fc .n{font-family:var(--slab);font-weight:300;font-size:84px;line-height:.9;letter-spacing:-.03em}
+.fc-a{left:4%;top:0;width:70%;height:260px;background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.fc-a .bars{position:absolute;left:20px;right:20px;bottom:18px;display:flex;align-items:flex-end;gap:8px;height:74px}
+.fc-a .bars span{flex:1;background:#151515;border-radius:8px 8px 4px 4px;opacity:.85}
+.fc-a .bars span.off{background:rgba(21,21,21,.12)}
+.fc-a .days{position:absolute;left:20px;right:20px;bottom:-2px;display:flex;gap:8px;font-size:11px;color:var(--lime-ink)}
+.fc-a .days b{flex:1;text-align:center;font-weight:600}
+.fc-b{right:0;top:28px;width:44%;background:#fff;text-align:center}
+.ring{--p:40;width:120px;height:120px;border-radius:50%;margin:8px auto 6px;background:conic-gradient(#151515 calc(var(--p)*1%),var(--sky) 0);display:grid;place-items:center}
+.ring::before{content:"";grid-area:1/1;width:92px;height:92px;border-radius:50%;background:#fff}
+.ring b{grid-area:1/1;font-family:var(--slab);font-size:30px;font-weight:600}
+.fc-c{right:0;left:auto;bottom:0;width:62%;background:var(--lav)}
+.fc-c .row{display:flex;align-items:center;gap:12px;margin-top:8px}
+.fc-c .num{font-family:var(--slab);font-size:48px;font-weight:300;line-height:.9}
+.fc-c b{display:block;font-weight:600;line-height:1.3}
+.fc-d{right:2%;bottom:34px;width:38%;background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.09) 1.5px,transparent 1.5px);background-size:13px 13px}
+.fc-d small{color:#B9BCC4}
+.fc-d .n{font-size:56px;color:var(--lime)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 11px;border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tag.dark{background:#151515;color:#fff}
+.tag.lime{background:var(--lime);color:var(--lime-ink)}
+.tag.lav{background:var(--lav);color:var(--lav-ink)}
+.tag.sage{background:var(--sage);color:var(--sage-ink)}
+.tag.sky{background:var(--sky);color:var(--sky-ink)}
+@media (max-width:560px){.collage{height:330px}.fc .n{font-size:64px}.ring{width:96px;height:96px}.ring::before{width:72px;height:72px}.ring b{font-size:24px}.fc-a{left:0;width:82%;height:220px}.fc-b{width:46%}.fc-c{width:80%}.fc-d{width:44%}.fc{padding:16px}}
+
+/* hero tiles: aligned two-tile grid */
+.hgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-self:center;height:400px}
+.ht{border-radius:28px;padding:22px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:flex;flex-direction:column;gap:6px;min-height:340px}
+.ht .tag{align-self:flex-start}
+.ht-num{font-family:var(--slab);font-weight:300;font-size:96px;line-height:.9;letter-spacing:-.04em;margin-top:18px}
+.ht-cap{margin:0;font-size:14px;color:var(--text)}
+.ht-count{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.ht-count .ht-cap{color:var(--lime-ink)}
+.ht-bars{margin-top:auto;display:flex;gap:6px;height:96px;align-items:stretch}
+.ht-bars div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.ht-bars span{width:100%;border-radius:8px 8px 4px 4px;background:rgba(21,21,21,.12)}
+.ht-bars .on span{background:#151515}
+.ht-bars b{font-size:11px;font-weight:600;color:var(--lime-ink)}
+.ht-next{background:var(--lav)}
+.ht-next>.tag{background:#fff;color:var(--lav-ink)}
+.ht-title{margin-top:auto;font-family:var(--slab);font-weight:600;font-size:20px;line-height:1.25}
+.ht-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.ht-meta .tag{align-self:auto}
+@media (max-width:560px){.hgrid{height:auto}.ht{min-height:260px;padding:18px}.ht-num{font-size:68px;margin-top:12px}.ht-title{font-size:17px}.ht-bars{height:70px}}
+
+/* sections */
+.sec{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:44px 0 18px}
+.sec h2{font-weight:300;font-size:clamp(30px,4.5vw,44px);line-height:1.1}
+.sec p{margin:0;color:var(--muted);font-size:15px}
+
+/* talk cards */
+.talks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.talks{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:28px;padding:24px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);min-width:0}
+.talk{display:grid;gap:12px;align-content:start}
+.talk.pick{background:linear-gradient(170deg,var(--lime-2) 0%,#fff 60%)}
+.talk.sky{background:linear-gradient(170deg,var(--sky-2) 0%,#fff 60%)}
+.when{display:flex;align-items:flex-end;gap:14px}
+.when .num{font-family:var(--slab);font-weight:300;font-size:64px;line-height:.82;letter-spacing:-.03em}
+.when div{display:grid;font-size:14px;color:var(--muted);line-height:1.3}
+.when div b{color:var(--ink);font-weight:600}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags .tag{background:#F2EFF4}
+.tags .tag.dark{background:#151515}
+.tags .tag.lime{background:var(--lime)}
+.talk h3{font-size:20px;font-weight:600;line-height:1.3}
+.talk h3 a{text-decoration:none;background-image:linear-gradient(var(--lime),var(--lime));background-size:100% 7px;background-repeat:no-repeat;background-position:0 92%}
+.talk p{margin:0}
+.take{color:var(--text)}
+.why{font-size:15px;background:rgba(246,240,228,.7);border-radius:18px;padding:12px 14px}
+.unv{font-size:14px;color:#8a5a00}
+.wide{grid-column:1/-1}
+
+/* paid examples (bento) */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.bento>*{grid-column:span 3}
+.bento .s2{grid-column:span 2}.bento .s4{grid-column:span 4}
+@media (max-width:860px){.bento>*,.bento .s2,.bento .s4{grid-column:1/-1}}
+.blk{border-radius:28px;padding:24px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:grid;gap:12px;align-content:start;position:relative;min-width:0}
+.blk h3{font-size:24px;font-weight:300;line-height:1.2}
+.blk p{margin:0}
+.blk .lock{position:absolute;top:20px;right:20px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.85);display:grid;place-items:center}
+.b-dark{background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.08) 1.5px,transparent 1.5px);background-size:14px 14px}
+.b-dark h3{color:#fff}.b-dark p{color:#C4C7CE}
+.b-dark .lock{background:rgba(255,255,255,.12)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:4px}
+.cal span{aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.07);display:grid;place-items:center;font-size:12px;color:#9EA2AA}
+.cal span.on{background:var(--lime);color:#151515;font-weight:700}
+.b-lime{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.b-lime .big{font-family:var(--slab);font-weight:300;font-size:96px;line-height:.85;letter-spacing:-.03em}
+.b-lime .big small{font-size:22px;letter-spacing:0;font-family:var(--body);font-weight:600}
+.week{display:flex;gap:6px}
+.week span{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.week span.on{background:#151515;color:var(--lime)}
+.b-lav{background:var(--lav)}
+.recap{background:rgba(255,255,255,.8);border-radius:20px;padding:14px 16px;display:grid;gap:4px}
+.recap .meta{font-size:13px;color:var(--lav-ink);font-weight:600}
+.recap b{font-family:var(--slab);font-weight:600;font-size:16px;line-height:1.3}
+.recap p{font-size:15px;color:var(--text)}
+.recap a{font-size:14px;color:var(--lav-ink);font-weight:600}
+.b-sage{background:var(--sage)}
+.conf{background:rgba(255,255,255,.75);border-radius:20px;padding:16px;display:grid;gap:4px}
+.conf .range{font-family:var(--slab);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em}
+.conf b{font-weight:600}
+.conf a{text-decoration:none;border-bottom:1.5px solid currentColor}
+.conf p{font-size:15px;color:var(--text)}
+.note{font-size:13px;color:var(--muted);margin:0}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.plans{grid-template-columns:1fr}}
+.plan{display:grid;gap:14px;align-content:start}
+.price{font-family:var(--slab);font-weight:300;font-size:72px;line-height:.9;letter-spacing:-.03em;display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.price small{font-family:var(--body);font-size:16px;font-weight:500;color:var(--muted);letter-spacing:0;padding-bottom:8px}
+.plan .value{margin:0;font-family:var(--slab);font-weight:600;font-size:21px;line-height:1.3;color:#151515;max-width:30ch}
+.plan ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.plan li{display:flex;gap:10px;align-items:flex-start}
+.plan li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:#F2EFF4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3L14.5 7' fill='none' stroke='%23151515' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.plan.paid{background:linear-gradient(160deg,var(--sky) 0%,var(--sky-2) 55%,var(--lav) 100%)}
+.plan.paid li::before{background-color:var(--lime)}
+.plan .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.save{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.7);border-radius:20px;padding:12px 14px}
+.save .ring{--p:17;width:58px;height:58px;margin:0;background:conic-gradient(#151515 calc(var(--p)*1%),#fff 0)}
+.save .ring::before{width:42px;height:42px;background:#EAF3FA}
+.save .ring b{font-size:13px}
+.save p{margin:0;font-size:14px;color:var(--text)}
+
+.about{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:44px}
+@media (max-width:560px){.about{grid-template-columns:1fr}}
+.about .logo{width:60px;height:60px}
+.about p{margin:0}
+footer{font-size:13px;color:var(--muted);text-align:center;padding-top:28px}
+/* footer */
+.closer{padding:40px 0 10px;text-align:center}
+.follow-label{margin:0 0 16px;font-family:var(--slab);font-weight:600;font-size:24px;color:#151515}
+.social-row{display:grid;grid-template-columns:repeat(4,150px);gap:12px;justify-content:center}
+.social-pill{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:13px 16px;border-radius:999px;background:#151515;color:#fff;font:500 15px var(--body);text-decoration:none;box-shadow:0 10px 22px rgba(0,0,0,.18)}
+.social-pill span{width:22px;height:22px;border-radius:50%;background:#fff;color:#151515;display:grid;place-items:center;font-size:13px}
+.social-pill:hover{transform:translateY(-1px)}
+@media (max-width:680px){.social-row{grid-template-columns:repeat(2,minmax(0,1fr));max-width:340px;margin:0 auto}}
+.foot{margin:26px 0 0;font-size:13px;color:#8C8C92}
+.foot.legal{max-width:640px;margin:8px auto 0;font-size:11.5px;line-height:1.5;opacity:.85}
+/* timeline */
+.talks.tl{display:block;position:relative;padding:8px 0}
+.talks.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:linear-gradient(#151515 0%,#151515 85%,rgba(21,21,21,0) 100%);border-radius:2px}
+.talks.tl .talk{position:relative;width:calc(50% - 44px);margin:0}
+.talks.tl .talk+.talk{margin-top:-70px}
+.talks.tl .talk:nth-child(odd){margin-right:auto}
+.talks.tl .talk:nth-child(even){margin-left:auto}
+.talks.tl .talk::before{content:"";position:absolute;top:44px;width:44px;height:2px;background:#151515}
+.talks.tl .talk:nth-child(odd)::before{right:-44px}
+.talks.tl .talk:nth-child(even)::before{left:-44px}
+.talks.tl .talk::after{content:"";position:absolute;top:35px;width:20px;height:20px;border-radius:50%;background:var(--lime);border:3px solid #151515;box-sizing:border-box}
+.talks.tl .talk:nth-child(odd)::after{right:-54px}
+.talks.tl .talk:nth-child(even)::after{left:-54px}
+.talks.tl .talk h3 a::after{content:"";position:absolute;inset:0;border-radius:28px}
+.talks.tl .talk{transition:transform .15s,box-shadow .15s}
+.talks.tl .talk:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.talks.tl .wide{grid-column:auto}
+@media (max-width:760px){
+  .talks.tl{padding-left:30px}
+  .talks.tl::before{left:9px}
+  .talks.tl .talk,.talks.tl .talk:nth-child(even),.talks.tl .talk:nth-child(odd){width:100%;margin:0}
+  .talks.tl .talk+.talk{margin-top:16px}
+  .talks.tl .talk:nth-child(n)::before{left:-21px;right:auto;width:21px}
+  .talks.tl .talk:nth-child(n)::after{left:-31px;right:auto}
+}
+#paid-thanks{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;margin:0 auto;z-index:5;background:#151515;color:#fff;border-radius:22px;padding:16px 20px;box-shadow:var(--shadow)}
+a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3px}
+#plans{display:block}
+.sec .sec-sub{margin-top:8px!important;flex-basis:100%;margin:2px 0 0;font-size:19px;color:var(--text);max-width:640px}
+[hidden]{display:none!important}
+.join{max-width:440px;border-radius:28px;background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.9);box-shadow:0 22px 46px -24px rgba(60,40,80,.35);padding:18px;backdrop-filter:blur(6px)}
+.join-top{display:flex;align-items:center;gap:10px;margin:0 0 12px 2px}
+.join-top .tag{background:#F2EFF4}
+.join-k{font-size:14px;color:var(--muted)}
+.join .signup{max-width:none;border:1px solid rgba(21,21,21,.18);background:#fff}
+.join .signup input{padding:0 12px;font-size:15px}
+.join.done{background:#151515;border-color:#151515;color:#fff;padding:24px}
+.join-done h3{font-family:var(--slab);font-weight:300;font-size:30px;line-height:1.15;margin:16px 0 0;color:#fff}
+.join-done p{margin:8px 0 0;color:#cfcfcf;font-size:15px}
+.join-done .pill{margin-top:20px;color:#151515}
+#signup-msg{margin:10px 4px 0;font-size:14px}
+@media (max-width:480px){.join{padding:14px}.join .signup{flex-direction:row;border-radius:999px}.join .signup input{padding:0 10px}.join .signup .pill{width:auto}}
+/* hero bento: calendar, count capsule, top pick (filled weekly from talks.json) */
+.bento{display:grid;grid-template-columns:1.12fr .88fr;grid-template-areas:"cal top" "cnt top";gap:14px;align-self:center}
+.bento>*{border-radius:28px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9)}
+.b-cal{grid-area:cal;background:linear-gradient(170deg,var(--lime) 0%,var(--lime-2) 75%,#fff 100%);padding:18px 16px;display:flex;flex-direction:column;gap:7px}
+.cal-h,.cal-r{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center}
+.cal-h b{font-size:12px;color:var(--lime-ink)}
+.cal-r span{position:relative;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.55);display:grid;place-items:center;font:600 13px var(--body);color:#5b5f3a}
+.cal-r span i{position:absolute;top:-6px;right:-7px;font:700 9px var(--body);font-style:normal;background:#fff;color:var(--ink);padding:1px 5px;border-radius:999px}
+.cal-r span.on{background:#151515;color:#fff}
+.cal-r span.tp{background:#852BAF;color:#fff}
+.cal-r span.tp::before{content:"★";position:absolute;top:-5px;left:-5px;width:15px;height:15px;border-radius:50%;background:#fff;color:#852BAF;font-size:9px;line-height:15px;text-align:center}
+.cal-k{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12px;font-weight:600;color:var(--lime-ink)}
+.cal-k span{display:inline-flex;align-items:center;gap:6px}
+.cal-k i{width:10px;height:10px;border-radius:50%;background:#151515}
+.cal-k i.k-top{background:#852BAF}
+.cal-k .rng{margin-left:auto;background:#fff;color:var(--ink);padding:3px 10px;border-radius:999px}
+.b-count{grid-area:cnt;background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.09) 1.5px,transparent 1.5px);background-size:14px 14px;padding:16px 18px;display:flex;align-items:center;gap:14px}
+.cnum{width:56px;height:80px;border-radius:999px;background:var(--lime);color:#151515;display:grid;place-items:center;font:300 46px var(--slab);flex:none}
+.clab{font:300 24px/1.1 var(--slab)}
+.b-top{grid-area:top;position:relative;background:var(--lav);padding:18px;display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.b-top:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.b-top>.tag{align-self:flex-start;color:var(--lav-ink)}
+.b-top>.tag.dark{color:#fff}
+.b-arrow{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:16px}
+.tp-d{display:flex;align-items:flex-end;gap:8px;margin-top:4px}
+.tp-d .num{font:300 72px/0.9 var(--slab)}
+.tp-d .mo{display:flex;flex-direction:column;font-size:11px;letter-spacing:.06em;color:var(--muted);font-weight:600;padding-bottom:4px}
+.tp-d .mo b{color:var(--ink)}
+.b-top .ttl{font-family:var(--slab);font-weight:600;font-size:19px;line-height:1.2}
+.tbar{margin-top:auto;display:grid;gap:6px}
+.tbar .bars{display:flex;align-items:flex-end;gap:2px;height:40px}
+.tbar .bars span{flex:1;border-radius:4px 4px 2px 2px;background:rgba(90,74,154,.16)}
+.tbar .bars span.on{background:#151515}
+.tlab{display:flex;justify-content:space-between;align-items:center;font:600 10px var(--body);color:var(--muted)}
+.tlab b{font-size:11px;color:var(--ink);background:rgba(255,255,255,.85);padding:3px 8px;border-radius:999px}
+@media (max-width:560px){.bento{grid-template-columns:1fr;grid-template-areas:"cal" "cnt" "top"}.cal-r span{font-size:15px}.cal-h b,.cal-k{font-size:13px}.tp-d .num{font-size:84px}.b-top{min-height:0}}
+.courses .sec{display:block;margin-top:56px}
+.c-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.course{position:relative;border-radius:28px;padding:22px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s;min-height:230px}
+.course:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.course.k0{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.course.k1{background:linear-gradient(160deg,var(--sky) 0%,var(--sky-2) 100%)}
+.course.k2{background:var(--lav)}
+.course .tag{align-self:flex-start}
+.course h3{font-family:var(--slab);font-weight:600;font-size:21px;line-height:1.2;margin:4px 0 0}
+.course p{margin:0;font-size:15px;line-height:1.45;color:var(--text)}
+.course .c-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.course .c-go{background:#151515;color:#fff;border-radius:999px;padding:8px 14px;font-size:13px;white-space:nowrap}
+@media (max-width:820px){.c-grid{grid-template-columns:1fr}.course{min-height:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top">
+    <a class="brand" href="../"><span class="wm">AI <b>Learning Hub</b></span></a>
+    <div class="nav">
+      <a class="pill" href="../">Free lessons <i aria-hidden="true">›</i></a>
+      <a class="pill dark" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><!--T:UPDATED-->Updated Nov 16, 2026<!--/T:UPDATED--></p>
+      <h1>Upcoming <b>AI Talks.</b></h1>
+      <p class="lede">Free AI talks and webinars, curated weekly for you.</p>
+      <!-- Free signup: saved to the Upcoming AI Talks Google Sheet by the Apps Script in talks/apps-script.gs -->
+      <div class="join" id="join">
+        <div class="join-form">
+          <div class="join-top"><span class="tag">Free</span><span class="join-k">The list in your inbox every Monday.</span></div>
+          <form class="signup" id="signup" novalidate>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+            <label for="email" class="sr">Your email</label>
+            <input id="email" type="email" name="email" placeholder="you@work.com" autocomplete="email" required>
+            <button class="pill dark" type="submit">Sign up <i aria-hidden="true">›</i></button>
+          </form>
+          <p id="signup-msg" role="status" aria-live="polite" hidden></p>
+        </div>
+        <div class="join-done" id="join-done" hidden>
+          <span class="tag lime" id="join-tag">Subscribed</span>
+          <h3 id="join-h">You're already subscribed.</h3>
+          <p id="join-p" hidden></p>
+          <a class="pill lime big" id="join-paid" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--T:HERO-->    <div class="bento">
+      <div class="b-cal" aria-label="Talk days">
+        <div class="cal-h"><b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b><b>S</b></div><div class="cal-r"><span class="on">30</span><span class="on tp">1<i>Dec</i></span><span class="on">2</span><span class="">3</span><span class="">4</span><span class="">5</span><span class="">6</span></div><div class="cal-r"><span class="">7</span><span class="">8</span><span class="">9</span><span class="">10</span><span class="">11</span><span class="">12</span><span class="">13</span></div><div class="cal-r"><span class="">14</span><span class="">15</span><span class="">16</span><span class="">17</span><span class="">18</span><span class="">19</span><span class="">20</span></div>
+        <div class="cal-k"><span><i></i>Talk day</span><span><i class="k-top"></i>Top pick</span><span class="rng">Nov 30 – Dec 2</span></div>
+      </div>
+      <div class="b-count"><span class="cnum">4</span><span class="clab">Upcoming<br>talks</span></div>
+      <a class="b-top" href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">
+        <span class="b-arrow" aria-hidden="true">↗</span>
+        <span class="tag">★ Top pick</span>
+        <div class="tp-d"><span class="num">01</span><span class="mo">DEC<b>TUE · 8:30 AM</b></span></div>
+        <div class="ttl">re:Invent CEO Keynote</div>
+        <div class="tbar"><div class="bars"><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span></div><div class="tlab"><span>6 AM</span><b>8:30 – 10:30 AM PST</b><span>8 PM</span></div></div>
+        <span class="tag dark">AWS</span>
+      </a>
+    </div>
+<!--/T:HERO-->
+  </header>
+
+  <!-- ===== WEEKLY LIST: filled from talks.json by talks/build.mjs ===== -->
+  <section class="talks tl" id="talks" style="margin-top:28px">
+<!--T:LIST-->
+    <article class="card talk " data-date="2026-11-30">
+      <div class="when"><span class="num">30</span><div><b>Mon, Nov</b>8:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Anthropic at re:Invent</span></div>
+      <h3><a href="https://anthropic.com/events/anthropic-at-aws-re-invent-2026" target="_blank" rel="noopener">Anthropic at AWS re:Invent 2026</a></h3>
+      <p class="take">Anthropic's sessions and demos from Las Vegas, streamed online.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-11-30">
+      <div class="when"><span class="num">30</span><div><b>Mon, Nov</b>7:30 – 8:45 PM PST</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent Developer Keynote</a></h3>
+      <p class="take">The evening keynote for builders, streamed free from Las Vegas.</p>
+    </article>
+
+    <article class="card talk pick" data-date="2026-12-01">
+      <div class="when"><span class="num">01</span><div><b>Tue, Dec</b>8:30 – 10:30 AM PST</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag lime">Top pick</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent CEO Keynote with Matt Garman</a></h3>
+      <p class="take">Amazon's biggest AI announcements of the year, in one keynote.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-12-02">
+      <div class="when"><span class="num">02</span><div><b>Wed, Dec</b>8:30 – 10:00 AM PST</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent Data and AI Keynote</a></h3>
+      <p class="take">How AWS sees data and AI coming together for businesses. Useful for leaders deciding how teams will use company data with AI next year.</p>
+    </article>
+<!--/T:LIST-->
+  </section>
+  <!-- ===== END WEEKLY LIST ===== -->
+
+  <section class="courses" id="courses">
+    <div class="sec"><h2>Free <b>courses</b></h2><p class="sec-sub">Learn at your own pace, no cost.</p></div>
+    <div class="c-grid"><!--T:COURSES-->
+      <a class="course k0" href="https://anthropic.skilljar.com/ai-fluency-framework-foundations" target="_blank" rel="noopener">
+        <span class="tag dark">Anthropic Academy</span>
+        <h3>AI Fluency: Framework &amp; Foundations</h3>
+        <p>Learn to work with AI effectively, efficiently, ethically and safely.</p>
+        <div class="c-foot"><span>Free · certificate</span><span class="c-go">Start free ›</span></div>
+      </a>
+      <a class="course k1" href="https://huggingface.co/learn/agents-course/unit0/introduction" target="_blank" rel="noopener">
+        <span class="tag dark">Hugging Face</span>
+        <h3>AI Agents Course</h3>
+        <p>From beginner to building your own AI agents, at about 3 to 4 hours a week.</p>
+        <div class="c-foot"><span>Free · certificate</span><span class="c-go">Start free ›</span></div>
+      </a>
+    <!--/T:COURSES--></div>
+  </section>
+
+  <div class="sec" id="plans"><h2>Choose your <b>plan</b></h2><p class="sec-sub">Save time finding, scheduling, and catching up on the best AI talks.</p></div>
+  <section class="plans">
+    <div class="card plan">
+      <span class="tag" style="justify-self:start;background:#F2EFF4">Free</span>
+      <div class="price">$0</div>
+      <ul>
+        <li>Full weekly list delivered every Monday</li>
+        <li>Top picks marked each week</li>
+        <li>Verified dates and times (Pacific Time)</li>
+      </ul>
+      <div class="acts"><a class="pill big" href="#signup">Subscribe free <i aria-hidden="true">›</i></a></div>
+    </div>
+    <div class="card plan paid">
+      <span class="tag dark" style="justify-self:start">Paid</span>
+      <div class="price">$8 <small>/ month</small></div>
+      <ul>
+        <li>Everything in free</li>
+        <li>Get next week’s list 3 days early</li>
+        <li>One-click calendar file for every talk</li>
+        <li>Catch-up summaries of selected talks</li>
+        <li>Monthly conference look-ahead</li>
+        <li>Or $80 a year, that's 2 months free</li>
+      </ul>
+      <div class="acts"><a class="pill dark big" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a><a class="pill big" href="#plans" data-pay="yearly">$80 a year <i aria-hidden="true">›</i></a></div>
+    </div>
+  </section>
+
+
+  <p class="note" style="text-align:center;margin-top:28px">Dates and times verified on each host’s official website as of <!--T:ASOF-->November 16, 2026<!--/T:ASOF-->. Schedules may change, so please confirm before registering.</p>
+
+  <section class="closer">
+    <p class="follow-label">Made by Weiwei Hu</p>
+    <div class="social-row"><a class="social-pill" href="../">Free lessons <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener">Newsletter <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://github.com/wei-wei-hu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+    <p class="foot">AI Learning Hub · Independent guide, not affiliated with the event hosts</p>
+    <p class="foot legal">© 2026 Weiwei Hu. All rights reserved. All content, designs and materials on this site are protected by copyright law. No part of this site may be copied, reproduced, distributed, modified, scraped, or used to train AI or machine-learning systems without prior written permission.</p>
+  </section>
+</div>
+
+<div id="paid-thanks" hidden><b>Welcome to the paid edition.</b> Your first early list arrives this Friday. Check your inbox for the Stripe receipt.</div>
+<script>
+// ===== Settings: paste your links here (see talks/README.md) =====
+var TALKS = {
+  scriptUrl: "",      // Google Apps Script web app URL, ends in /exec
+  monthly: "",        // Stripe Payment Link for $8 a month
+  yearly: ""          // Stripe Payment Link for $80 a year
+};
+function payLink(plan,email){
+  var link=TALKS[plan==='yearly'?'yearly':'monthly'];
+  if(!link) return '#plans';
+  try{var u=new URL(link);if(email)u.searchParams.set('prefilled_email',email);return u.toString();}catch(e){return link;}
+}
+(function(){
+  // Hide talks whose date has passed (Pacific time), between weekly rebuilds.
+  var today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
+  document.querySelectorAll('article[data-date]').forEach(function(a){if(a.getAttribute('data-date')<today)a.hidden=true;});
+  // Payment buttons go straight to Stripe. Emails link here with ?plan=monthly&email=...
+  document.querySelectorAll('[data-pay]').forEach(function(a){
+    a.addEventListener('click',function(e){var l=payLink(a.getAttribute('data-pay'),a.getAttribute('data-email')||'');if(l==='#plans'){e.preventDefault();alertSoon();}else{a.href=l;}});
+  });
+  function alertSoon(){var m=document.getElementById('signup-msg');m.hidden=false;m.textContent='The paid edition opens soon. Sign up free above and we will tell you when it opens.';document.getElementById('signup').scrollIntoView({behavior:'smooth',block:'center'});}
+  var q=new URLSearchParams(location.search);
+  if(q.get('plan')){var l=payLink(q.get('plan'),q.get('email')||'');if(l!=='#plans'){location.replace(l);return;}}
+})();
+(function(){
+  var f=document.getElementById('signup'),m=document.getElementById('signup-msg');
+  function say(t,bad){m.hidden=false;m.textContent=t;m.style.color=bad?'#a12':'';}
+  function done(st,email){
+    var J=document.getElementById('join'),D=document.getElementById('join-done'),H=document.getElementById('join-h'),P=document.getElementById('join-p'),T=document.getElementById('join-tag'),A=document.getElementById('join-paid');
+    J.querySelector('.join-form').hidden=true;D.hidden=false;J.classList.add('done');
+    A.setAttribute('data-email',email);
+    if(st==='paid'){T.textContent='Paid';H.textContent="You're already on Paid.";P.textContent='Your next list arrives Friday.';P.hidden=false;A.hidden=true;}
+    else if(st==='free'){H.textContent="You're already subscribed.";}
+    else{T.textContent='Free';H.textContent="You're in.";P.textContent='The next list arrives Monday morning.';P.hidden=false;}
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=f.email.value.trim(),b=f.querySelector('button');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){say('Please enter a valid email.',true);return;}
+    b.disabled=true;say('Adding you…');
+    if(!TALKS.scriptUrl){say('Signups open very soon. Please check back shortly.',true);b.disabled=false;return;}
+    // text/plain keeps this a simple request, which Google Apps Script accepts from any site.
+    fetch(TALKS.scriptUrl,{method:'POST',headers:{'content-type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'subscribe',email:email,website:f.website.value,source:'talks page'})})
+      .then(function(r){return r.json().catch(function(){return {ok:false};});})
+      .then(function(j){if(j.ok){done(j.status,email);}else{say(j.error||'Something went wrong. Please try again.',true);}})
+      .catch(function(){say('Something went wrong. Please try again.',true);})
+      .then(function(){b.disabled=false;});
+  });
+  if(/[?&]paid=1/.test(location.search)){document.getElementById('paid-thanks').hidden=false;}
+})();
+</script>
+</body>
+</html>
