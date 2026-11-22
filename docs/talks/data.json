@@ -1,21 +1,26 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-22",
  "talks": [
   {
    "date": "2026-11-30",
+   "sort": "1",
    "start": "8:00 AM",
    "format": "livestream",
-   "host": "Anthropic at re:Invent",
+   "host": "Anthropic",
+   "tags": [
+    "Free stream"
+   ],
    "title": "Anthropic at AWS re:Invent 2026",
-   "short": "Anthropic at AWS re:Invent",
-   "url": "https://anthropic.com/events/anthropic-at-aws-re-invent-2026",
-   "desc": "Anthropic's sessions and demos from Las Vegas, streamed online."
+   "short": "Anthropic at re:Invent",
+   "url": "https://www.anthropic.com/events/anthropic-at-aws-re-invent-2026",
+   "desc": "Anthropic's sessions and demos from re:Invent in Las Vegas, with a livestream on the event page."
   },
   {
    "date": "2026-11-30",
    "sort": "2",
    "start": "7:30 PM",
    "end": "8:45 PM",
+   "format": "livestream",
    "host": "AWS",
    "tags": [
     "Free stream"
@@ -23,12 +28,14 @@
    "title": "re:Invent Developer Keynote",
    "short": "re:Invent Developer Keynote",
    "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "The evening keynote for builders, streamed free from Las Vegas."
+   "desc": "AWS engineers including Marc Brooker and Clare Liguori on how builders are working with AI agents."
   },
   {
    "date": "2026-12-01",
+   "sort": "1",
    "start": "8:30 AM",
    "end": "10:30 AM",
+   "format": "livestream",
    "host": "AWS",
    "top": true,
    "tags": [
@@ -37,20 +44,83 @@
    "title": "re:Invent CEO Keynote with Matt Garman",
    "short": "re:Invent CEO Keynote",
    "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "Amazon's biggest AI announcements of the year, in one keynote."
+   "desc": "Amazon's biggest AI announcements of the year, with guests Sam Altman of OpenAI and Tony Xu of DoorDash."
   },
   {
    "date": "2026-12-02",
+   "sort": "1",
    "start": "8:30 AM",
    "end": "10:00 AM",
+   "format": "livestream",
+   "host": "AWS",
+   "top": true,
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Data and AI Keynote with Swami Sivasubramanian",
+   "short": "re:Invent Data and AI Keynote",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "How AWS sees data and AI agents coming together, with stories from Delta Air Lines and Cox Automotive. Useful for leaders planning next year."
+  },
+  {
+   "date": "2026-12-02",
+   "sort": "2",
+   "start": "3:00 PM",
+   "end": "4:00 PM",
+   "format": "livestream",
    "host": "AWS",
    "tags": [
     "Free stream"
    ],
-   "title": "re:Invent Data and AI Keynote",
-   "short": "re:Invent Data and AI Keynote",
+   "title": "re:Invent Partner Keynote",
+   "short": "re:Invent Partner Keynote",
    "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "How AWS sees data and AI coming together for businesses. Useful for leaders deciding how teams will use company data with AI next year."
+   "desc": "Ruba Borno and Matt Garman on working with AWS partners, with Marriott International and Presidio."
+  },
+  {
+   "date": "2026-12-03",
+   "sort": "1",
+   "start": "8:30 AM",
+   "end": "10:00 AM",
+   "format": "livestream",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "re:Invent Technical Innovations Keynote",
+   "short": "re:Invent Tech Innovations",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "Matt Wood and AWS leaders on new chips, security and the technology behind AI at scale."
+  },
+  {
+   "date": "2026-12-03",
+   "sort": "2",
+   "start": "10:15 AM",
+   "end": "11:15 AM",
+   "format": "livestream",
+   "host": "OpenAI Academy",
+   "tags": [
+    "Education"
+   ],
+   "title": "ChatGPT for Teachers: Leading District-Wide Adoption",
+   "short": "ChatGPT for Teachers",
+   "url": "https://academy.openai.com/public/clubs/k-12-administrators-and-district-leaders-gcxd3/events/chatgpt-for-teachers-leading-district-wide-adoption-xxfhix3z96",
+   "desc": "For school and district leaders planning how teachers will use ChatGPT across a whole district."
+  },
+  {
+   "date": "2026-12-08",
+   "sort": "1",
+   "start": "9:00 AM",
+   "end": "9:45 AM",
+   "format": "webinar",
+   "host": "Anthropic",
+   "tags": [
+    "Government"
+   ],
+   "title": "Best Practices for Government: IT Modernization with Claude",
+   "short": "Government IT Modernization",
+   "url": "https://claude.com/resources/webinars/best-practices-for-government-it-modernization-with-claude",
+   "desc": "A government technology leader on modernizing a legacy system with Claude, and how to do it securely."
   }
  ],
  "courses": [
@@ -67,6 +137,13 @@
    "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
    "desc": "From beginner to building your own AI agents, at about 3 to 4 hours a week.",
    "meta": "Free · certificate"
+  },
+  {
+   "host": "OpenAI Academy",
+   "title": "AI Foundations",
+   "url": "https://academy.openai.com/pages/courses",
+   "desc": "AI basics, prompting, context and how to review what AI gives you.",
+   "meta": "Free · 60–75 min"
   }
  ]
 }

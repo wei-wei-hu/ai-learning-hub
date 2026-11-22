@@ -1,7 +1,7 @@
 <a id="top"></a>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img src="./docs/cover.png" alt="AI Learning Hub: Learn AI and AI Agents with OpenAI and Anthropic. 22 lessons, 5 tracks, official sources. Created by Weiwei Hu." width="100%"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img src="./docs/cover.png" alt="AI Learning Hub: Learn AI and AI Agents with OpenAI and Anthropic, plus free AI talks every week. 22 lessons, 5 tracks. Created by Weiwei Hu." width="100%"></a>
 </p>
 
 <h1 align="center">AI Learning Hub</h1>
