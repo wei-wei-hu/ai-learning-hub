@@ -152,7 +152,7 @@ h1 b,h2 b,h3 b{font-weight:700}
 .unv{font-size:14px;color:#8a5a00}
 .wide{grid-column:1/-1}
 
-/* paid examples (bento) */
+/* hero bento */
 .bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
 .bento>*{grid-column:span 3}
 .bento .s2{grid-column:span 2}.bento .s4{grid-column:span 4}
@@ -187,19 +187,10 @@ h1 b,h2 b,h3 b{font-weight:700}
 .conf p{font-size:15px;color:var(--text)}
 .note{font-size:13px;color:var(--muted);margin:0}
 
-/* pricing */
-.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-@media (max-width:760px){.plans{grid-template-columns:1fr}}
-.plan{display:grid;gap:14px;align-content:start}
-.price{font-family:var(--slab);font-weight:300;font-size:72px;line-height:.9;letter-spacing:-.03em;display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
-.price small{font-family:var(--body);font-size:16px;font-weight:500;color:var(--muted);letter-spacing:0;padding-bottom:8px}
-.plan .value{margin:0;font-family:var(--slab);font-weight:600;font-size:21px;line-height:1.3;color:#151515;max-width:30ch}
-.plan ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.plan li{display:flex;gap:10px;align-items:flex-start}
-.plan li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:#F2EFF4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3L14.5 7' fill='none' stroke='%23151515' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
-.plan.paid{background:linear-gradient(160deg,var(--sky) 0%,var(--sky-2) 55%,var(--lav) 100%)}
-.plan.paid li::before{background-color:var(--lime)}
-.plan .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+/* get the list */
+.getlist{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:34px;background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.getlist h2{font-weight:300;font-size:clamp(24px,3vw,32px);line-height:1.15;max-width:22ch}
+.getlist .sec-sub{margin:8px 0 0}
 .save{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.7);border-radius:20px;padding:12px 14px}
 .save .ring{--p:17;width:58px;height:58px;margin:0;background:conic-gradient(#151515 calc(var(--p)*1%),#fff 0)}
 .save .ring::before{width:42px;height:42px;background:#EAF3FA}
@@ -246,9 +237,7 @@ footer{font-size:13px;color:var(--muted);text-align:center;padding-top:28px}
   .talks.tl .talk:nth-child(n)::before{left:-21px;right:auto;width:21px}
   .talks.tl .talk:nth-child(n)::after{left:-31px;right:auto}
 }
-#paid-thanks{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;margin:0 auto;z-index:5;background:#151515;color:#fff;border-radius:22px;padding:16px 20px;box-shadow:var(--shadow)}
 a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3px}
-#plans{display:block}
 .sec .sec-sub{margin-top:8px!important;flex-basis:100%;margin:2px 0 0;font-size:19px;color:var(--text);max-width:640px}
 [hidden]{display:none!important}
 .join{max-width:440px;border-radius:28px;background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.9);box-shadow:0 22px 46px -24px rgba(60,40,80,.35);padding:18px;backdrop-filter:blur(6px)}
@@ -320,8 +309,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
   <nav class="top">
     <div class="brand"><a href="https://behindprompt.substack.com/" target="_blank" rel="noopener" title="Behind The Prompt newsletter"><img class="btp" src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="96" height="56"></a><a class="wm" href="../" style="text-decoration:none">AI <b>Learning Hub</b></a></div>
     <div class="nav">
-      <a class="pill" href="../pathway/">Free lessons <i aria-hidden="true">›</i></a>
-      <a class="pill dark" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a>
+      <a class="pill" href="../pathway/">AI Learning Pathway <i aria-hidden="true">›</i></a>
+      <a class="pill dark" href="#signup">Get the list <i aria-hidden="true">›</i></a>
     </div>
   </nav>
 
@@ -330,7 +319,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
       <p class="eyebrow"><span class="dot" aria-hidden="true"></span><!--T:UPDATED-->Updated Nov 22, 2026<!--/T:UPDATED--></p>
       <h1>Upcoming <b>AI Talks.</b></h1>
       <p class="lede">Free AI talks and webinars, curated weekly for you.</p>
-      <!-- Free signup: saved to the Upcoming AI Talks Google Sheet by the Apps Script in talks/apps-script.gs -->
+      <!-- Free signup -->
       <div class="join" id="join">
         <div class="join-form">
           <div class="join-top"><span class="tag">Free</span><span class="join-k">The list in your inbox every Monday.</span></div>
@@ -346,7 +335,6 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
           <span class="tag lime" id="join-tag">Subscribed</span>
           <h3 id="join-h">You're already subscribed.</h3>
           <p id="join-p" hidden></p>
-          <a class="pill lime big" id="join-paid" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a>
         </div>
       </div>
     </div>
@@ -455,31 +443,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
     <!--/T:COURSES--></div>
   </section>
 
-  <div class="sec" id="plans"><h2>Choose your <b>plan</b></h2><p class="sec-sub">Save time finding, scheduling, and catching up on the best AI talks.</p></div>
-  <section class="plans">
-    <div class="card plan">
-      <span class="tag" style="justify-self:start;background:#F2EFF4">Free</span>
-      <div class="price">$0</div>
-      <ul>
-        <li>Full weekly list delivered every Monday</li>
-        <li>Top picks marked each week</li>
-        <li>Verified dates and times (Pacific Time)</li>
-      </ul>
-      <div class="acts"><a class="pill big" href="#signup">Subscribe free <i aria-hidden="true">›</i></a></div>
-    </div>
-    <div class="card plan paid">
-      <span class="tag dark" style="justify-self:start">Paid</span>
-      <div class="price">$8 <small>/ month</small></div>
-      <ul>
-        <li>Everything in free</li>
-        <li>Get next week’s list 3 days early</li>
-        <li>One-click calendar file for every talk</li>
-        <li>Catch-up summaries of selected talks</li>
-        <li>Monthly conference look-ahead</li>
-        <li>Or $80 a year, that's 2 months free</li>
-      </ul>
-      <div class="acts"><a class="pill dark big" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a><a class="pill big" href="#plans" data-pay="yearly">$80 a year <i aria-hidden="true">›</i></a></div>
-    </div>
+  <section class="card getlist" id="get">
+    <div><h2>Get the full list of <b>top AI talks</b> in your inbox.</h2><p class="sec-sub">Every Monday, with top picks marked and times in Pacific.</p></div>
+    <a class="pill dark big" href="#signup">Sign up free <i aria-hidden="true">›</i></a>
   </section>
 
 
@@ -488,46 +454,27 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
   <section class="closer">
     <a href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><img src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="180" style="display:block;height:auto;margin:0 auto 14px"></a>
     <p class="follow-label">Made by Weiwei Hu</p>
-    <div class="social-row"><a class="social-pill" href="../pathway/">Free lessons <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener">Newsletter <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://github.com/wei-wei-hu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+    <div class="social-row"><a class="social-pill" href="../pathway/">AI Learning Pathway <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener">Newsletter <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://github.com/wei-wei-hu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
     <p class="foot">AI Learning Hub · Independent guide, not affiliated with the event hosts</p>
     <p class="foot legal">© 2026 Weiwei Hu. All rights reserved. All content, designs and materials on this site are protected by copyright law. No part of this site may be copied, reproduced, distributed, modified, scraped, or used to train AI or machine-learning systems without prior written permission.</p>
   </section>
 </div>
 
-<div id="paid-thanks" hidden><b>Welcome to the paid edition.</b> Your first early list arrives this Friday. Check your inbox for the Stripe receipt.</div>
 <script>
-// ===== Settings: paste your links here (see talks/README.md) =====
-var TALKS = {
-  scriptUrl: "",      // Google Apps Script web app URL, ends in /exec
-  monthly: "",        // Stripe Payment Link for $8 a month
-  yearly: ""          // Stripe Payment Link for $80 a year
-};
-function payLink(plan,email){
-  var link=TALKS[plan==='yearly'?'yearly':'monthly'];
-  if(!link) return '#plans';
-  try{var u=new URL(link);if(email)u.searchParams.set('prefilled_email',email);return u.toString();}catch(e){return link;}
-}
+// Signup form address (ends in /exec)
+var TALKS = { scriptUrl: "" };
 (function(){
   // Hide talks whose date has passed (Pacific time), between weekly rebuilds.
   var today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
   document.querySelectorAll('article[data-date]').forEach(function(a){if(a.getAttribute('data-date')<today)a.hidden=true;});
-  // Payment buttons go straight to Stripe. Emails link here with ?plan=monthly&email=...
-  document.querySelectorAll('[data-pay]').forEach(function(a){
-    a.addEventListener('click',function(e){var l=payLink(a.getAttribute('data-pay'),a.getAttribute('data-email')||'');if(l==='#plans'){e.preventDefault();alertSoon();}else{a.href=l;}});
-  });
-  function alertSoon(){var m=document.getElementById('signup-msg');m.hidden=false;m.textContent='The paid edition opens soon. Sign up free above and we will tell you when it opens.';document.getElementById('signup').scrollIntoView({behavior:'smooth',block:'center'});}
-  var q=new URLSearchParams(location.search);
-  if(q.get('plan')){var l=payLink(q.get('plan'),q.get('email')||'');if(l!=='#plans'){location.replace(l);return;}}
 })();
 (function(){
   var f=document.getElementById('signup'),m=document.getElementById('signup-msg');
   function say(t,bad){m.hidden=false;m.textContent=t;m.style.color=bad?'#a12':'';}
   function done(st,email){
-    var J=document.getElementById('join'),D=document.getElementById('join-done'),H=document.getElementById('join-h'),P=document.getElementById('join-p'),T=document.getElementById('join-tag'),A=document.getElementById('join-paid');
+    var J=document.getElementById('join'),D=document.getElementById('join-done'),H=document.getElementById('join-h'),P=document.getElementById('join-p'),T=document.getElementById('join-tag');
     J.querySelector('.join-form').hidden=true;D.hidden=false;J.classList.add('done');
-    A.setAttribute('data-email',email);
-    if(st==='paid'){T.textContent='Paid';H.textContent="You're already on Paid.";P.textContent='Your next list arrives Friday.';P.hidden=false;A.hidden=true;}
-    else if(st==='free'){H.textContent="You're already subscribed.";}
+    if(st==='paid'||st==='free'){H.textContent="You're already subscribed.";}
     else{T.textContent='Free';H.textContent="You're in.";P.textContent='The next list arrives Monday morning.';P.hidden=false;}
   }
   f.addEventListener('submit',function(e){
@@ -536,14 +483,12 @@ function payLink(plan,email){
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){say('Please enter a valid email.',true);return;}
     b.disabled=true;say('Adding you…');
     if(!TALKS.scriptUrl){say('Signups open very soon. Please check back shortly.',true);b.disabled=false;return;}
-    // text/plain keeps this a simple request, which Google Apps Script accepts from any site.
     fetch(TALKS.scriptUrl,{method:'POST',headers:{'content-type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'subscribe',email:email,website:f.website.value,source:'talks page'})})
       .then(function(r){return r.json().catch(function(){return {ok:false};});})
       .then(function(j){if(j.ok){done(j.status,email);}else{say(j.error||'Something went wrong. Please try again.',true);}})
       .catch(function(){say('Something went wrong. Please try again.',true);})
       .then(function(){b.disabled=false;});
   });
-  if(/[?&]paid=1/.test(location.search)){document.getElementById('paid-thanks').hidden=false;}
 })();
 </script>
 </body>

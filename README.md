@@ -1,46 +1,81 @@
 <a id="top"></a>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img src="./docs/cover.png" alt="AI Learning Hub: Learn AI and AI Agents with OpenAI and Anthropic, plus free AI talks every week. 22 lessons, 5 tracks. Created by Weiwei Hu." width="100%"></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img src="./docs/cover.png" alt="AI Learning Hub by Weiwei Hu, with two free features: AI Learning Pathway and Upcoming AI Talks." width="100%"></a>
 </p>
 
 <h1 align="center">AI Learning Hub</h1>
 
-<p align="center"><strong>Free lessons · Official learning resources · Hands-on practice · Role-based tracks</strong></p>
+<p align="center"><strong>Two free ways to keep learning AI: a step-by-step learning pathway, and the best AI talks each week.</strong></p>
 
 <p align="center">
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img alt="Site: live" src="https://img.shields.io/badge/site-live-7fb3dd"></a>
+  <a href="#ai-learning-pathway"><img alt="AI Learning Pathway: 22 lessons" src="https://img.shields.io/badge/AI%20Learning%20Pathway-22%20lessons-e0c24a"></a>
+  <a href="#upcoming-ai-talks"><img alt="Upcoming AI Talks: weekly" src="https://img.shields.io/badge/Upcoming%20AI%20Talks-weekly-c9e35a"></a>
   <a href="./LICENSE"><img alt="License: All rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-555555"></a>
-  <a href="#ai-learning-curriculum"><img alt="Lessons: 22" src="https://img.shields.io/badge/lessons-22-e0c24a"></a>
-  <a href="#who-this-is-for"><img alt="Tracks: 5" src="https://img.shields.io/badge/tracks-5-8fb277"></a>
-  <a href="#how-it-works"><img alt="Sources: official only" src="https://img.shields.io/badge/sources-official%20only-d99cc0"></a>
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><img alt="Interactive site: live" src="https://img.shields.io/badge/site-live-7fb3dd"></a>
-  <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><img alt="Feedback: 3-minute form" src="https://img.shields.io/badge/feedback-3%20min%20form-e0c24a"></a>
-  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-555555"></a>
 </p>
 
-<p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/pathway/"><strong>Start the AI Learning Pathway →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
-</p>
+<p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Behind The Prompt newsletter</a> · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9">Give feedback</a></p>
 
-<p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Newsletter</a></p>
+---
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [AI Learning Pathway →](https://wei-wei-hu.github.io/ai-learning-hub/pathway/)
+
+Learn AI and AI agents step by step with official OpenAI and Anthropic courses and docs.
+
+- 22 lessons in 6 stages
+- 5 role-based tracks
+- Hands-on exercises
+- Progress tracking on the site
+
+</td>
+<td width="50%" valign="top">
+
+### [Upcoming AI Talks →](https://wei-wei-hu.github.io/ai-learning-hub/talks/)
+
+Free AI talks, keynotes and webinars, picked and checked each week.
+
+- A fresh list every week
+- Top picks marked
+- Verified dates and times in Pacific
+- Free self-paced courses
+- The full list in your inbox
+
+</td>
+</tr>
+</table>
+
+<p align="center"><a href="https://wei-wei-hu.github.io/ai-learning-hub/"><strong>Open AI Learning Hub →</strong></a></p>
 
 ---
 
 ## Upcoming AI Talks
 
-Free AI talks, keynotes and webinars from OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA and more, picked and checked every week. All times are Pacific.
+A weekly list of free AI talks, keynotes, webinars and livestreams from leading AI companies and conferences.
 
-- **Free:** the full list in your inbox every Monday, with top picks marked.
-- **Paid ($8 a month or $80 a year):** next week's list 3 days early, one-click calendar links, catch-up summaries and a monthly conference look-ahead.
+- **Weekly list.** Upcoming talks for the next few weeks on one page, updated every week.
+- **Top picks.** The most useful talks of the week are marked.
+- **Verified times.** Every date and time is checked on the host's official page and shown in Pacific time.
+- **Free courses.** Self-paced courses you can start anytime.
+- **In your inbox.** Get the full list of top AI talks by email every Monday.
 
-[See this week's talks and sign up →](https://wei-wei-hu.github.io/ai-learning-hub/talks/) · How it runs: [talks/README.md](./talks/README.md)
+[See this week's talks and get the list →](https://wei-wei-hu.github.io/ai-learning-hub/talks/)
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## Who this is for
+## AI Learning Pathway
 
-AI Learning Hub is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders. Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
+A free, step-by-step course for learning AI and AI agents, built only from official OpenAI and Anthropic resources.
+
+[Start the AI Learning Pathway →](https://wei-wei-hu.github.io/ai-learning-hub/pathway/)
+
+### Who this is for
+
+The AI Learning Pathway is designed for anyone who wants to learn AI and AI agents, from everyday users to engineers and business leaders. Whether you're just getting started or already using AI at work, you can choose a learning track that fits your role and goals.
 
 | Learning Track | Who It's For | What You'll Learn |
 |---|---|---|
@@ -56,7 +91,7 @@ The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each le
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## Your learning journey
+### Your learning journey
 
 | Stage | Lessons | What you finish with | Example scenario |
 |---|---|---|---|
@@ -71,7 +106,7 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## AI learning curriculum
+### AI learning curriculum
 
 <!-- CURRICULUM:START -->
 | # | Lesson | What you'll learn | Tracks |
@@ -102,7 +137,7 @@ Each stage ends with a short checklist at the end of its last lesson, so you kno
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
-## How it works
+### How it works
 
 - **Official sources only.** Every link goes to OpenAI or Anthropic, including the academies, docs, cookbooks, blogs, and research pages.
 - **Maintenance.** We check all resource links weekly and automatically open a GitHub issue if a link breaks. All resources were reviewed and verified in November 2026.
