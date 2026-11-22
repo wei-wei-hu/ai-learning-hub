@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Upcoming AI Talks: bakes docs/talks/talks.json into docs/talks/index.html.
-// Run from the repo root after editing talks.json:  node talks/build.mjs
+// Run from the repo root after editing talks.json:  node scripts/build_talks.mjs
 // It fills the blocks between <!--T:NAME--> and <!--/T:NAME--> markers and
-// writes docs/talks/data.json, the cleaned list the weekly emails read.
+// writes docs/talks/data.json, the cleaned list the weekly email reads.
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
