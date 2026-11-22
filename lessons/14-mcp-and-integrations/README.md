@@ -54,4 +54,4 @@ MCP provides a common standard for connecting AI applications to tools and data.
 
 [← Lesson 13: Memory and Context Engineering](../13-memory-and-context-engineering/README.md) · [Course home](../../README.md) · [Lesson 15: Skills and Plugins →](../15-skills-and-plugins/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

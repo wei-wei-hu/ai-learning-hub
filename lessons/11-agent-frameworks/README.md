@@ -56,4 +56,4 @@ The OpenAI Agents SDK gives you separate parts for agents, tools, handoffs, guar
 
 [← Lesson 10: Multimodal: Vision, Audio and Voice](../10-multimodal/README.md) · [Course home](../../README.md) · [Lesson 12: Multi-Agent Systems and Orchestration →](../12-multi-agent-systems/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

@@ -64,4 +64,4 @@ This lesson completes **Stage 6: Lead and manage**. Before you move on, finish o
 
 [← Lesson 21: Managing AI-Enabled Teams](../21-managing-ai-enabled-teams/README.md) · [Course home](../../README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

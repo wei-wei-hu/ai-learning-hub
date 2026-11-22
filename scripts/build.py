@@ -4,7 +4,7 @@
 Generates:
   - lessons/<slug>/README.md for every lesson
   - the curriculum table inside README.md (between CURRICULUM markers)
-  - the lesson data embedded in docs/index.html (between LESSONS markers)
+  - the lesson data embedded in docs/pathway/index.html (between LESSONS markers)
 
 Run from the repo root:  python3 scripts/build.py
 """
@@ -163,7 +163,7 @@ def main():
     text = replace_between(text, "<!-- CURRICULUM:START -->", "<!-- CURRICULUM:END -->", curriculum_md())
     readme.write_text(text, encoding="utf-8")
 
-    site = ROOT / "docs" / "index.html"
+    site = ROOT / "docs" / "pathway" / "index.html"
     html = site.read_text(encoding="utf-8")
     payload = json.dumps({"repo": DATA["repo"], "tracks": TRACKS, "lessons": LESSONS, "stages": DATA.get("stages", [])}, ensure_ascii=False)
     html = replace_between(html, "/*LESSONS:START*/", "/*LESSONS:END*/", f"const COURSE={payload};")
