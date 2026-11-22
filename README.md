@@ -173,10 +173,18 @@ This is an independent learning guide. It is not affiliated with, endorsed by, o
 
 ## License
 
-**Copyright © 2026 Weiwei Hu. All rights reserved.**
+**Copyright © 2026 Weiwei Hu. All rights reserved. This is a proprietary, all-rights-reserved project and is not open source.**
 
-You may read and use this course for your own personal, non-commercial learning, share links to it, and quote short excerpts with credit to "Weiwei Hu, AI Learning Hub" and a link to this repository.
+You may view this site and repository for your own personal, non-commercial learning, share links to it, and quote short excerpts with credit to "Weiwei Hu, AI Learning Hub" and a link back.
 
-Without prior written permission, you may **not** copy, republish or redistribute this course; modify, translate or create derivative courses or materials from it; use it for any commercial purpose, including paid training or consulting; remove the author's attribution; or use it to train or evaluate AI models.
+Without prior written permission, you may **not**:
 
-Contributions are welcome under the terms in [LICENSE](./LICENSE). Linked OpenAI and Anthropic material belongs to its owners and is not covered by this license. For permission requests, contact [Weiwei Hu on LinkedIn](https://www.linkedin.com/in/weiweihu/).
+- copy, mirror, re-host, frame, republish or redistribute any part of this site or repository
+- modify, translate or build courses, talk lists, newsletters or sites from its content, structure or selections
+- use it for any commercial purpose, including paid training, consulting, coaching or memberships
+- scrape or bulk download it, or use it to train, fine-tune or prompt AI models, or add it to any dataset
+- remove the copyright notice, attribution or logos, or suggest endorsement by Weiwei Hu
+
+Forks are allowed only to propose changes back to this repository. Any other use is copyright infringement and may lead to takedown notices and legal action. Full terms are in [LICENSE](./LICENSE). Linked OpenAI, Anthropic and event material belongs to its owners.
+
+Created by [Weiwei Hu](https://weiweihu.carrd.co/). For permission requests, contact Weiwei through the [website](https://weiweihu.carrd.co/) or [LinkedIn](https://www.linkedin.com/in/weiweihu/).

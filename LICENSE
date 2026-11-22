@@ -1,52 +1,70 @@
 AI Learning Hub
 Copyright (c) 2026 Weiwei Hu. All rights reserved.
 
-This repository and everything in it, including the lesson text, learning
-goals, exercises, questions, curriculum structure, track design, data files,
-scripts, website code, visual design and documentation (together, "the Work"),
-are the property of Weiwei Hu and are protected by copyright law.
+PROPRIETARY LICENSE. THIS IS NOT AN OPEN-SOURCE LICENSE.
+
+This repository and the website at https://wei-wei-hu.github.io/ai-learning-hub/
+(together, the "Work") include the AI Learning Pathway, Upcoming AI Talks, all
+text, lesson structure, curriculum, selections and descriptions of talks and
+courses, designs, layouts, images, logos, cover art, code and data. The Work is
+owned by Weiwei Hu and protected by copyright and other laws. Making the Work
+publicly viewable does not place it in the public domain and does not grant any
+license except the limited permissions in Section 1.
 
 1. WHAT YOU MAY DO
-   Without asking permission, you may:
-   a. Read and use the Work for your own personal, non-commercial learning.
-   b. Share links to this repository or to the published website.
-   c. Quote short excerpts for commentary or review, provided you credit
-      "Weiwei Hu, AI Learning Hub" and link to
-      https://github.com/wei-wei-hu/ai-learning-hub.
-   d. Fork this repository on GitHub only to the extent GitHub's Terms of
-      Service require, and only to propose changes back to this repository
-      through a pull request.
+   a. View the Work in a web browser and use it for your own personal,
+      non-commercial learning.
+   b. Share links to the Work.
+   c. Quote short excerpts for commentary or review, with visible credit to
+      "Weiwei Hu, AI Learning Hub" and a link to the Work.
+   d. Fork the repository on GitHub only as GitHub's Terms of Service require,
+      and only to propose changes back to this repository. A fork may not be
+      published, deployed, hosted or used for any other purpose.
 
-2. WHAT YOU MAY NOT DO WITHOUT PRIOR WRITTEN PERMISSION
-   a. Copy, republish, mirror or redistribute the Work, in whole or in part,
-      in any format or on any platform.
-   b. Modify, translate, adapt or create derivative works, including other
-      courses, curricula, learning paths, books, slide decks or videos based
-      on the Work.
-   c. Use the Work, in whole or in part, for any commercial purpose, including
-      paid courses, training, consulting, coaching or products.
-   d. Remove or alter this notice, the author's name or attribution, or present
-      the Work as your own.
-   e. Use the Work to train, fine-tune or evaluate machine learning models, or
-      include it in datasets.
+2. WHAT YOU MAY NOT DO without prior written permission from Weiwei Hu
+   a. Copy, download in bulk, reproduce, mirror, frame or re-host the Work, in
+      whole or in part, on any site, app, platform or product.
+   b. Republish, redistribute, sell, sublicense, rent or lend the Work.
+   c. Modify, translate, adapt or create derivative works, including courses,
+      curricula, talk lists, newsletters, templates, slides or sites based on
+      the Work's structure, selections or wording.
+   d. Use the Work for any commercial purpose, including paid courses,
+      training, workshops, consulting, coaching, memberships or advertising.
+   e. Scrape, crawl, harvest or extract the Work or its data by automated
+      means, except search engines indexing pages for ordinary search results.
+   f. Use the Work, in whole or in part, to train, fine-tune, evaluate, ground
+      or prompt any artificial intelligence or machine-learning system, or
+      include it in any dataset.
+   g. Remove, hide or change any copyright notice, attribution, logo or this
+      License.
+   h. Use the names "AI Learning Hub", "Upcoming AI Talks", "AI Learning
+      Pathway", "Behind The Prompt" or "Weiwei Hu", or any logo in the Work, in
+      a way that suggests endorsement or affiliation.
 
 3. CONTRIBUTIONS
    By submitting an issue, pull request or other contribution, you grant
    Weiwei Hu a perpetual, worldwide, royalty-free, irrevocable license to use,
-   modify and publish your contribution as part of the Work, and you confirm
-   that you have the right to grant this license.
+   modify and publish it as part of the Work, and you confirm you have the
+   right to grant this license. Contributing gives you no rights in the Work.
 
 4. THIRD-PARTY MATERIAL
-   The Work links to material published by OpenAI, Anthropic and others. That
-   material is not part of the Work and remains the property of its owners
-   under their own terms. OpenAI, ChatGPT, Codex, Anthropic, Claude and other
-   names are trademarks of their respective owners. The Work is independent
-   and is not affiliated with, endorsed by or sponsored by OpenAI or Anthropic.
+   Linked courses, documentation, events and trademarks belong to their
+   respective owners and are not covered by this License. The Work is an
+   independent guide and is not affiliated with, endorsed by or sponsored by
+   OpenAI, Anthropic or any event host.
 
-5. NO WARRANTY
-   The Work is provided "as is", without warranty of any kind. The author is
-   not liable for any claim, damages or other liability arising from use of
-   the Work or of any linked material.
+5. ENFORCEMENT AND TERMINATION
+   Any use outside Section 1 is an infringement of copyright. Your permissions
+   end automatically, without notice, if you break any term of this License.
+   Weiwei Hu may file takedown notices (including under the U.S. Digital
+   Millennium Copyright Act), and seek removal, damages and other remedies
+   available by law.
 
-For permission requests, contact Weiwei Hu:
-https://weiweihu.carrd.co/ or https://www.linkedin.com/in/weiweihu/
+6. NO WARRANTY
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. EVENT DATES,
+   TIMES AND LINKS MAY CHANGE. IN NO EVENT SHALL WEIWEI HU BE LIABLE FOR ANY
+   CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE WORK OR ITS USE.
+
+7. PERMISSION REQUESTS
+   Website: https://weiweihu.carrd.co/
+   LinkedIn: https://www.linkedin.com/in/weiweihu/
