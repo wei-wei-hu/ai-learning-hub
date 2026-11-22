@@ -29,6 +29,7 @@ Without evals, every change to a prompt or model is a guess. Evals turn quality 
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | Article | Intermediate | Rigorous evals for multi-turn agents |
+| [Building strong safety evaluations](https://www.anthropic.com/research/building-strong-safety-evaluations) | Article | Advanced | Design, run and report safety evals |
 | [AI Fluency for Builders](https://anthropic.skilljar.com/) | Course | Intermediate | From problem to shipped solution |
 
 ## Which approach should you explore?

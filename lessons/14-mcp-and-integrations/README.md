@@ -20,8 +20,8 @@ MCP is the shared standard both providers support for connecting models to outsi
 
 | Resource | Type | Level | What you get |
 |---|---|---|---|
-| [Apps SDK](https://developers.openai.com/apps-sdk) | Docs | Intermediate | Apps that run inside ChatGPT, built on MCP |
-| [MCP Apps in ChatGPT](https://developers.openai.com/apps-sdk/mcp-apps-in-chatgpt) | Docs | Advanced | Build to the open MCP Apps standard first |
+| [Plugins for ChatGPT and Codex](https://developers.openai.com/plugins) | Docs | Intermediate | Skills, MCP servers and optional UI |
+| [Add UI to your MCP server](https://developers.openai.com/plugins/build/chatgpt-ui) | Docs | Advanced | MCP Apps standard plus ChatGPT extras |
 
 ## Learn from Anthropic
 
@@ -31,10 +31,11 @@ MCP is the shared standard both providers support for connecting models to outsi
 | [Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/) | Course | Advanced | Sampling, notifications, transports |
 | [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) | Article | Advanced | Call tools through code to save context |
 | [modelcontextprotocol.io](https://modelcontextprotocol.io) | Docs | Intermediate | The open standard's official site |
+| [MCP 2026-07-28: stateless core](https://claude.com/resources/articles/bringing-mcp-2026-07-28-to-claude) | Article | Intermediate | What the latest spec changes for builders |
 
 ## Which approach should you explore?
 
-MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's Apps SDK focuses on integrating applications into ChatGPT. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server.
+MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's plugin docs focus on bringing MCP servers into ChatGPT and Codex. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server.
 
 *These are practical starting recommendations based on the resources in this lesson. Neither provider has been benchmarked here, and studying both is often worthwhile.*
 

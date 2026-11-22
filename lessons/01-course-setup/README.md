@@ -21,7 +21,7 @@ OpenAI and Anthropic each publish courses, docs, cookbooks and research, but the
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [OpenAI Academy](https://www.openai.com/academy) | Hub | Beginner | 14 free courses across four pathways |
-| [OpenAI developer docs](https://developers.openai.com/topics/agents) | Hub | Beginner | API, Agents SDK, Codex and Apps SDK docs |
+| [OpenAI developer docs](https://developers.openai.com/learn/agents) | Hub | Beginner | API, Agents SDK, Codex and plugin docs |
 | [OpenAI Cookbook](https://developers.openai.com/cookbook) | Hub | Beginner | Runnable notebooks by topic |
 
 ## Learn from Anthropic

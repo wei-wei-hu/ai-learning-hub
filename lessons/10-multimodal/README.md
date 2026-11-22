@@ -22,7 +22,7 @@ A large share of business information lives in screenshots, scanned forms, chart
 |---|---|---|---|
 | [Images and vision](https://developers.openai.com/api/docs/guides/images-vision) | Docs | Beginner | Image inputs and image generation |
 | [Audio and speech](https://developers.openai.com/api/docs/guides/audio) | Docs | Intermediate | Speech-to-text, text-to-speech, realtime audio |
-| [Voice agents guide](https://developers.openai.com/api/docs/guides/voice-agents) | Docs | Intermediate | Voice-first agents with realtime models |
+| [Voice agents guide](https://developers.openai.com/api/docs/guides/voice-agents) | Docs | Intermediate | Voice agents with GPT-Live or the Realtime API |
 
 ## Learn from Anthropic
 
