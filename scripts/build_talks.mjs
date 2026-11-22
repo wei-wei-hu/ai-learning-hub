@@ -56,7 +56,7 @@ function renderTalksPage(html, data) {
       <div class="tags">${tagsHtml(t)}</div>
       <h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)}</a></h3>
       <p class="take">${esc(t.desc)}</p>
-    </article>
+${t.top && t.why ? `      <p class="why"><b>Why I picked it</b>${esc(t.why)}</p>\n` : ""}    </article>
 `;
   }).join("") : `
     <article class="card talk"><h3>New talks are on the way.</h3><p class="take">Sign up above and we'll send the next list to your inbox.</p></article>

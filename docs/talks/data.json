@@ -44,7 +44,8 @@
    "title": "re:Invent CEO Keynote with Matt Garman",
    "short": "re:Invent CEO Keynote",
    "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "Amazon's biggest AI announcements of the year, with guests Sam Altman of OpenAI and Tony Xu of DoorDash."
+   "desc": "Amazon's biggest AI announcements of the year, with guests Sam Altman of OpenAI and Tony Xu of DoorDash.",
+   "why": "The year's main AWS AI launches in one sitting, with the heads of AWS and OpenAI on the same stage. Watch it if you make AI platform or budget decisions."
   },
   {
    "date": "2026-12-02",
@@ -60,7 +61,8 @@
    "title": "re:Invent Data and AI Keynote with Swami Sivasubramanian",
    "short": "re:Invent Data and AI Keynote",
    "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "How AWS sees data and AI agents coming together, with stories from Delta Air Lines and Cox Automotive. Useful for leaders planning next year."
+   "desc": "How AWS sees data and AI agents coming together, with stories from Delta Air Lines and Cox Automotive. Useful for leaders planning next year.",
+   "why": "Getting company data ready is often the hardest part of an AI project. Here two large companies show how they connected theirs to AI agents. Watch it if you lead a data, analytics or AI team."
   },
   {
    "date": "2026-12-02",
