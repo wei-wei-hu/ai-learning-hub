@@ -61,7 +61,7 @@ A weekly list of free AI talks, keynotes, webinars and livestreams from leading 
 - **Top picks.** The most useful talks of the week are marked.
 - **Verified times.** Every date and time is checked on the host's official page and shown in Pacific time.
 - **Free courses.** Self-paced courses you can start anytime.
-- **In your inbox.** Get the full list of top AI talks by email every Monday.
+- **In your inbox.** Get the full list of top AI talks by email every week.
 
 [See this week's talks and get the list →](https://wei-wei-hu.github.io/ai-learning-hub/talks/)
 

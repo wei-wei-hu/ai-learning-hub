@@ -59,7 +59,7 @@ function renderTalksPage(html, data) {
     </article>
 `;
   }).join("") : `
-    <article class="card talk"><h3>New talks are on the way.</h3><p class="take">Sign up above and we'll send Monday's list to your inbox.</p></article>
+    <article class="card talk"><h3>New talks are on the way.</h3><p class="take">Sign up above and we'll send the next list to your inbox.</p></article>
 `;
   html = swapBlock(html, "LIST", list);
   html = swapBlock(html, "COURSES", (data.courses || []).map((c, i) => `

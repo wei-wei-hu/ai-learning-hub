@@ -322,7 +322,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
       <!-- Free signup -->
       <div class="join" id="join">
         <div class="join-form">
-          <div class="join-top"><span class="tag">Free</span><span class="join-k">The list in your inbox every Monday.</span></div>
+          <div class="join-top"><span class="tag">Free</span><span class="join-k">The list in your inbox every week.</span></div>
           <form class="signup" id="signup" novalidate>
             <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
             <label for="email" class="sr">Your email</label>
@@ -444,7 +444,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
   </section>
 
   <section class="card getlist" id="get">
-    <div><h2>Get the full list of <b>top AI talks</b> in your inbox.</h2><p class="sec-sub">Every Monday, with top picks marked and times in Pacific.</p></div>
+    <div><h2>Get the full list of <b>top AI talks</b> in your inbox.</h2><p class="sec-sub">Every week, with top picks marked and times in Pacific.</p></div>
     <a class="pill dark big" href="#signup">Sign up free <i aria-hidden="true">›</i></a>
   </section>
 
@@ -475,7 +475,7 @@ var TALKS = { scriptUrl: "" };
     var J=document.getElementById('join'),D=document.getElementById('join-done'),H=document.getElementById('join-h'),P=document.getElementById('join-p'),T=document.getElementById('join-tag');
     J.querySelector('.join-form').hidden=true;D.hidden=false;J.classList.add('done');
     if(st==='paid'||st==='free'){H.textContent="You're already subscribed.";}
-    else{T.textContent='Free';H.textContent="You're in.";P.textContent='The next list arrives Monday morning.';P.hidden=false;}
+    else{T.textContent='Free';H.textContent="You're in.";P.textContent='The next list arrives this week.';P.hidden=false;}
   }
   f.addEventListener('submit',function(e){
     e.preventDefault();
