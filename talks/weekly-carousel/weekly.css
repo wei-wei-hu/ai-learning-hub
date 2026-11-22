@@ -140,7 +140,7 @@ h1 b,h2 b{font-weight:700}
 .tl.n1 .tc p{font-size:28px;-webkit-line-clamp:4}
 .tl.n1 .tbar .bars{height:170px}
 .tl.n1 .tlab b{font-size:24px}
-/* top pick days: purple, matches /ai-talks hero */
+/* top pick days: purple, matches /talks hero */
 .cal-r span.tp{background:#852BAF;color:#fff;box-shadow:none}
 .cal-r span.tp::before{content:"★";position:absolute;top:-6px;left:-6px;width:26px;height:26px;border-radius:50%;background:#fff;color:#852BAF;font-size:15px;line-height:26px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.15)}
 .cal-k i.k-top{background:#852BAF;box-shadow:none;outline:0}

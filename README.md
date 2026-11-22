@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/ai-talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
 </p>
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Newsletter</a></p>
@@ -34,7 +34,7 @@ Free AI talks, keynotes and webinars from OpenAI, Anthropic, Microsoft, AWS, Goo
 - **Free:** the full list in your inbox every Monday, with top picks marked.
 - **Paid ($8 a month or $80 a year):** next week's list 3 days early, one-click calendar links, catch-up summaries and a monthly conference look-ahead.
 
-[See this week's talks and sign up →](https://wei-wei-hu.github.io/ai-learning-hub/ai-talks/) · How it runs: [talks/README.md](./ai-talks/README.md)
+[See this week's talks and sign up →](https://wei-wei-hu.github.io/ai-learning-hub/talks/) · How it runs: [talks/README.md](./talks/README.md)
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
