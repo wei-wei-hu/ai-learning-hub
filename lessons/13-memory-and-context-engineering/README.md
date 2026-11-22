@@ -46,4 +46,4 @@ Long tasks fail when agents lose track of what they already did. Both providers 
 
 [← Lesson 12: Multi-Agent Systems and Orchestration](../12-multi-agent-systems/README.md) · [Course home](../../README.md) · [Lesson 14: Model Context Protocol and Integrations →](../14-mcp-and-integrations/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

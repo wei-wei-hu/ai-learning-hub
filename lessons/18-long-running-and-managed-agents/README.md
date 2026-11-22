@@ -61,4 +61,4 @@ This lesson completes **Stage 4: Run advanced agents**. Before you move on, fini
 
 [← Lesson 17: Computer Use and Browser Agents](../17-computer-use/README.md) · [Course home](../../README.md) · [Lesson 19: Evaluating AI Systems →](../19-evaluating-ai-systems/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

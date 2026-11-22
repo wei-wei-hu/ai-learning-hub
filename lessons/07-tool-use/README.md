@@ -46,4 +46,4 @@ Tools are what turn a model from a writer into a worker. Nearly every agent fail
 
 [← Lesson 6: Working with the Model APIs](../06-model-apis/README.md) · [Course home](../../README.md) · [Lesson 8: Structured Outputs →](../08-structured-outputs/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

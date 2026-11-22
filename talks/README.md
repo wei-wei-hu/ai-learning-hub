@@ -2,7 +2,7 @@
 
 Free AI talks and webinars, picked and checked every week. Part of AI Learning Hub by Weiwei Hu.
 
-**Page:** https://wei-wei-hu.github.io/ai-learning-hub/talks/
+**Page:** https://wei-wei-hu.github.io/ai-learning-hub/talks/ (the hub home page at https://wei-wei-hu.github.io/ai-learning-hub/ links to it and to the AI Learning Pathway at /pathway/)
 
 | Feature | How it works |
 |---|---|

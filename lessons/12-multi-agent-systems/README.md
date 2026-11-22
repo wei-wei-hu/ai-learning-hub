@@ -46,4 +46,4 @@ Splitting work across agents can improve quality and speed, and it can also mult
 
 [← Lesson 11: Agent Frameworks: OpenAI Agents SDK and Claude Agent SDK](../11-agent-frameworks/README.md) · [Course home](../../README.md) · [Lesson 13: Memory and Context Engineering →](../13-memory-and-context-engineering/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

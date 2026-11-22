@@ -53,4 +53,4 @@ Start with OpenAI's evaluation courses to learn how to create test datasets, mea
 
 [← Lesson 18: Long-Running and Managed Agents](../18-long-running-and-managed-agents/README.md) · [Course home](../../README.md) · [Lesson 20: Safety, Security and Governance →](../20-safety-security-and-governance/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

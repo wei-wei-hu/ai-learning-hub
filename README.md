@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://wei-wei-hu.github.io/ai-learning-hub/"><strong>Start the interactive learning path →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
+  <a href="https://wei-wei-hu.github.io/ai-learning-hub/pathway/"><strong>Start the AI Learning Pathway →</strong></a> &nbsp;·&nbsp; <a href="https://wei-wei-hu.github.io/ai-learning-hub/talks/"><strong>Upcoming AI Talks</strong></a> &nbsp;·&nbsp; <a href="https://forms.gle/9DdkzDKoyQURQJJZ9"><strong>Give feedback</strong></a>
 </p>
 
 <p align="center">Created by <a href="https://weiweihu.carrd.co/">Weiwei Hu</a> · <a href="https://www.linkedin.com/in/weiweihu/">LinkedIn</a> · <a href="https://behindprompt.substack.com/">Newsletter</a></p>
@@ -52,7 +52,7 @@ AI Learning Hub is designed for anyone who wants to learn AI and AI agents, from
 
 **New to AI?** Start with *AI at Work*. If you already have experience, choose your track and jump directly to the lessons most relevant to you.
 
-The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-hub/) lets you swipe through tracks, stages and lessons, pick what to take next, and track your progress.
+The [AI learning curriculum](#ai-learning-curriculum) shows which tracks each lesson belongs to. The [interactive site](https://wei-wei-hu.github.io/ai-learning-hub/pathway/) lets you swipe through tracks, stages and lessons, pick what to take next, and track your progress.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 

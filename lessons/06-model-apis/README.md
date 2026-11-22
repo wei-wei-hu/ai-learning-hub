@@ -48,4 +48,4 @@ Every product, agent and integration in this course sits on top of these two API
 
 [← Lesson 5: What Makes an Agent](../05-what-is-an-agent/README.md) · [Course home](../../README.md) · [Lesson 7: Tool Use and Function Calling →](../07-tool-use/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

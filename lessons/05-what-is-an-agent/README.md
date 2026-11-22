@@ -61,4 +61,4 @@ This lesson completes **Stage 1: Get started with AI**. Before you move on, fini
 
 [← Lesson 4: AI Assistants and Agents at Work](../04-ai-assistants-and-agents-at-work/README.md) · [Course home](../../README.md) · [Lesson 6: Working with the Model APIs →](../06-model-apis/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

@@ -47,4 +47,4 @@ Most poor AI output comes from vague instructions or missing context. Learning t
 
 [← Lesson 2: AI Foundations](../02-ai-foundations/README.md) · [Course home](../../README.md) · [Lesson 4: AI Assistants and Agents at Work →](../04-ai-assistants-and-agents-at-work/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

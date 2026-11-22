@@ -52,4 +52,4 @@ Start with OpenAI's hosted file search if you want to prototype retrieval quickl
 
 [← Lesson 8: Structured Outputs](../08-structured-outputs/README.md) · [Course home](../../README.md) · [Lesson 10: Multimodal: Vision, Audio and Voice →](../10-multimodal/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

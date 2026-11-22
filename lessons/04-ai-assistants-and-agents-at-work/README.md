@@ -55,4 +55,4 @@ The skills are the same on both sides, so start with the assistant your organiza
 
 [← Lesson 3: Prompting and Context](../03-prompting-and-context/README.md) · [Course home](../../README.md) · [Lesson 5: What Makes an Agent →](../05-what-is-an-agent/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

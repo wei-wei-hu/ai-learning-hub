@@ -64,4 +64,4 @@ This lesson completes **Stage 3: Build agents**. Before you move on, finish one 
 
 [← Lesson 14: Model Context Protocol and Integrations](../14-mcp-and-integrations/README.md) · [Course home](../../README.md) · [Lesson 16: Coding Agents: Codex and Claude Code →](../16-coding-agents/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*
