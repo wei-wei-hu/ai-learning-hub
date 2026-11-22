@@ -40,8 +40,10 @@ h1 b,h2 b,h3 b{font-weight:700}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .logo{width:44px;height:44px;border-radius:50%;background:#151515;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06);flex:none}
-.brand span{font-family:var(--slab);font-weight:300;font-size:24px}
+.brand .wm{font-family:var(--slab);font-weight:300;font-size:24px;color:var(--ink)}
 .brand .wm b{font-weight:700}
+.brand .btp{height:56px;width:auto;display:block}
+@media (max-width:480px){.brand .btp{height:44px}}
 .nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 18px;border-radius:999px;font:500 14px var(--body);text-decoration:none;white-space:nowrap;cursor:pointer;background:#fff;color:#151515;border:1px solid #151515;transition:transform .15s}
 .pill:hover{transform:translateY(-1px)}
@@ -51,10 +53,10 @@ h1 b,h2 b,h3 b{font-weight:700}
 .pill i{font-style:normal}
 .nav{display:grid;grid-template-columns:repeat(2,minmax(0,190px));gap:8px}
 .nav .short{display:none}
-@media (max-width:600px){.brand span:not(.logo){display:none}}
+@media (max-width:600px){.brand .wm{display:none}}
 @media (max-width:720px){.nav{grid-template-columns:repeat(2,auto)}.nav .long{display:none}.nav .short{display:inline}}
 @media (max-width:480px){.nav{gap:6px}.nav .pill{padding:0 11px;font-size:13px;height:40px}}
-@media (max-width:720px){.nav .hide-sm{display:none}.brand span{font-size:20px}}
+@media (max-width:720px){.nav .hide-sm{display:none}.brand .wm{font-size:20px}}
 
 /* hero */
 .hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:36px;align-items:center;padding:48px 0 30px}
@@ -316,7 +318,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
 <div class="wrap">
 
   <nav class="top">
-    <a class="brand" href="../"><span class="wm">AI <b>Learning Hub</b></span></a>
+    <div class="brand"><a href="https://behindprompt.substack.com/" target="_blank" rel="noopener" title="Behind The Prompt newsletter"><img class="btp" src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="96" height="56"></a><a class="wm" href="../" style="text-decoration:none">AI <b>Learning Hub</b></a></div>
     <div class="nav">
       <a class="pill" href="../">Free lessons <i aria-hidden="true">›</i></a>
       <a class="pill dark" href="#plans" data-pay="monthly">Subscribe to Paid <i aria-hidden="true">›</i></a>
@@ -484,6 +486,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
   <p class="note" style="text-align:center;margin-top:28px">Dates and times verified on each host’s official website as of <!--T:ASOF-->November 22, 2026<!--/T:ASOF-->. Schedules may change, so please confirm before registering.</p>
 
   <section class="closer">
+    <a href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><img src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="180" style="display:block;height:auto;margin:0 auto 14px"></a>
     <p class="follow-label">Made by Weiwei Hu</p>
     <div class="social-row"><a class="social-pill" href="../">Free lessons <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener">Newsletter <span aria-hidden="true">↗</span></a><a class="social-pill" href="https://github.com/wei-wei-hu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
     <p class="foot">AI Learning Hub · Independent guide, not affiliated with the event hosts</p>

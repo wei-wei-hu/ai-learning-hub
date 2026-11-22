@@ -21,6 +21,8 @@ const SITE = 'https://wei-wei-hu.github.io/ai-learning-hub';
 const TALKS_PAGE = SITE + '/talks/';
 const DATA_URL = SITE + '/talks/data.json';
 const TZ = 'America/Los_Angeles';
+const LOGO_URL = SITE + '/assets/behind-the-prompt-logo.png';
+const NEWSLETTER = 'https://behindprompt.substack.com/';
 
 const HEADERS = ['Email', 'Status', 'Plan', 'Stripe customer', 'Stripe subscription', 'Signed up', 'Updated', 'Source'];
 const COL = { email: 1, status: 2, plan: 3, customer: 4, subscription: 5, signedUp: 6, updated: 7, source: 8 };
@@ -247,12 +249,13 @@ function buildEdition_(data, kind, daysAhead) {
     </td></tr></table></td></tr>` : '';
     return `<div style="background:#F3EEF2;padding:28px 12px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto">
       <tr><td style="padding:0 4px 18px;font-family:Arial,sans-serif">
+        <a href="${NEWSLETTER}"><img src="${LOGO_URL}" alt="Behind The Prompt" width="150" style="display:block;width:150px;height:auto;border:0;margin:0 0 14px"></a>
         <p style="margin:0;font-size:13px;color:#666">${kind === 'paid' ? 'Paid edition · 3 days early' : 'AI Learning Hub'}</p>
         <h1 style="margin:6px 0 0;font:300 34px/1.1 Georgia,serif;color:#151515">Upcoming <b>AI Talks.</b></h1>
         <p style="margin:8px 0 0;font-size:15px;color:#444">Free AI talks and webinars, curated weekly for you.</p>
       </td></tr>
       ${cards}${upsell}
-      <tr><td style="padding:8px 4px 0;font:12px/1.5 Arial,sans-serif;color:#6b726e;text-align:center">Dates and times verified on each host’s official website as of ${asOf}. Schedules may change, so please confirm before registering.<br><br>You're getting this because you signed up for Upcoming AI Talks from <a href="${TALKS_PAGE}" style="color:#6b726e">AI Learning Hub</a> by Weiwei Hu. <a href="${unsub}" style="color:#6b726e">Unsubscribe</a></td></tr>
+      <tr><td style="padding:8px 4px 0;font:12px/1.5 Arial,sans-serif;color:#6b726e;text-align:center">Dates and times verified on each host’s official website as of ${asOf}. Schedules may change, so please confirm before registering.<br><br>You're getting this because you signed up for Upcoming AI Talks from <a href="${TALKS_PAGE}" style="color:#6b726e">AI Learning Hub</a> by Weiwei Hu. Read more on <a href="${NEWSLETTER}" style="color:#6b726e">Behind The Prompt</a>. <a href="${unsub}" style="color:#6b726e">Unsubscribe</a></td></tr>
     </table></div>`;
   };
   return { subject, html, count: talks.length };
