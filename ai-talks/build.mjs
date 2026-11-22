@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-// Upcoming AI Talks: bakes docs/talks/talks.json into docs/talks/index.html.
-// Run from the repo root after editing talks.json:  node talks/build.mjs
+// Upcoming AI Talks: bakes docs/ai-talks/talks.json into docs/ai-talks/index.html.
+// Run from the repo root after editing talks.json:  node ai-talks/build.mjs
 // It fills the blocks between <!--T:NAME--> and <!--/T:NAME--> markers and
-// writes docs/talks/data.json, the cleaned list the weekly emails read.
+// writes docs/ai-talks/data.json, the cleaned list the weekly emails read.
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PAGE = join(ROOT, "docs/talks/index.html");
-const DATA = join(ROOT, "docs/talks/talks.json");
-const OUT = join(ROOT, "docs/talks/data.json");
+const PAGE = join(ROOT, "docs/ai-talks/index.html");
+const DATA = join(ROOT, "docs/ai-talks/talks.json");
+const OUT = join(ROOT, "docs/ai-talks/data.json");
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];

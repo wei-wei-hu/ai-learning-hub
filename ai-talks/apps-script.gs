@@ -10,7 +10,7 @@
  *
  * Nothing private is stored in this file. Your Stripe key, your email and the signing
  * password live in Project Settings > Script Properties, which only you can see.
- * Step-by-step setup: talks/README.md in the repo.
+ * Step-by-step setup: ai-talks/README.md in the repo.
  */
 
 const SENDER_NAME = 'AI Learning Hub';
@@ -18,8 +18,8 @@ const SENDER_NAME = 'AI Learning Hub';
 // Gmail > Settings > Accounts > "Send mail as". Leave '' to use your Gmail.
 const FROM_ALIAS = '';
 const SITE = 'https://wei-wei-hu.github.io/ai-learning-hub';
-const TALKS_PAGE = SITE + '/talks/';
-const DATA_URL = SITE + '/talks/data.json';
+const TALKS_PAGE = SITE + '/ai-talks/';
+const DATA_URL = SITE + '/ai-talks/data.json';
 const TZ = 'America/Los_Angeles';
 const LOGO_URL = SITE + '/assets/behind-the-prompt-logo.png';
 const NEWSLETTER = 'https://behindprompt.substack.com/';

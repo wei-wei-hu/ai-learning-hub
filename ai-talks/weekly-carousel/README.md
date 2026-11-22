@@ -19,7 +19,7 @@ Renders a 4:5 (1080x1350) carousel of the coming week's talks, in the Upcoming A
 - Uses the rendered slide PNGs. No voice and no audio track (user's choice, 2026-11-14).
 - Timing: cover 3.5s, each talk slide 5s, recap 4.5s, call-to-action 4.5s, with 0.5s crossfades and a slow push-in.
 - Writes video-9x16.mp4 (Reels, Shorts, TikTok) and video-1x1.mp4 (LinkedIn, feed). Needs ffmpeg, pillow and numpy.
-- The last slide is the call to action: a simple "Follow Weiwei Hu" slide (LinkedIn, Newsletter, GitHub pills), with one light line: Free weekly list at wei-wei-hu.github.io/ai-learning-hub/talks.
+- The last slide is the call to action: a simple "Follow Weiwei Hu" slide (LinkedIn, Newsletter, GitHub pills), with one light line: Free weekly list at wei-wei-hu.github.io/ai-learning-hub/ai-talks.
 
 ## Source checklist: check every one before each weekly list
 

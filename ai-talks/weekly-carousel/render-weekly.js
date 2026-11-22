@@ -26,7 +26,7 @@ let talks = (data.talks || []).filter(t => t.date >= mondayIso)
   .sort((a,b) => (a.date + (a.sort||'1')).localeCompare(b.date + (b.sort||'1'))).slice(0, 8);
 if (!talks.length) { console.error('No upcoming talks from ' + mondayIso + '. Nothing rendered.'); process.exit(2); }
 
-const SITE = 'wei-wei-hu.github.io/ai-learning-hub/talks', SITE_URL = 'https://' + SITE + '/';
+const SITE = 'wei-wei-hu.github.io/ai-learning-hub/ai-talks', SITE_URL = 'https://' + SITE + '/';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const dd2 = t => String(d(t.date).getUTCDate()).padStart(2,'0');
 const dayLine = t => { const x = d(t.date); return DAY[x.getUTCDay()] + ', ' + MON[x.getUTCMonth()]; };
