@@ -46,11 +46,11 @@ h1 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight
 .btp img{display:block;width:170px;height:auto}
 .by{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:22px;position:relative;z-index:1}
 .by a,.by span{display:flex;align-items:center;justify-content:center;gap:9px;height:50px;border-radius:999px;padding:0 10px;font-size:15px;font-weight:700;white-space:nowrap;transition:transform .15s,box-shadow .15s,background .15s,color .15s}
-.by a{background:var(--lime);color:#141414;border:1.5px solid #141414;box-shadow:0 4px 0 #141414}
+.by a{background:#141414;color:#fff;border:1.5px solid #141414;box-shadow:0 10px 20px -10px rgba(0,0,0,.55)}
 .by svg{flex:none;width:18px;height:18px}
-.by span{background:#141414;color:#fff;font-weight:600;border:1.5px solid #141414}
-.by a:hover{transform:translateY(-2px);box-shadow:0 6px 0 #141414;background:#141414;color:var(--lime)}
-.by a:active{transform:translateY(3px);box-shadow:0 1px 0 #141414}
+.by span{background:#fff;color:#141414;font-weight:600;border:1.5px solid #141414}
+.by a:hover{transform:translateY(-3px);box-shadow:0 16px 26px -12px rgba(0,0,0,.6);background:var(--lav);color:#141414}
+.by a:active{transform:translateY(0);box-shadow:0 6px 12px -8px rgba(0,0,0,.5)}
 /* feature cards */
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1;min-height:0}
 .card{position:relative;padding:28px 32px;display:flex;flex-direction:column;gap:12px;overflow:hidden;transition:transform .15s,box-shadow .15s}
