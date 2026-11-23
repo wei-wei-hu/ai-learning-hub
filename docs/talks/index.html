@@ -316,6 +316,19 @@ a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3p
 .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
 h2,h3{letter-spacing:-.02em}
 @media (max-width:720px){.btplink{display:none}.hubnav a{padding:8px 12px;font-size:13px}.hubnav .lg{display:none}}
+.social-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:1000px;margin:0 auto}
+.social-pill{height:42px!important;padding:0 10px!important;font:600 14px var(--body)!important;color:#141414!important;border:1.5px solid rgba(20,20,20,.14);box-shadow:0 10px 20px -14px rgba(40,50,40,.6)!important;white-space:nowrap;transition:transform .15s,border-color .15s}
+.social-pill:hover{transform:translateY(-3px);border-color:#141414}
+.social-pill svg{width:16px;height:16px}
+.social-row .social-pill:nth-child(1){background:#fff;border-color:#141414}
+.social-row .social-pill:nth-child(1) span{background:none!important;color:#141414!important;width:auto!important;height:auto!important}
+.social-row .social-pill:nth-child(2){background:#CFE3C9}
+.social-row .social-pill:nth-child(3){background:#CFE4F5}
+.social-row .social-pill:nth-child(4){background:#F4F1FF}
+.social-row .social-pill:nth-child(5){background:#F7D4CC}
+.foot{font-size:12px!important;max-width:none!important}
+@media (min-width:1100px){.foot{white-space:nowrap}}
+@media (max-width:760px){.social-row{grid-template-columns:repeat(2,minmax(0,1fr));max-width:400px}.social-row .social-pill:nth-child(1){grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -472,8 +485,7 @@ h2,h3{letter-spacing:-.02em}
     <a href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><img src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="180" style="display:block;height:auto;margin:0 auto 14px"></a>
     <p class="follow-label">Created by Weiwei Hu</p>
     <div class="social-row"><a class="social-pill" href="../pathway/">AI Learning Pathway <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a><a class="social-pill" href="https://github.com/wei-wei-hu/ai-learning-hub" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a><a class="social-pill" href="https://weiweihu.carrd.co/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Newsletter</a></div>
-    <p class="foot">Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · AI Learning Hub · Independent guide, not affiliated with the event hosts</p>
-    <p class="foot legal">© 2026 Weiwei Hu. All rights reserved.</p>
+    <p class="foot">Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · © 2026 Weiwei Hu. All rights reserved. · Independent guide, not affiliated with OpenAI, Anthropic or the event hosts · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener">Give feedback</a>.</p>
   </section>
 </div>
 
