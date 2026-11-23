@@ -41,7 +41,7 @@ Free AI talks, keynotes and webinars, picked and checked each week.
 
 - A fresh list every week
 - Top picks marked
-- Verified dates and times in Pacific
+- Verified dates and times
 - Free self-paced courses
 - The full list in your inbox
 
@@ -59,7 +59,7 @@ A weekly list of free AI talks, keynotes, webinars and livestreams from leading 
 
 - **Weekly list.** Upcoming talks for the next few weeks on one page, updated every week.
 - **Top picks.** The most useful talks of the week are marked.
-- **Verified times.** Every date and time is checked on the host's official page and shown in Pacific time.
+- **Verified times.** Every date and time is checked on the host's official page.
 - **Free courses.** Self-paced courses you can start anytime.
 - **In your inbox.** Get the full list of top AI talks by email every week.
 

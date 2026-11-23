@@ -84,7 +84,8 @@ h1 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight
 .talks .arr{background:var(--lime)}
 .talks .big small{color:rgba(255,255,255,.6)}
 .talks::before{content:"";position:absolute;width:360px;height:360px;left:-120px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(217,210,247,.35),transparent 65%);pointer-events:none}
-footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:rgba(20,20,20,.55);padding:0 10px}
+footer{text-align:center;font-size:12px;color:rgba(20,20,20,.55);padding:0 4px}
+@media (min-width:1100px){footer{white-space:nowrap}}
 footer a{text-decoration:underline;text-underline-offset:3px}
 @media (min-width:900px) and (min-height:660px){
   body{display:flex;align-items:center;min-height:100vh;padding-left:clamp(28px,8vw,140px);padding-right:clamp(28px,8vw,140px)}
@@ -124,15 +125,14 @@ footer a{text-decoration:underline;text-underline-offset:3px}
       <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
       <span class="tag">02 · New every week</span>
       <h2>Upcoming AI <em>Talks</em></h2>
-      <p>Free AI talks, keynotes and webinars, checked every week, with top picks marked. All times Pacific.</p>
+      <p>Free AI talks, keynotes and webinars, checked every week, with top picks marked.</p>
       <ul class="chips"><li>Keynotes</li><li>Webinars</li><li>Free courses</li></ul>
       <div class="foot"><span class="go">See this week's talks <i>›</i></span><span class="big" id="tcount" hidden><b>8</b><small>upcoming talks</small></span></div>
     </a>
   </section>
 
   <footer>
-    <span>Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · © 2026 Weiwei Hu. All rights reserved.</span>
-    <span>Independent guide, not affiliated with OpenAI, Anthropic or the event hosts · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener">Give feedback</a></span>
+    <span>Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · © 2026 Weiwei Hu. All rights reserved. · Independent guide, not affiliated with OpenAI, Anthropic or the event hosts · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener">Give feedback</a></span>
   </footer>
 </div>
 <script>
