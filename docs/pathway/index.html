@@ -405,6 +405,43 @@ footer{border-top:1px solid rgba(20,20,20,.1)}
 @media(max-width:1340px){.wrap{padding-top:24px}#track,#course,#lesson{padding-top:0}}
 @media(max-width:700px){.hbtp{position:static;display:block;width:max-content;margin-bottom:12px}.hbtp img{width:120px}.socrow .soc{grid-template-columns:repeat(2,minmax(0,1fr))}#home h1{white-space:normal}}
 @media(max-width:600px){.wrap{padding:14px 14px 24px}.hero{padding:22px 18px 20px;border-radius:26px}.hubnav a{padding:8px 12px;font-size:13px}.hubnav .lg{display:none}.topr .fb{padding:9px 12px}}
+/* ---- template body: glass bento grid on desktop ---- */
+@media (min-width:760px){
+.wrap{max-width:1000px}
+.swipe{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;overflow:visible!important;padding:6px 0 10px!important;margin:0!important;scroll-snap-type:none;counter-reset:card}
+.swipe.secs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.swnav{display:none!important}
+.swipe .sc,.swipe .stepc,.swipe .secs .sec,.secs .sec{width:auto!important;flex:none!important;transform:none!important;opacity:1!important;min-height:0!important}
+.swipe .sc{counter-increment:card;position:relative;align-items:flex-start;text-align:left;padding:24px 24px 22px;border-radius:30px;background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.85);box-shadow:0 24px 44px -30px rgba(60,70,60,.45),inset 0 1px 0 rgba(255,255,255,.9);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);transition:transform .15s,box-shadow .15s!important}
+.swipe .sc:hover{transform:translateY(-3px)!important;box-shadow:0 28px 48px -28px rgba(60,70,60,.55)}
+.swipe .sc .slabel{background:var(--c);color:#141414;border-radius:999px;padding:5px 12px;font-size:11.5px;font-weight:600;letter-spacing:0;text-transform:none}
+.swipe .sc .plate{width:58px!important;height:58px!important;margin:16px 0 12px;background:var(--c);box-shadow:none}
+.swipe .sc .plate>svg{display:none}
+.swipe .sc .pin svg{width:28px;height:28px}.swipe .sc .pin b{font-size:24px}
+.swipe .sc .tn{font-size:21px;padding-right:8px}
+.swipe .sc .sdesc{text-align:left;min-height:0;margin-top:6px}
+.swipe .sc .smeta{margin-bottom:16px}
+.swipe .sc .ltags{justify-content:flex-start!important;margin:8px 0 10px!important}
+.swipe .sc .scta{margin-top:auto;background:#141414;color:#fff;border-radius:999px;padding:10px 18px;font-size:14px}
+.swipe .sc::after{content:"↗";position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#141414;font-size:17px;box-shadow:0 8px 18px -10px rgba(0,0,0,.4);transition:transform .2s}
+.swipe .sc:hover::after{transform:rotate(45deg)}
+.swipe .sc::before{content:counter(card,decimal-leading-zero);position:absolute;right:22px;bottom:16px;font-size:58px;font-weight:200;letter-spacing:-.05em;line-height:.9;color:rgba(20,20,20,.8)}
+.swipe .sc.done{background:rgba(255,255,255,.4)}
+#cards .sc:first-child{grid-row:span 2;background:#141414;color:#fff;border-color:#141414}
+#cards .sc:first-child .sdesc,#cards .sc:first-child .smeta{color:rgba(255,255,255,.72)}
+#cards .sc:first-child::before{color:#fff;font-size:96px}
+#cards .sc:first-child .scta{background:#DDF26B;color:#141414}
+#cards .sc:first-child .plate{width:84px!important;height:84px!important}
+#cards .sc:first-child .tn{font-size:28px}
+.swipe .stepc{border-radius:28px;background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 40px -30px rgba(60,70,60,.45);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.swipe .stepc.done{background:rgba(230,240,224,.75)}
+.secs .sec{background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.85);border-top:8px solid var(--c);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.stagehead{background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.85);border-left:10px solid var(--c)}
+.rt{font-size:20px;font-weight:600;letter-spacing:-.02em}
+}
+.top{background:#E4DDFA;border:1px solid rgba(255,255,255,.7)}.ring{background:#fff}
+.filter{background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.85)}
+.tabs,.prov{background:#141414}.tab{color:#fff}
 </style>
 </head>
 <body>
@@ -616,6 +653,11 @@ document.getElementById('tprov').onclick=e=>{const b=e.target.closest('.pv');if(
 document.getElementById('lprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;lprov=b.dataset.v;if(lprov!=='both'){prov=lprov;S._v=prov;save()}renderLesson()};
 document.getElementById('cprov').onclick=e=>{const b=e.target.closest('.pv');if(!b)return;lprov=b.dataset.v;if(lprov!=='both'){prov=lprov;S._v=prov;save()}renderCourse()};
 show('home');
+</script>
+<script>
+(function(){var mq=matchMedia('(min-width:760px)');
+function fix(){if(!mq.matches)return;document.querySelectorAll('.rt').forEach(function(e){var t=e.textContent,n=t.replace(/^Swipe to choose/,'Choose').replace(/^Swipe the resources/,'Resources').replace(/: swipe the resources/,'');if(n!==t)e.textContent=n;});}
+new MutationObserver(fix).observe(document.body,{childList:true,subtree:true});fix();})();
 </script>
 </body>
 </html>
