@@ -15,7 +15,7 @@
 <meta name="twitter:image" content="https://wei-wei-hu.github.io/ai-learning-hub/cover.png">
 <title>AI Learning Pathway · AI Learning Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
  --ink:#23262f;--sub:#6b7080;--faint:#9aa0ae;
@@ -371,17 +371,52 @@ body,.bg{background:#fff}
 .talkrow a:hover{background:#333}
 @media(max-width:600px){.talkrow a{font-size:13px}}
 footer span:nth-child(3){flex-basis:100%;text-align:center;text-transform:none;letter-spacing:.02em;margin-top:8px;font-size:11.5px}
+/* ---- hub template (2026-11-23) ---- */
+html{background:#DDE3DA}
+body,.bg{background:radial-gradient(900px 600px at 8% 0%,#EEF2E9 0%,transparent 60%),radial-gradient(800px 600px at 100% 100%,#E4E0F2 0%,transparent 55%),linear-gradient(160deg,#E3E9E0 0%,#D8DFD7 55%,#E2E2E6 100%)}
+.bg{position:fixed}
+.wrap{max-width:860px;background:transparent;padding:24px 24px 40px}
+.hubtop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.hubnav{display:flex;align-items:center;gap:4px;background:#141414;border-radius:999px;padding:6px;box-shadow:0 14px 28px -16px rgba(0,0,0,.5)}
+.hubnav a{color:rgba(255,255,255,.75);font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:999px}
+.hubnav a.on{background:#fff;color:#141414}.hubnav a:hover{color:#fff}.hubnav a.on:hover{color:#141414}
+.topr,.topr .fb{position:static!important}
+.topr .fb{background:rgba(255,255,255,.62);color:#141414;border:1px solid rgba(255,255,255,.8);box-shadow:none}
+.topr .fb:hover{background:#fff;color:#141414}
+.hero{position:relative;text-align:left;background:#E4DDFA;border:1px solid rgba(255,255,255,.7);border-radius:32px;padding:30px 34px 28px;box-shadow:0 24px 48px -28px rgba(60,70,60,.35),inset 0 1px 0 rgba(255,255,255,.9);overflow:hidden}
+.hero::after{content:"";position:absolute;width:380px;height:380px;right:-120px;top:-170px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.55),transparent 65%);pointer-events:none}
+.hlabel{display:inline-flex;font-size:12.5px;font-weight:600;letter-spacing:0;text-transform:none;color:#141414;background:#DDF26B;border-radius:999px;padding:6px 14px;margin-bottom:14px}
+#home h1{white-space:nowrap;font-size:clamp(30px,6.4vw,58px);font-weight:600;letter-spacing:-.035em;line-height:1;margin:0 0 12px}
+#home h1 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+#home .tagline2{font-size:clamp(15px,1.9vw,19px);font-weight:600;color:#141414;margin:0 0 18px;max-width:none}
+.hbtp{position:absolute;top:20px;right:26px;z-index:1}.hbtp img{display:block;width:140px;height:auto}
+.talkrow{justify-content:flex-start;margin:0 0 12px;position:relative;z-index:1}
+.talkrow a{padding:11px 20px;font-size:14px}
+.socrow{position:relative;z-index:1}.socrow .soc{justify-content:flex-start;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.socrow .soc a{justify-content:center;height:42px;padding:0 10px;border-radius:999px;font-size:14px;font-weight:600;color:#141414;border:1.5px solid rgba(20,20,20,.14);box-shadow:0 10px 20px -14px rgba(40,50,40,.6);transition:transform .15s,border-color .15s}
+.socrow .soc a:nth-child(1){background:#CFE3C9}.socrow .soc a:nth-child(2){background:#CFE4F5}.socrow .soc a:nth-child(3){background:#F4F1FF}.socrow .soc a:nth-child(4){background:#F7D4CC}
+.socrow .soc a:hover{background-color:inherit;color:#141414;transform:translateY(-3px);border-color:#141414}
+.socrow .soc a:nth-child(1):hover{background:#CFE3C9}.socrow .soc a:nth-child(2):hover{background:#CFE4F5}.socrow .soc a:nth-child(3):hover{background:#F4F1FF}.socrow .soc a:nth-child(4):hover{background:#F7D4CC}
+.socrow .soc a svg{width:16px;height:16px}
+.prov{background:#141414}
+.rt{font-family:Montserrat,system-ui,sans-serif}
+.ctitle em,.lh h2 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+footer{border-top:1px solid rgba(20,20,20,.1)}
+@media(max-width:1340px){.wrap{padding-top:24px}#track,#course,#lesson{padding-top:0}}
+@media(max-width:700px){.hbtp{position:static;display:block;width:max-content;margin-bottom:12px}.hbtp img{width:120px}.socrow .soc{grid-template-columns:repeat(2,minmax(0,1fr))}#home h1{white-space:normal}}
+@media(max-width:600px){.wrap{padding:14px 14px 24px}.hero{padding:22px 18px 20px;border-radius:26px}.hubnav a{padding:8px 12px;font-size:13px}.hubnav .lg{display:none}.topr .fb{padding:9px 12px}}
 </style>
 </head>
 <body>
 <div class="bg"><i></i><i></i><i></i><i></i></div>
 <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a521"/><stop offset="1" stop-color="#c9a521"/></linearGradient></defs></svg>
 <div class="wrap">
- <div class="topr"><a class="fb" href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Give feedback</a></div>
+ <div class="hubtop"><nav class="hubnav" aria-label="Main"><a href="../">Hub</a><a class="on" href="./"><span class="lg">AI Learning </span>Pathway</a><a href="../talks/"><span class="lg">Upcoming AI </span>Talks</a></nav><div class="topr"><a class="fb" href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Give feedback</a></div></div>
  <section id="home">
   <div class="hero">
-  <p class="hlabel"><a href="../" style="color:inherit">AI Learning Hub</a> · Free course</p>
-  <h1>AI <em>Learning Pathway</em></h1>
+  <a class="hbtp" href="https://behindprompt.substack.com/" target="_blank" rel="noopener" title="Behind The Prompt newsletter"><img src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="210" height="123"></a>
+  <p class="hlabel">01 · Free course</p>
+  <h1>AI Learning <em>Pathway</em></h1>
   <p class="tagline2">Learn AI and AI Agents with OpenAI and Anthropic.</p>
   <p class="talkrow"><a class="home" href="../"><span aria-hidden="true">‹</span> AI Learning Hub</a><a href="../talks/">Upcoming AI Talks <span aria-hidden="true">›</span></a></p>
   <p class="socrow"><span class="soc"><a href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span>LinkedIn</span></a><a href="https://github.com/wei-wei-hu" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span>GitHub</span></a><a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener" aria-label="Website" title="Website"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>Website</span></a><a href="https://behindprompt.substack.com/" target="_blank" rel="noopener" aria-label="Newsletter on Substack" title="Newsletter on Substack"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>Newsletter</span></a></span></p>
