@@ -18,81 +18,106 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#151515;--sub:rgba(20,20,20,.64);--yel:#F9DF8A;--lime:#E4F27A;--char:#4a4a4a;--bg:#f6f3ec}
+:root{--ink:#141414;--sub:rgba(20,20,20,.6);--lime:#DDF26B;--lav:#D9D2F7;--sage:#DDE5DA;--glass:rgba(255,255,255,.62);--line:rgba(255,255,255,.8)}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{padding:32px;font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45;-webkit-font-smoothing:antialiased}
+body{padding:28px;font-family:Montserrat,system-ui,sans-serif;color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased;
+background:radial-gradient(900px 600px at 8% 0%,#EEF2E9 0%,transparent 60%),radial-gradient(800px 600px at 100% 100%,#E4E0F2 0%,transparent 55%),linear-gradient(160deg,#E3E9E0 0%,#D8DFD7 55%,#E2E2E6 100%)}
+html{background:#DDE3DA}
 a{color:inherit;text-decoration:none}
-.wrap{width:100%;max-width:1120px;margin:0 auto;padding:32px;background:#fff;border-radius:44px;box-shadow:0 30px 60px -34px rgba(120,100,60,.3);display:flex;flex-direction:column;gap:20px}
-.hero{position:relative;background:var(--yel);border-radius:32px;padding:30px 44px 30px}
-.kick{font-size:12.5px;letter-spacing:.2em;font-weight:500;color:var(--sub);text-transform:uppercase}
-h1{font-size:clamp(34px,6.6vw,78px);font-weight:600;letter-spacing:-.03em;line-height:1;margin:12px 0 14px;white-space:nowrap}
+.page{width:100%;max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:32px;box-shadow:0 24px 48px -28px rgba(60,70,60,.35),inset 0 1px 0 rgba(255,255,255,.9);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav{display:flex;align-items:center;gap:4px;background:#141414;border-radius:999px;padding:6px;box-shadow:0 14px 28px -16px rgba(0,0,0,.5)}
+.nav a{color:rgba(255,255,255,.75);font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:999px}
+.nav a.on{background:#fff;color:#141414}
+.nav a:hover{color:#fff} .nav a.on:hover{color:#141414}
+.date{font-size:13px;font-weight:600;background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+/* hero */
+.hero{position:relative;padding:34px 40px 30px;overflow:hidden}
+.hero::after{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(221,242,107,.55),transparent 65%);pointer-events:none}
+.kick{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;background:var(--lime);border-radius:999px;padding:6px 14px}
+h1{font-size:clamp(34px,6.4vw,80px);font-weight:600;letter-spacing:-.035em;line-height:1;margin:16px 0 14px;white-space:nowrap}
 h1 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
-.lede{font-size:clamp(16px,1.8vw,20px);color:var(--sub);line-height:1.45}
-.btp{position:absolute;top:24px;right:32px}
-.btp img{display:block;width:180px;height:auto}
-.by{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:22px}
-.by a,.by span{display:flex;align-items:center;justify-content:center;gap:8px;height:44px;background:#fff;border-radius:999px;padding:0 10px;font-size:14px;font-weight:600;white-space:nowrap;transition:background .15s,color .15s}
+.lede{font-size:clamp(16px,1.7vw,20px);color:var(--sub)}
+.btp{position:absolute;top:22px;right:30px;z-index:1}
+.btp img{display:block;width:170px;height:auto}
+.by{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:22px;position:relative;z-index:1}
+.by a,.by span{display:flex;align-items:center;justify-content:center;gap:8px;height:44px;background:#fff;border-radius:999px;padding:0 10px;font-size:14px;font-weight:600;white-space:nowrap;box-shadow:0 6px 14px -10px rgba(0,0,0,.35);transition:background .15s,color .15s}
 .by svg{flex:none}
-.by span{background:var(--char);color:#fff;font-weight:500}
-.by a:hover{background:#151515;color:#fff}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;flex:1;min-height:0}
-.card{position:relative;border-radius:30px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;overflow:hidden;transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translateY(-3px);box-shadow:0 22px 44px -22px rgba(40,40,60,.35)}
-.num{position:absolute;top:14px;right:28px;font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:88px;line-height:1;opacity:.22}
-.card .tag{align-self:flex-start;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;background:#fff}
-.card h2{font-size:clamp(26px,3vw,36px);font-weight:600;letter-spacing:-.02em;line-height:1.08}
-.card p{font-size:15px;color:var(--sub);max-width:440px}
-.card ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.card h2{padding-right:90px}
-.card li{background:rgba(255,255,255,.7);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600}
-.card .go{margin-top:auto;align-self:flex-start;background:#151515;color:#fff;border-radius:999px;padding:11px 22px;font-size:15px;font-weight:600}
-.path{background:linear-gradient(160deg,#F5CFA4 0%,#F8D9E8 55%,#C8E2F7 100%)}
-.talks{background:#151515;color:#fff}
-.talks p{color:rgba(255,255,255,.72)}
-.talks .tag{background:var(--lime);color:#151515}
-.talks li{background:rgba(255,255,255,.12);color:#fff}
-.talks .go{background:var(--lime);color:#151515}
-.talks .num{color:var(--lime);opacity:.5}
-footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:rgba(20,20,20,.55);padding:0 8px}
+.by span{background:#141414;color:#fff;font-weight:500}
+.by a:hover{background:#141414;color:#fff}
+/* feature cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1;min-height:0}
+.card{position:relative;padding:28px 32px;display:flex;flex-direction:column;gap:12px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px)}
+.arr{position:absolute;top:22px;right:22px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#141414;box-shadow:0 8px 18px -10px rgba(0,0,0,.4);transition:transform .2s}
+.card:hover .arr{transform:rotate(45deg)}
+.tag{align-self:flex-start;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:600;background:var(--lav)}
+.card h2{font-size:clamp(26px,3vw,38px);font-weight:600;letter-spacing:-.025em;line-height:1.05;padding-right:60px}
+.card h2 em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+.card p{font-size:15px;color:var(--sub);max-width:420px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:rgba(255,255,255,.85);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600}
+.foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.go{display:inline-flex;align-items:center;gap:10px;background:#141414;color:#fff;border-radius:999px;padding:6px 6px 6px 20px;font-size:14.5px;font-weight:600;white-space:nowrap}
+.go i{width:32px;height:32px;border-radius:50%;background:#fff;color:#141414;display:grid;place-items:center;font-style:normal;font-size:15px}
+.big{flex:none;font-size:clamp(56px,7vw,96px);font-weight:200;letter-spacing:-.05em;line-height:.85}
+.big b{font-weight:200}
+.big small{display:block;font-size:12.5px;font-weight:600;letter-spacing:0;text-align:right;color:var(--sub);margin-top:8px;white-space:nowrap}
+.talks{background:#141414;color:#fff;border-color:#141414}
+.talks p{color:rgba(255,255,255,.7)}
+.talks .tag{background:var(--lime);color:#141414}
+.talks .chips li{background:rgba(255,255,255,.1);color:#fff}
+.talks .go{background:var(--lime);color:#141414}
+.talks .go i{background:#141414;color:var(--lime)}
+.talks .arr{background:var(--lime)}
+.talks .big small{color:rgba(255,255,255,.6)}
+.talks::before{content:"";position:absolute;width:360px;height:360px;left:-120px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(217,210,247,.35),transparent 65%);pointer-events:none}
+footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:rgba(20,20,20,.55);padding:0 10px}
 footer a{text-decoration:underline;text-underline-offset:3px}
-/* one screen on laptops and desktops */
 @media (min-width:900px) and (min-height:660px){
   body{display:flex;align-items:center;min-height:100vh}
-  .wrap{height:min(calc(100vh - 64px),860px)}
-  @media (max-height:860px){body{padding:20px 32px}.wrap{height:calc(100vh - 40px);padding:24px;gap:16px}h1{margin:8px 0 10px}.by{margin-top:16px}}
-  @media (max-height:820px){.card ul{display:none}}
+  .page{height:min(calc(100vh - 56px),880px)}
+  @media (max-height:860px){body{padding:18px 28px}.page{height:calc(100vh - 36px);gap:14px}.cards{gap:14px}h1{margin:12px 0 10px}.by{margin-top:16px}.hero{padding:26px 36px 24px}}
+  @media (max-height:800px){.chips{display:none}.big{font-size:64px}}
 }
-@media (max-width:899px){.btp{position:static;display:inline-block;margin-bottom:12px}.btp img{width:150px}.by{grid-template-columns:repeat(2,minmax(0,1fr))}.by span{grid-column:1/-1}.cards{grid-template-columns:1fr}.card{min-height:300px}footer{justify-content:center;text-align:center}}
-@media (max-width:600px){body{padding:16px}.wrap{padding:16px;border-radius:34px}.hero{padding:26px 20px 22px;border-radius:26px}h1{font-size:clamp(30px,10vw,44px)}.card{padding:24px 20px;border-radius:26px}.num{font-size:64px;right:18px}}
+@media (max-width:899px){.btp{position:static;display:block;width:max-content;margin-bottom:14px}.btp img{width:150px}.by{grid-template-columns:repeat(2,minmax(0,1fr))}.by span{grid-column:1/-1}.cards{grid-template-columns:1fr}.card{min-height:320px}footer{justify-content:center;text-align:center}.date{display:none}}
+@media (max-width:600px){body{padding:14px}.hero{padding:24px 20px 22px}h1{font-size:clamp(30px,10vw,44px)}.card{padding:24px 20px}.nav a{padding:8px 14px;font-size:13px}.nav .lg{display:none}}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <header class="hero">
+<div class="page">
+  <div class="top">
+    <nav class="nav" aria-label="Main"><a class="on" href="./">Hub</a><a href="pathway/"><span class="lg">AI Learning </span>Pathway</a><a href="talks/"><span class="lg">Upcoming AI </span>Talks</a></nav>
+    <span class="date">Free · Updated every week</span>
+  </div>
+
+  <header class="hero glass">
     <a class="btp" href="https://behindprompt.substack.com/" target="_blank" rel="noopener" title="Behind The Prompt newsletter"><img src="assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="210" height="123"></a>
-    <p class="kick">Free AI learning</p>
+    <span class="kick">Free AI learning</span>
     <h1>AI Learning <em>Hub</em></h1>
     <p class="lede">Learn AI and agents step by step.<br>Find the best AI talks every week.</p>
     <div class="by"><span>Created by Weiwei Hu</span><a href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a><a href="https://github.com/wei-wei-hu/ai-learning-hub" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a><a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a><a href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Newsletter</a></div>
   </header>
 
   <section class="cards">
-    <a class="card path" href="pathway/">
-      <span class="num" aria-hidden="true">01</span>
-      <span class="tag">Free course</span>
-      <h2>AI Learning Pathway</h2>
-      <p>22 lessons in 5 tracks from official OpenAI and Anthropic courses. Pick your role and track your progress.</p>
-      <ul><li>AI at Work</li><li>Management</li><li>Leadership</li><li>Engineering</li><li>Safety</li></ul>
-      <span class="go">Start learning ›</span>
+    <a class="card glass path" href="pathway/">
+      <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+      <span class="tag">01 · Free course</span>
+      <h2>AI Learning <em>Pathway</em></h2>
+      <p>Lessons from official OpenAI and Anthropic courses. Pick your role and track your progress.</p>
+      <ul class="chips"><li>AI at Work</li><li>Management</li><li>Leadership</li><li>Engineering</li><li>Safety</li></ul>
+      <div class="foot"><span class="go">Start learning <i>›</i></span><span class="big">22<small>lessons · 5 tracks</small></span></div>
     </a>
-    <a class="card talks" href="talks/">
-      <span class="num" aria-hidden="true">02</span>
-      <span class="tag">New · every week</span>
-      <h2>Upcoming AI Talks</h2>
+    <a class="card glass talks" href="talks/">
+      <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+      <span class="tag">02 · New every week</span>
+      <h2>Upcoming AI <em>Talks</em></h2>
       <p>Free AI talks, keynotes and webinars, checked every week, with top picks marked. All times Pacific.</p>
-      <ul><li>Keynotes</li><li>Webinars</li><li>Free courses</li></ul>
-      <span class="go">See this week's talks ›</span>
+      <ul class="chips"><li>Keynotes</li><li>Webinars</li><li>Free courses</li></ul>
+      <div class="foot"><span class="go">See this week's talks <i>›</i></span><span class="big" id="tcount" hidden><b>8</b><small>upcoming talks</small></span></div>
     </a>
   </section>
 
@@ -100,6 +125,13 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <span>Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · © 2026 Weiwei Hu. All rights reserved.</span>
     <span>Independent guide, not affiliated with OpenAI, Anthropic or the event hosts · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener">Give feedback</a></span>
   </footer>
-</main>
+</div>
+<script>
+fetch("talks/data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+  var t=new Date(),k=t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");
+  var n=(d.talks||[]).filter(x=>x.date>=k).length, el=document.getElementById("tcount");
+  if(n>0){el.querySelector("b").textContent=n;el.querySelector("small").textContent=n==1?"upcoming talk":"upcoming talks";el.hidden=false;}
+}).catch(()=>{});
+</script>
 </body>
 </html>
