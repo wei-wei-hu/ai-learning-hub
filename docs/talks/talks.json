@@ -2,6 +2,21 @@
  "updated": "2026-11-22",
  "talks": [
   {
+   "date": "2026-11-29",
+   "sort": "1",
+   "start": "12:00 PM",
+   "end": "6:00 PM",
+   "format": "livestream",
+   "host": "AWS",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "Road to re:Invent: Live Hackathon",
+   "short": "Road to re:Invent",
+   "url": "https://aws.amazon.com/events/reinvent/livestream/",
+   "desc": "A live hackathon tournament the day before re:Invent opens, with Jeff Barr and Swami Sivasubramanian."
+  },
+  {
    "date": "2026-11-30",
    "sort": "1",
    "start": "8:00 AM",
@@ -111,6 +126,21 @@
   },
   {
    "date": "2026-12-08",
+   "sort": "0",
+   "start": "5:30 AM",
+   "end": "6:30 AM",
+   "format": "livestream",
+   "host": "Microsoft",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "Ignite 2026: What's New, What's Next?",
+   "short": "Ignite 2026 recap",
+   "url": "https://developer.microsoft.com/en-us/reactor/events/27795/",
+   "desc": "A walkthrough of Microsoft's Ignite announcements on AI, Copilot, Azure and security, and what comes next."
+  },
+  {
+   "date": "2026-12-08",
    "sort": "1",
    "start": "9:00 AM",
    "end": "9:45 AM",
@@ -123,6 +153,21 @@
    "short": "Government IT Modernization",
    "url": "https://claude.com/resources/webinars/best-practices-for-government-it-modernization-with-claude",
    "desc": "A government technology leader on modernizing a legacy system with Claude, and how to do it securely."
+  },
+  {
+   "date": "2026-12-10",
+   "sort": "1",
+   "start": "8:00 AM",
+   "end": "9:00 AM",
+   "format": "livestream",
+   "host": "Microsoft",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "AI @Work Live: Real People, Real Projects, Real AI",
+   "short": "AI @Work Live",
+   "url": "https://developer.microsoft.com/en-us/reactor/events/27703/",
+   "desc": "People share real AI projects from their work and what they learned along the way."
   }
  ],
  "courses": [
