@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "talks": [
   {
    "date": "2026-11-29",
@@ -80,19 +80,18 @@
    "why": "Getting company data ready is often the hardest part of an AI project. Here two large companies show how they connected theirs to AI agents. Watch it if you lead a data, analytics or AI team."
   },
   {
-   "date": "2026-12-02",
-   "sort": "2",
-   "start": "3:00 PM",
-   "end": "4:00 PM",
+   "date": "2026-12-03",
+   "sort": "0",
+   "start": "7:00 AM",
    "format": "livestream",
-   "host": "AWS",
+   "host": "Salesforce",
    "tags": [
     "Free stream"
    ],
-   "title": "re:Invent Partner Keynote",
-   "short": "re:Invent Partner Keynote",
-   "url": "https://aws.amazon.com/events/reinvent/livestream/",
-   "desc": "Ruba Borno and Matt Garman on working with AWS partners, with Marriott International and Presidio."
+   "title": "Salesforce World Tour New York",
+   "short": "Salesforce World Tour NYC",
+   "url": "https://www.salesforce.com/plus/experience/world_tour_nyc_winter_2026",
+   "desc": "The main keynote streams free on Salesforce+, with news on Agentforce, Slack and Salesforce with Claude. Free registration."
   },
   {
    "date": "2026-12-03",
@@ -143,7 +142,7 @@
    "date": "2026-12-08",
    "sort": "1",
    "start": "9:00 AM",
-   "end": "9:45 AM",
+   "end": "10:00 AM",
    "format": "webinar",
    "host": "Anthropic",
    "tags": [
@@ -168,6 +167,21 @@
    "short": "AI @Work Live",
    "url": "https://developer.microsoft.com/en-us/reactor/events/27703/",
    "desc": "People share real AI projects from their work and what they learned along the way."
+  },
+  {
+   "date": "2026-12-15",
+   "sort": "0",
+   "start": "5:30 AM",
+   "end": "6:30 AM",
+   "format": "livestream",
+   "host": "Microsoft",
+   "tags": [
+    "Free stream"
+   ],
+   "title": "Frontier Transformation: Reimagining Business with the New Microsoft 365 Copilot",
+   "short": "Microsoft 365 Copilot for business",
+   "url": "https://developer.microsoft.com/en-us/reactor/events/27796/",
+   "desc": "How teams move from AI-assisted work to agents with the new Microsoft 365 Copilot, Copilot Cowork and Autopilot."
   }
  ],
  "courses": [
