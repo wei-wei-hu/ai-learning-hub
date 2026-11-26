@@ -21,6 +21,7 @@ In 2026 both providers launched hosted agent runtimes: OpenAI's Agents API and A
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Introducing the Agents API](https://openai.com/index/introducing-the-agents-api/) | Article | Intermediate | Managed Codex harness with sandbox choices |
+| [Agents API docs](https://developers.openai.com/api/docs/guides/agents-api/overview) | Docs | Intermediate | Sessions, tools, environments and pricing |
 | [openai/symphony](https://github.com/openai/symphony) | Repo | Advanced | Run autonomous Codex agents from a Linear board |
 
 ## Learn from Anthropic
@@ -29,6 +30,7 @@ In 2026 both providers launched hosted agent runtimes: OpenAI's Agents API and A
 |---|---|---|---|
 | [Claude Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview) | Docs | Intermediate | Hosted harness for long-running work |
 | [Managed Agents quickstart](https://platform.claude.com/docs/en/managed-agents/quickstart) | Docs | Intermediate | Your first hosted agent session |
+| [Building always-on agents](https://claude.com/resources/articles/building-always-on-agents) | Article | Advanced | Inbox, timers, memory, permissions and outbox |
 | [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Article | Advanced | Working across many context windows |
 
 ## Try it

@@ -28,6 +28,7 @@ Long tasks fail when agents lose track of what they already did. Both providers 
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Article | Intermediate | Manage limited attention across long tasks |
+| [The components of agent memory](https://www.anthropic.com/research/components-of-agent-memory) | Article | Advanced | What agents should remember, and how dreaming helps |
 | [Memory tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool) | Docs | Intermediate | Store and read information across conversations |
 
 ## Try it

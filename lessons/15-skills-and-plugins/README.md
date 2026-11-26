@@ -21,7 +21,7 @@ Skills capture how your team does a job, so an agent can repeat it consistently.
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Agent Skills in Codex](https://developers.openai.com/codex/skills) | Docs | Intermediate | SKILL.md folders that load only when needed |
-| [Build a Codex plugin](https://developers.openai.com/codex/plugins/build) | Docs | Intermediate | Bundle skills, MCP servers, apps and hooks |
+| [Package your plugin](https://developers.openai.com/plugins/build/plugins) | Docs | Intermediate | Bundle skills and MCP servers in one plugin |
 | [openai/skills](https://github.com/openai/skills) | Repo | Beginner | Official skills catalog |
 | [openai/plugins](https://github.com/openai/plugins) | Repo | Intermediate | Official plugins |
 

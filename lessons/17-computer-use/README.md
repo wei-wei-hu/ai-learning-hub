@@ -21,8 +21,9 @@ Many systems have no API, so agents need to use them the way people do. That pow
 | Resource | Type | Level | What you get |
 |---|---|---|---|
 | [Computer use guide](https://developers.openai.com/api/docs/guides/tools-computer-use) | Docs | Advanced | Operate interfaces through screenshots and actions |
-| [Computer use topic hub](https://developers.openai.com/topics/cua) | Hub | Advanced | Guides and demos |
+| [Computer use hub](https://developers.openai.com/learn/cua) | Hub | Advanced | Guides and demos |
 | [Hardening ChatGPT Atlas against prompt injection](https://openai.com/index/hardening-atlas-against-prompt-injection) | Article | Intermediate | Finding and fixing attacks on browser agents |
+| [Inside the Codex sandbox](https://openai.com/index/inside-the-codex-sandbox/) | Article | Advanced | How Codex limits files and network on your machine |
 
 ## Learn from Anthropic
 

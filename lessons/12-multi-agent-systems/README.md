@@ -14,14 +14,14 @@
 
 ## Why it matters
 
-Splitting work across agents can improve quality and speed, and it can also multiply cost and confusion. Anthropic's research system and OpenAI's orchestration recipes show both sides. The goal is to know which problems actually benefit.
+Splitting work across agents can improve quality and speed, and it can also multiply cost and confusion. Anthropic's research system shows the gains, and its guide on folding subagents back into one loop shows the costs. The goal is to know which problems actually benefit.
 
 ## Learn from OpenAI
 
 | Resource | Type | Level | What you get |
 |---|---|---|---|
-| [Orchestration and handoffs recipes](https://developers.openai.com/resources/cookbooks) | Cookbook | Intermediate | Agent orchestration, handoffs, multi-tool |
-| [Deep Research API with the Agents SDK](https://learn.chatgpt.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api_agents) | Cookbook | Advanced | Agentic research workflows |
+| [Design and Build Agentic Systems](https://academy.openai.com/pages/courses) | Course | Intermediate | Defined roles, controlled tools, safe handoffs · 110 min |
+| [Deep Research API with the Agents SDK](https://developers.openai.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api_agents) | Cookbook | Advanced | Agentic research workflows (archived recipe) |
 
 ## Learn from Anthropic
 
@@ -29,6 +29,7 @@ Splitting work across agents can improve quality and speed, and it can also mult
 |---|---|---|---|
 | [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Article | Intermediate | Lessons from Claude's Research feature |
 | [Introduction to Subagents](https://anthropic.skilljar.com/) | Course | Intermediate | Use subagents to manage context and delegate |
+| [When to fold subagents into your main agent loop](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop) | Article | Intermediate | When one agent loop beats many subagents |
 
 ## Try it
 

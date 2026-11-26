@@ -37,10 +37,10 @@
     ],
     [
      "OpenAI developer docs",
-     "https://developers.openai.com/topics/agents",
+     "https://developers.openai.com/learn/agents",
      "Hub",
      "Beginner",
-     "API, Agents SDK, Codex and Apps SDK docs"
+     "API, Agents SDK, Codex and plugin docs"
     ],
     [
      "OpenAI Cookbook",
@@ -622,7 +622,7 @@
      "https://developers.openai.com/api/docs/guides/voice-agents",
      "Docs",
      "Intermediate",
-     "Voice-first agents with realtime models"
+     "Voice agents with GPT-Live or the Realtime API"
     ]
    ],
    "anthropic": [
@@ -749,21 +749,21 @@
     "Explain when parallel agents speed things up and when they waste tokens",
     "Design a two-agent system with a clear division of work"
    ],
-   "why": "Splitting work across agents can improve quality and speed, and it can also multiply cost and confusion. Anthropic's research system and OpenAI's orchestration recipes show both sides. The goal is to know which problems actually benefit.",
+   "why": "Splitting work across agents can improve quality and speed, and it can also multiply cost and confusion. Anthropic's research system shows the gains, and its guide on folding subagents back into one loop shows the costs. The goal is to know which problems actually benefit.",
    "openai": [
     [
-     "Orchestration and handoffs recipes",
-     "https://developers.openai.com/resources/cookbooks",
-     "Cookbook",
+     "Design and Build Agentic Systems",
+     "https://academy.openai.com/pages/courses",
+     "Course",
      "Intermediate",
-     "Agent orchestration, handoffs, multi-tool"
+     "Defined roles, controlled tools, safe handoffs · 110 min"
     ],
     [
      "Deep Research API with the Agents SDK",
-     "https://learn.chatgpt.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api_agents",
+     "https://developers.openai.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api_agents",
      "Cookbook",
      "Advanced",
-     "Agentic research workflows"
+     "Agentic research workflows (archived recipe)"
     ]
    ],
    "anthropic": [
@@ -780,6 +780,13 @@
      "Course",
      "Intermediate",
      "Use subagents to manage context and delegate"
+    ],
+    [
+     "When to fold subagents into your main agent loop",
+     "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+     "Article",
+     "Intermediate",
+     "When one agent loop beats many subagents"
     ]
    ],
    "try": [
@@ -831,6 +838,13 @@
      "Manage limited attention across long tasks"
     ],
     [
+     "The components of agent memory",
+     "https://www.anthropic.com/research/components-of-agent-memory",
+     "Article",
+     "Advanced",
+     "What agents should remember, and how dreaming helps"
+    ],
+    [
      "Memory tool",
      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
      "Docs",
@@ -864,18 +878,18 @@
    "why": "MCP is the shared standard both providers support for connecting models to outside systems. Build an integration once and it works across many AI products. That makes it one of the highest-leverage skills in this course.",
    "openai": [
     [
-     "Apps SDK",
-     "https://developers.openai.com/apps-sdk",
+     "Plugins for ChatGPT and Codex",
+     "https://developers.openai.com/plugins",
      "Docs",
      "Intermediate",
-     "Apps that run inside ChatGPT, built on MCP"
+     "Skills, MCP servers and optional UI"
     ],
     [
-     "MCP Apps in ChatGPT",
-     "https://developers.openai.com/apps-sdk/mcp-apps-in-chatgpt",
+     "Add UI to your MCP server",
+     "https://developers.openai.com/plugins/build/chatgpt-ui",
      "Docs",
      "Advanced",
-     "Build to the open MCP Apps standard first"
+     "MCP Apps standard plus ChatGPT extras"
     ]
    ],
    "anthropic": [
@@ -906,6 +920,13 @@
      "Docs",
      "Intermediate",
      "The open standard's official site"
+    ],
+    [
+     "MCP 2026-07-28: stateless core",
+     "https://claude.com/resources/articles/bringing-mcp-2026-07-28-to-claude",
+     "Article",
+     "Intermediate",
+     "What the latest spec changes for builders"
     ]
    ],
    "try": [
@@ -918,7 +939,7 @@
     "What should you check before connecting a third-party MCP server?",
     "Which internal system would you expose through MCP first, and why?"
    ],
-   "compare": "MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's Apps SDK focuses on integrating applications into ChatGPT. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server."
+   "compare": "MCP provides a common standard for connecting AI applications to tools and data. Anthropic's resources are useful for learning how to create MCP servers and clients, while OpenAI's plugin docs focus on bringing MCP servers into ChatGPT and Codex. Start with the systems your users already use, then verify client compatibility, authentication, permissions, and security before deploying a shared MCP server."
   },
   {
    "slug": "15-skills-and-plugins",
@@ -944,11 +965,11 @@
      "SKILL.md folders that load only when needed"
     ],
     [
-     "Build a Codex plugin",
-     "https://developers.openai.com/codex/plugins/build",
+     "Package your plugin",
+     "https://developers.openai.com/plugins/build/plugins",
      "Docs",
      "Intermediate",
-     "Bundle skills, MCP servers, apps and hooks"
+     "Bundle skills and MCP servers in one plugin"
     ],
     [
      "openai/skills",
@@ -1115,8 +1136,8 @@
      "Operate interfaces through screenshots and actions"
     ],
     [
-     "Computer use topic hub",
-     "https://developers.openai.com/topics/cua",
+     "Computer use hub",
+     "https://developers.openai.com/learn/cua",
      "Hub",
      "Advanced",
      "Guides and demos"
@@ -1127,6 +1148,13 @@
      "Article",
      "Intermediate",
      "Finding and fixing attacks on browser agents"
+    ],
+    [
+     "Inside the Codex sandbox",
+     "https://openai.com/index/inside-the-codex-sandbox/",
+     "Article",
+     "Advanced",
+     "How Codex limits files and network on your machine"
     ]
    ],
    "anthropic": [
@@ -1178,6 +1206,13 @@
      "Managed Codex harness with sandbox choices"
     ],
     [
+     "Agents API docs",
+     "https://developers.openai.com/api/docs/guides/agents-api/overview",
+     "Docs",
+     "Intermediate",
+     "Sessions, tools, environments and pricing"
+    ],
+    [
      "openai/symphony",
      "https://github.com/openai/symphony",
      "Repo",
@@ -1199,6 +1234,13 @@
      "Docs",
      "Intermediate",
      "Your first hosted agent session"
+    ],
+    [
+     "Building always-on agents",
+     "https://claude.com/resources/articles/building-always-on-agents",
+     "Article",
+     "Advanced",
+     "Inbox, timers, memory, permissions and outbox"
     ],
     [
      "Effective harnesses for long-running agents",
@@ -1265,6 +1307,13 @@
      "Article",
      "Intermediate",
      "Rigorous evals for multi-turn agents"
+    ],
+    [
+     "Building strong safety evaluations",
+     "https://www.anthropic.com/research/building-strong-safety-evaluations",
+     "Article",
+     "Advanced",
+     "Design, run and report safety evals"
     ],
     [
      "AI Fluency for Builders",
