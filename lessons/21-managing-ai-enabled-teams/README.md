@@ -50,4 +50,4 @@ Most AI adoption happens one team at a time, and managers decide how it lands. A
 
 [← Lesson 20: Safety, Security and Governance](../20-safety-security-and-governance/README.md) · [Course home](../../README.md) · [Lesson 22: Leading AI Adoption →](../22-leading-ai-adoption/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

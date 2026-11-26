@@ -1,4 +1,4 @@
-# Contributing to AI Learning Path
+# Contributing to AI Learning Hub
 
 Thank you for helping more people learn AI from trustworthy sources. This guide explains what to contribute and how.
 

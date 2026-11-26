@@ -48,4 +48,4 @@ OpenAI and Anthropic each publish courses, docs, cookbooks and research, but the
 
 [Course home](../../README.md) · [Lesson 2: AI Foundations →](../02-ai-foundations/README.md)
 
-*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-path/).*
+*Track your progress in the [interactive learning path](https://wei-wei-hu.github.io/ai-learning-hub/pathway/).*

@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index, follow, noai, noimageai">
+<meta name="copyright" content="© 2026 Weiwei Hu. All rights reserved.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Upcoming AI Talks · AI Learning Hub</title>
+<meta name="description" content="Free AI talks and webinars, checked every week. All times PST. From AI Learning Hub by Weiwei Hu.">
+<meta property="og:title" content="Upcoming AI Talks · AI Learning Hub">
+<meta property="og:url" content="https://wei-wei-hu.github.io/ai-learning-hub/talks/">
+<link rel="canonical" href="https://wei-wei-hu.github.io/ai-learning-hub/talks/">
+<meta property="og:description" content="Free AI talks and webinars, checked every week.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%2216%22 fill=%22%23E4F27A%22/%3E%3Ctext x=%2216%22 y=%2221%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2214%22 font-weight=%22700%22 fill=%22%23151515%22%3EAI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Montserrat:wght@200;300;400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  /* AI Learning Hub: Upcoming AI Talks */
+  --ink:#151515; --text:#4A4A50; --muted:#7C7F88; --line:#E6E2EA; --card:#fff;
+  --bg1:#E6ECE3; --bg2:#D9E0D8; --bg3:#E4E0F0;
+  /* color blocks from the design references */
+  --lime:#E4F27A; --lime-2:#F4FAC8; --lime-ink:#4B5600;
+  --lav:#E6E0F8; --lav-ink:#5A4A9A;
+  --sage:#D7E6D9; --sage-ink:#2F5A3E;
+  --sky:#CFE3F1; --sky-2:#EAF3FA; --sky-ink:#2C5877;
+  --slab:Montserrat,system-ui,sans-serif; --body:Montserrat,system-ui,sans-serif; --serif:"Instrument Serif",Georgia,serif;
+  --shadow:0 16px 40px -18px rgba(60,40,80,.28);
+}
+*{box-sizing:border-box}
+html{background:var(--bg1);scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:var(--body);color:var(--ink);font-size:16px;line-height:1.55;background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 45%,var(--bg3) 100%);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1104px;margin:0 auto;padding:40px 56px 80px;overflow:hidden}
+@media (max-width:900px){.wrap{padding:28px 32px 64px}}
+@media (max-width:600px){.wrap{padding-left:16px;padding-right:16px}}
+h1,h2,h3{font-family:var(--slab);margin:0;color:var(--ink)}
+h1 b,h2 b,h3 b{font-weight:700}
+
+/* nav */
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:44px;height:44px;border-radius:50%;background:#151515;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06);flex:none}
+.brand .wm{font-family:var(--slab);font-weight:300;font-size:24px;color:var(--ink)}
+.brand .wm b{font-weight:700}
+.brand .btp{height:56px;width:auto;display:block}
+@media (max-width:480px){.brand .btp{height:44px}}
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 18px;border-radius:999px;font:500 14px var(--body);text-decoration:none;white-space:nowrap;cursor:pointer;background:#fff;color:#151515;border:1px solid #151515;transition:transform .15s}
+.pill:hover{transform:translateY(-1px)}
+.pill.dark{background:#151515;color:#fff}
+.pill.lime{background:var(--lime);border-color:var(--lime)}
+.pill.big{height:52px;padding:0 24px;font-size:15px}
+.pill i{font-style:normal}
+.nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.nav .short{display:none}
+@media (max-width:600px){.brand .wm{display:none}}
+@media (max-width:720px){.nav{grid-template-columns:repeat(2,auto)}.nav .long{display:none}.nav .short{display:inline}}
+@media (max-width:480px){.nav{gap:6px}.nav .pill{padding:0 11px;font-size:13px;height:40px}}
+@media (max-width:720px){.nav .hide-sm{display:none}.brand .wm{font-size:20px}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:36px;align-items:center;padding:48px 0 30px}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:28px;padding-top:32px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:#4A3C3A;margin:0 0 16px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#2FB67A;box-shadow:0 0 0 4px rgba(47,182,122,.18)}
+.hero h1{font-weight:300;font-size:clamp(44px,7vw,76px);line-height:1.03;letter-spacing:-.01em}
+.lede{font-size:18px;color:var(--text);max-width:520px;margin:18px 0 24px}
+.signup{display:flex;gap:6px;background:#fff;border:1px solid #151515;padding:5px;border-radius:999px;max-width:500px}
+.signup input{flex:1 1 180px;min-width:0;border:0;background:transparent;font:inherit;font-size:16px;padding:0 16px;outline:none}
+.signup .pill{border:0}
+.signup:focus-within{box-shadow:0 0 0 3px var(--lime)}
+@media (max-width:480px){.signup{flex-direction:column;border-radius:26px}.signup input{flex:none;padding:12px 14px}.signup .pill{width:100%}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#signup-msg{margin:10px 4px 0;font-size:15px;color:var(--text)}
+.sub-link{display:inline-block;margin-top:14px;font-size:15px;font-weight:600;border-bottom:1.5px solid currentColor;text-decoration:none}
+
+/* hero collage: layered floating cards */
+.collage{position:relative;height:400px}
+.fc{position:absolute;border-radius:28px;padding:20px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9)}
+.fc small{display:block;font-size:13px;color:var(--muted)}
+.fc .n{font-family:var(--slab);font-weight:300;font-size:84px;line-height:.9;letter-spacing:-.03em}
+.fc-a{left:4%;top:0;width:70%;height:260px;background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.fc-a .bars{position:absolute;left:20px;right:20px;bottom:18px;display:flex;align-items:flex-end;gap:8px;height:74px}
+.fc-a .bars span{flex:1;background:#151515;border-radius:8px 8px 4px 4px;opacity:.85}
+.fc-a .bars span.off{background:rgba(21,21,21,.12)}
+.fc-a .days{position:absolute;left:20px;right:20px;bottom:-2px;display:flex;gap:8px;font-size:11px;color:var(--lime-ink)}
+.fc-a .days b{flex:1;text-align:center;font-weight:600}
+.fc-b{right:0;top:28px;width:44%;background:#fff;text-align:center}
+.ring{--p:40;width:120px;height:120px;border-radius:50%;margin:8px auto 6px;background:conic-gradient(#151515 calc(var(--p)*1%),var(--sky) 0);display:grid;place-items:center}
+.ring::before{content:"";grid-area:1/1;width:92px;height:92px;border-radius:50%;background:#fff}
+.ring b{grid-area:1/1;font-family:var(--slab);font-size:30px;font-weight:600}
+.fc-c{right:0;left:auto;bottom:0;width:62%;background:var(--lav)}
+.fc-c .row{display:flex;align-items:center;gap:12px;margin-top:8px}
+.fc-c .num{font-family:var(--slab);font-size:48px;font-weight:300;line-height:.9}
+.fc-c b{display:block;font-weight:600;line-height:1.3}
+.fc-d{right:2%;bottom:34px;width:38%;background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.09) 1.5px,transparent 1.5px);background-size:13px 13px}
+.fc-d small{color:#B9BCC4}
+.fc-d .n{font-size:56px;color:var(--lime)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 11px;border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tag.dark{background:#151515;color:#fff}
+.tag.lime{background:var(--lime);color:var(--lime-ink)}
+.tag.lav{background:var(--lav);color:var(--lav-ink)}
+.tag.sage{background:var(--sage);color:var(--sage-ink)}
+.tag.sky{background:var(--sky);color:var(--sky-ink)}
+@media (max-width:560px){.collage{height:330px}.fc .n{font-size:64px}.ring{width:96px;height:96px}.ring::before{width:72px;height:72px}.ring b{font-size:24px}.fc-a{left:0;width:82%;height:220px}.fc-b{width:46%}.fc-c{width:80%}.fc-d{width:44%}.fc{padding:16px}}
+
+/* hero tiles: aligned two-tile grid */
+.hgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-self:center;height:400px}
+.ht{border-radius:28px;padding:22px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:flex;flex-direction:column;gap:6px;min-height:340px}
+.ht .tag{align-self:flex-start}
+.ht-num{font-family:var(--slab);font-weight:300;font-size:96px;line-height:.9;letter-spacing:-.04em;margin-top:18px}
+.ht-cap{margin:0;font-size:14px;color:var(--text)}
+.ht-count{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.ht-count .ht-cap{color:var(--lime-ink)}
+.ht-bars{margin-top:auto;display:flex;gap:6px;height:96px;align-items:stretch}
+.ht-bars div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.ht-bars span{width:100%;border-radius:8px 8px 4px 4px;background:rgba(21,21,21,.12)}
+.ht-bars .on span{background:#151515}
+.ht-bars b{font-size:11px;font-weight:600;color:var(--lime-ink)}
+.ht-next{background:var(--lav)}
+.ht-next>.tag{background:#fff;color:var(--lav-ink)}
+.ht-title{margin-top:auto;font-family:var(--slab);font-weight:600;font-size:20px;line-height:1.25}
+.ht-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.ht-meta .tag{align-self:auto}
+@media (max-width:560px){.hgrid{height:auto}.ht{min-height:260px;padding:18px}.ht-num{font-size:68px;margin-top:12px}.ht-title{font-size:17px}.ht-bars{height:70px}}
+
+/* sections */
+.sec{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:44px 0 18px}
+.sec h2{font-weight:300;font-size:clamp(30px,4.5vw,44px);line-height:1.1}
+.sec p{margin:0;color:var(--muted);font-size:15px}
+
+/* talk cards */
+.talks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.talks{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:28px;padding:24px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);min-width:0}
+.talk{display:grid;gap:12px;align-content:start}
+.talk.pick{background:linear-gradient(170deg,var(--lime-2) 0%,#fff 60%)}
+.talk.sky{background:linear-gradient(170deg,var(--sky-2) 0%,#fff 60%)}
+.when{display:flex;align-items:flex-end;gap:14px}
+.when .num{font-family:var(--slab);font-weight:300;font-size:64px;line-height:.82;letter-spacing:-.03em}
+.when div{display:grid;font-size:14px;color:var(--muted);line-height:1.3}
+.when div b{color:var(--ink);font-weight:600}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags .tag{background:#F2EFF4}
+.tags .tag.dark{background:#151515}
+.tags .tag.lime{background:var(--lime)}
+.talk h3{font-size:20px;font-weight:600;line-height:1.3}
+.talk h3 a{text-decoration:none;background-image:linear-gradient(var(--lime),var(--lime));background-size:100% 7px;background-repeat:no-repeat;background-position:0 92%}
+.talk p{margin:0}
+.take{color:var(--text)}
+.why{margin-top:12px;padding:12px 16px;border-radius:16px;background:rgba(255,255,255,.7);color:var(--ink);font-size:.95em}
+.why b{display:block;font-size:.78em;letter-spacing:.08em;text-transform:uppercase;color:var(--lime-ink);margin-bottom:3px}
+.why{font-size:15px;background:rgba(246,240,228,.7);border-radius:18px;padding:12px 14px}
+.unv{font-size:14px;color:#8a5a00}
+.wide{grid-column:1/-1}
+
+/* hero bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.bento>*{grid-column:span 3}
+.bento .s2{grid-column:span 2}.bento .s4{grid-column:span 4}
+@media (max-width:860px){.bento>*,.bento .s2,.bento .s4{grid-column:1/-1}}
+.blk{border-radius:28px;padding:24px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:grid;gap:12px;align-content:start;position:relative;min-width:0}
+.blk h3{font-size:24px;font-weight:300;line-height:1.2}
+.blk p{margin:0}
+.blk .lock{position:absolute;top:20px;right:20px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.85);display:grid;place-items:center}
+.b-dark{background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.08) 1.5px,transparent 1.5px);background-size:14px 14px}
+.b-dark h3{color:#fff}.b-dark p{color:#C4C7CE}
+.b-dark .lock{background:rgba(255,255,255,.12)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:4px}
+.cal span{aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.07);display:grid;place-items:center;font-size:12px;color:#9EA2AA}
+.cal span.on{background:var(--lime);color:#151515;font-weight:700}
+.b-lime{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.b-lime .big{font-family:var(--slab);font-weight:300;font-size:96px;line-height:.85;letter-spacing:-.03em}
+.b-lime .big small{font-size:22px;letter-spacing:0;font-family:var(--body);font-weight:600}
+.week{display:flex;gap:6px}
+.week span{flex:1;text-align:center;font-size:12px;font-weight:600;padding:8px 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.week span.on{background:#151515;color:var(--lime)}
+.b-lav{background:var(--lav)}
+.recap{background:rgba(255,255,255,.8);border-radius:20px;padding:14px 16px;display:grid;gap:4px}
+.recap .meta{font-size:13px;color:var(--lav-ink);font-weight:600}
+.recap b{font-family:var(--slab);font-weight:600;font-size:16px;line-height:1.3}
+.recap p{font-size:15px;color:var(--text)}
+.recap a{font-size:14px;color:var(--lav-ink);font-weight:600}
+.b-sage{background:var(--sage)}
+.conf{background:rgba(255,255,255,.75);border-radius:20px;padding:16px;display:grid;gap:4px}
+.conf .range{font-family:var(--slab);font-weight:300;font-size:34px;line-height:1;letter-spacing:-.02em}
+.conf b{font-weight:600}
+.conf a{text-decoration:none;border-bottom:1.5px solid currentColor}
+.conf p{font-size:15px;color:var(--text)}
+.note{font-size:13px;color:var(--muted);margin:0}
+
+/* get the list */
+.getlist{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:34px;background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.getlist h2{font-weight:300;font-size:clamp(24px,3vw,32px);line-height:1.15;max-width:22ch}
+.getlist .sec-sub{margin:8px 0 0}
+.save{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.7);border-radius:20px;padding:12px 14px}
+.save .ring{--p:17;width:58px;height:58px;margin:0;background:conic-gradient(#151515 calc(var(--p)*1%),#fff 0)}
+.save .ring::before{width:42px;height:42px;background:#EAF3FA}
+.save .ring b{font-size:13px}
+.save p{margin:0;font-size:14px;color:var(--text)}
+
+.about{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:44px}
+@media (max-width:560px){.about{grid-template-columns:1fr}}
+.about .logo{width:60px;height:60px}
+.about p{margin:0}
+footer{font-size:13px;color:var(--muted);text-align:center;padding-top:28px}
+/* footer */
+.closer{padding:40px 0 10px;text-align:center}
+.follow-label{margin:0 0 16px;font-family:var(--slab);font-weight:600;font-size:24px;color:#151515}
+.social-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:760px;margin:0 auto}
+.social-pill{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:13px 20px;white-space:nowrap;border-radius:999px;background:#151515;color:#fff;font:500 15px var(--body);text-decoration:none;box-shadow:0 10px 22px rgba(0,0,0,.18)}
+.social-pill span{width:22px;height:22px;border-radius:50%;background:#fff;color:#151515;display:grid;place-items:center;font-size:13px}
+.social-pill:hover{transform:translateY(-1px)}
+@media (max-width:680px){.social-row{max-width:360px}}
+.foot{margin:26px 0 0;font-size:13px;color:#8C8C92}
+.foot.legal{max-width:640px;margin:8px auto 0;font-size:11.5px;line-height:1.5;opacity:.85}
+/* timeline */
+.talks.tl{display:block;position:relative;padding:8px 0}
+.talks.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:linear-gradient(#151515 0%,#151515 85%,rgba(21,21,21,0) 100%);border-radius:2px}
+.talks.tl .talk{position:relative;width:calc(50% - 44px);margin:0}
+.talks.tl .talk+.talk{margin-top:-70px}
+.talks.tl .talk:nth-child(odd){margin-right:auto}
+.talks.tl .talk:nth-child(even){margin-left:auto}
+.talks.tl .talk::before{content:"";position:absolute;top:44px;width:44px;height:2px;background:#151515}
+.talks.tl .talk:nth-child(odd)::before{right:-44px}
+.talks.tl .talk:nth-child(even)::before{left:-44px}
+.talks.tl .talk::after{content:"";position:absolute;top:35px;width:20px;height:20px;border-radius:50%;background:var(--lime);border:3px solid #151515;box-sizing:border-box}
+.talks.tl .talk:nth-child(odd)::after{right:-54px}
+.talks.tl .talk:nth-child(even)::after{left:-54px}
+.talks.tl .talk h3 a::after{content:"";position:absolute;inset:0;border-radius:28px}
+.talks.tl .talk{transition:transform .15s,box-shadow .15s}
+.talks.tl .talk:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.talks.tl .wide{grid-column:auto}
+@media (max-width:760px){
+  .talks.tl{padding-left:30px}
+  .talks.tl::before{left:9px}
+  .talks.tl .talk,.talks.tl .talk:nth-child(even),.talks.tl .talk:nth-child(odd){width:100%;margin:0}
+  .talks.tl .talk+.talk{margin-top:16px}
+  .talks.tl .talk:nth-child(n)::before{left:-21px;right:auto;width:21px}
+  .talks.tl .talk:nth-child(n)::after{left:-31px;right:auto}
+}
+a:focus-visible,button:focus-visible{outline:2px solid #151515;outline-offset:3px}
+.sec .sec-sub{margin-top:8px!important;flex-basis:100%;margin:2px 0 0;font-size:19px;color:var(--text);max-width:640px}
+[hidden]{display:none!important}
+.join{max-width:440px;border-radius:28px;background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.9);box-shadow:0 22px 46px -24px rgba(60,40,80,.35);padding:18px;backdrop-filter:blur(6px)}
+.join-top{display:flex;align-items:center;gap:10px;margin:0 0 12px 2px}
+.join-top .tag{background:#F2EFF4}
+.join-k{font-size:14px;color:var(--muted)}
+.join .signup{max-width:none;border:1px solid rgba(21,21,21,.18);background:#fff}
+.join .signup input{padding:0 12px;font-size:15px}
+.join.done{background:#151515;border-color:#151515;color:#fff;padding:24px}
+.join-done h3{font-family:var(--slab);font-weight:300;font-size:30px;line-height:1.15;margin:16px 0 0;color:#fff}
+.join-done p{margin:8px 0 0;color:#cfcfcf;font-size:15px}
+.join-done .pill{margin-top:20px;color:#151515}
+#signup-msg{margin:10px 4px 0;font-size:14px}
+@media (max-width:480px){.join{padding:14px}.join .signup{flex-direction:row;border-radius:999px}.join .signup input{padding:0 10px}.join .signup .pill{width:auto}}
+/* hero bento: calendar, count capsule, top pick (filled weekly from talks.json) */
+.bento{display:grid;grid-template-columns:1.12fr .88fr;grid-template-areas:"cal top" "cnt top";gap:14px;align-self:center}
+.bento>*{border-radius:28px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9)}
+.b-cal{grid-area:cal;background:linear-gradient(170deg,var(--lime) 0%,var(--lime-2) 75%,#fff 100%);padding:18px 16px;display:flex;flex-direction:column;gap:7px}
+.cal-h,.cal-r{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center}
+.cal-h b{font-size:12px;color:var(--lime-ink)}
+.cal-r span{position:relative;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.55);display:grid;place-items:center;font:600 13px var(--body);color:#5b5f3a}
+.cal-r span i{position:absolute;top:-6px;right:-7px;font:700 9px var(--body);font-style:normal;background:#fff;color:var(--ink);padding:1px 5px;border-radius:999px}
+.cal-r span.on{background:#151515;color:#fff}
+.cal-r span.tp{background:#852BAF;color:#fff}
+.cal-r span.tp::before{content:"★";position:absolute;top:-5px;left:-5px;width:15px;height:15px;border-radius:50%;background:#fff;color:#852BAF;font-size:9px;line-height:15px;text-align:center}
+.cal-k{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12px;font-weight:600;color:var(--lime-ink)}
+.cal-k span{display:inline-flex;align-items:center;gap:6px}
+.cal-k i{width:10px;height:10px;border-radius:50%;background:#151515}
+.cal-k i.k-top{background:#852BAF}
+.cal-k .rng{margin-left:auto;background:#fff;color:var(--ink);padding:3px 10px;border-radius:999px}
+.b-count{grid-area:cnt;background:#151515;color:#fff;background-image:radial-gradient(rgba(255,255,255,.09) 1.5px,transparent 1.5px);background-size:14px 14px;padding:16px 18px;display:flex;align-items:center;gap:14px}
+.cnum{width:56px;height:80px;border-radius:999px;background:var(--lime);color:#151515;display:grid;place-items:center;font:300 46px var(--slab);flex:none}
+.clab{font:300 24px/1.1 var(--slab)}
+.b-top{grid-area:top;position:relative;background:var(--lav);padding:18px;display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.b-top:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.b-top>.tag{align-self:flex-start;color:var(--lav-ink)}
+.b-top>.tag.dark{color:#fff}
+.b-arrow{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:16px}
+.tp-d{display:flex;align-items:flex-end;gap:8px;margin-top:4px}
+.tp-d .num{font:300 72px/0.9 var(--slab)}
+.tp-d .mo{display:flex;flex-direction:column;font-size:11px;letter-spacing:.06em;color:var(--muted);font-weight:600;padding-bottom:4px}
+.tp-d .mo b{color:var(--ink)}
+.b-top .ttl{font-family:var(--slab);font-weight:600;font-size:19px;line-height:1.2}
+.tbar{margin-top:auto;display:grid;gap:6px}
+.tbar .bars{display:flex;align-items:flex-end;gap:2px;height:40px}
+.tbar .bars span{flex:1;border-radius:4px 4px 2px 2px;background:rgba(90,74,154,.16)}
+.tbar .bars span.on{background:#151515}
+.tlab{display:flex;justify-content:space-between;align-items:center;font:600 10px var(--body);color:var(--muted)}
+.tlab b{font-size:11px;color:var(--ink);background:rgba(255,255,255,.85);padding:3px 8px;border-radius:999px}
+@media (max-width:560px){.bento{grid-template-columns:1fr;grid-template-areas:"cal" "cnt" "top"}.cal-r span{font-size:15px}.cal-h b,.cal-k{font-size:13px}.tp-d .num{font-size:84px}.b-top{min-height:0}}
+.courses .sec{display:block;margin-top:56px}
+.c-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.course{position:relative;border-radius:28px;padding:22px;box-shadow:var(--shadow);border:1.5px solid rgba(255,255,255,.9);display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s;min-height:230px}
+.course:hover{transform:translateY(-3px);box-shadow:0 22px 46px -18px rgba(60,40,80,.38)}
+.course.k0{background:linear-gradient(160deg,var(--lime) 0%,var(--lime-2) 100%)}
+.course.k1{background:linear-gradient(160deg,var(--sky) 0%,var(--sky-2) 100%)}
+.course.k2{background:var(--lav)}
+.course .tag{align-self:flex-start}
+.course h3{font-family:var(--slab);font-weight:600;font-size:21px;line-height:1.2;margin:4px 0 0}
+.course p{margin:0;font-size:15px;line-height:1.45;color:var(--text)}
+.course .c-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.course .c-go{background:#151515;color:#fff;border-radius:999px;padding:8px 14px;font-size:13px;white-space:nowrap}
+@media (max-width:820px){.c-grid{grid-template-columns:1fr}.course{min-height:0}}
+.social-pill svg{flex:none;margin-right:2px}
+/* ---- hub template (2026-11-23) ---- */
+.hubnav{display:flex;align-items:center;gap:4px;background:#141414;border-radius:999px;padding:6px;box-shadow:0 14px 28px -16px rgba(0,0,0,.5)}
+.hubnav a{color:rgba(255,255,255,.75);font:600 13.5px var(--body);padding:9px 16px;border-radius:999px;text-decoration:none}
+.hubnav a.on{background:#fff;color:#141414}.hubnav a:hover{color:#fff}.hubnav a.on:hover{color:#141414}
+.nav{align-items:center}.btplink .btp{height:56px;width:auto;display:block}
+.hero h1{font-weight:600;letter-spacing:-.035em;line-height:1}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+h2,h3{letter-spacing:-.02em}
+@media (max-width:720px){.btplink{display:none}.hubnav a{padding:8px 12px;font-size:13px}.hubnav .lg{display:none}}
+.social-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:1000px;margin:0 auto}
+.social-pill{height:42px!important;padding:0 10px!important;font:600 14px var(--body)!important;color:#141414!important;border:1.5px solid rgba(20,20,20,.14);box-shadow:0 10px 20px -14px rgba(40,50,40,.6)!important;white-space:nowrap;transition:transform .15s,border-color .15s}
+.social-pill:hover{transform:translateY(-3px);border-color:#141414}
+.social-pill svg{width:16px;height:16px}
+.social-row .social-pill:nth-child(1){background:#fff;border-color:#141414}
+.social-row .social-pill:nth-child(1) span{background:none!important;color:#141414!important;width:auto!important;height:auto!important}
+.social-row .social-pill:nth-child(2){background:#CFE3C9}
+.social-row .social-pill:nth-child(3){background:#CFE4F5}
+.social-row .social-pill:nth-child(4){background:#F4F1FF}
+.social-row .social-pill:nth-child(5){background:#F7D4CC}
+.foot{font-size:12px!important;max-width:none!important}
+@media (min-width:1100px){.foot{white-space:nowrap}}
+@media (max-width:760px){.social-row{grid-template-columns:repeat(2,minmax(0,1fr));max-width:400px}.social-row .social-pill:nth-child(1){grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top">
+    <div class="hubnav" role="navigation" aria-label="Main"><a href="../">Hub</a><a href="../pathway/"><span class="lg">AI Learning </span>Pathway</a><a class="on" href="./"><span class="lg">Upcoming AI </span>Talks</a></div>
+    <div class="nav">
+      <a class="btplink" href="https://behindprompt.substack.com/" target="_blank" rel="noopener" title="Behind The Prompt newsletter"><img class="btp" src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="96" height="56"></a>
+      <a class="pill dark" href="#signup">Get the list <i aria-hidden="true">›</i></a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><!--T:UPDATED-->Updated Nov 23, 2026<!--/T:UPDATED--></p>
+      <h1>Upcoming AI <em>Talks</em></h1>
+      <p class="lede">Free AI talks and webinars, checked every week.</p>
+      <!-- Free signup -->
+      <div class="join" id="join">
+        <div class="join-form">
+          <div class="join-top"><span class="tag">Free</span><span class="join-k">The list in your inbox every week.</span></div>
+          <form class="signup" id="signup" novalidate>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+            <label for="email" class="sr">Your email</label>
+            <input id="email" type="email" name="email" placeholder="you@work.com" autocomplete="email" required>
+            <button class="pill dark" type="submit">Sign up <i aria-hidden="true">›</i></button>
+          </form>
+          <p id="signup-msg" role="status" aria-live="polite" hidden></p>
+        </div>
+        <div class="join-done" id="join-done" hidden>
+          <span class="tag lime" id="join-tag">Subscribed</span>
+          <h3 id="join-h">You're already subscribed.</h3>
+          <p id="join-p" hidden></p>
+        </div>
+      </div>
+    </div>
+
+    <!--T:HERO-->    <div class="bento">
+      <div class="b-cal" aria-label="Talk days">
+        <div class="cal-h"><b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b><b>S</b></div><div class="cal-r"><span class="">23</span><span class="">24</span><span class="">25</span><span class="">26</span><span class="">27</span><span class="">28</span><span class="on">29</span></div><div class="cal-r"><span class="on">30</span><span class="on tp">1<i>Dec</i></span><span class="on tp">2</span><span class="on">3</span><span class="">4</span><span class="">5</span><span class="">6</span></div><div class="cal-r"><span class="">7</span><span class="on">8</span><span class="">9</span><span class="on">10</span><span class="">11</span><span class="">12</span><span class="">13</span></div>
+        <div class="cal-k"><span><i></i>Talk day</span><span><i class="k-top"></i>Top pick</span><span class="rng">Nov 29 – Dec 15</span></div>
+      </div>
+      <div class="b-count"><span class="cnum">12</span><span class="clab">Upcoming<br>talks</span></div>
+      <a class="b-top" href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">
+        <span class="b-arrow" aria-hidden="true">↗</span>
+        <span class="tag">★ Top pick</span>
+        <div class="tp-d"><span class="num">01</span><span class="mo">DEC<b>TUE · 8:30 AM</b></span></div>
+        <div class="ttl">re:Invent CEO Keynote</div>
+        <div class="tbar"><div class="bars"><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="on" style="height:100%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span><span class="" style="height:30%"></span><span class="" style="height:42%"></span><span class="" style="height:54%"></span><span class="" style="height:36%"></span></div><div class="tlab"><span>6 AM</span><b>8:30 – 10:30 AM PST</b><span>8 PM</span></div></div>
+        <span class="tag dark">AWS</span>
+      </a>
+    </div>
+<!--/T:HERO-->
+  </header>
+
+  <!-- ===== WEEKLY LIST: filled from talks.json by talks/build.mjs ===== -->
+  <section class="talks tl" id="talks" style="margin-top:28px">
+<!--T:LIST-->
+    <article class="card talk " data-date="2026-11-29">
+      <div class="when"><span class="num">29</span><div><b>Sun, Nov</b>12:00 – 6:00 PM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">Road to re:Invent: Live Hackathon</a></h3>
+      <p class="take">A live hackathon tournament the day before re:Invent opens, with Jeff Barr and Swami Sivasubramanian.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-11-30">
+      <div class="when"><span class="num">30</span><div><b>Mon, Nov</b>8:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Anthropic</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://www.anthropic.com/events/anthropic-at-aws-re-invent-2026" target="_blank" rel="noopener">Anthropic at AWS re:Invent 2026</a></h3>
+      <p class="take">Anthropic's sessions and demos from re:Invent in Las Vegas, with a livestream on the event page.</p>
+    </article>
+
+    <article class="card talk " data-date="2026-11-30">
+      <div class="when"><span class="num">30</span><div><b>Mon, Nov</b>7:30 – 8:45 PM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent Developer Keynote</a></h3>
+      <p class="take">AWS engineers including Marc Brooker and Clare Liguori on how builders are working with AI agents.</p>
+    </article>
+
+    <article class="card talk pick" data-date="2026-12-01">
+      <div class="when"><span class="num">01</span><div><b>Tue, Dec</b>8:30 – 10:30 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag lime">Top pick</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent CEO Keynote with Matt Garman</a></h3>
+      <p class="take">Amazon's biggest AI announcements of the year, with guests Sam Altman of OpenAI and Tony Xu of DoorDash.</p>
+      <p class="why"><b>Why I picked it</b>The year's main AWS AI launches in one sitting, with the heads of AWS and OpenAI on the same stage. Watch it if you make AI platform or budget decisions.</p>
+    </article>
+
+    <article class="card talk pick" data-date="2026-12-02">
+      <div class="when"><span class="num">02</span><div><b>Wed, Dec</b>8:30 – 10:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag lime">Top pick</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent Data and AI Keynote with Swami Sivasubramanian</a></h3>
+      <p class="take">How AWS sees data and AI agents coming together, with stories from Delta Air Lines and Cox Automotive. Useful for leaders planning next year.</p>
+      <p class="why"><b>Why I picked it</b>Getting company data ready is often the hardest part of an AI project. Here two large companies show how they connected theirs to AI agents. Watch it if you lead a data, analytics or AI team.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-12-03">
+      <div class="when"><span class="num">03</span><div><b>Thu, Dec</b>7:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Salesforce</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://www.salesforce.com/plus/experience/world_tour_nyc_winter_2026" target="_blank" rel="noopener">Salesforce World Tour New York</a></h3>
+      <p class="take">The main keynote streams free on Salesforce+, with news on Agentforce, Slack and Salesforce with Claude. Free registration.</p>
+    </article>
+
+    <article class="card talk " data-date="2026-12-03">
+      <div class="when"><span class="num">03</span><div><b>Thu, Dec</b>8:30 – 10:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">AWS</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://aws.amazon.com/events/reinvent/livestream/" target="_blank" rel="noopener">re:Invent Technical Innovations Keynote</a></h3>
+      <p class="take">Matt Wood and AWS leaders on new chips, security and the technology behind AI at scale.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-12-03">
+      <div class="when"><span class="num">03</span><div><b>Thu, Dec</b>10:15 – 11:15 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">OpenAI Academy</span><span class="tag">Education</span></div>
+      <h3><a href="https://academy.openai.com/public/clubs/k-12-administrators-and-district-leaders-gcxd3/events/chatgpt-for-teachers-leading-district-wide-adoption-xxfhix3z96" target="_blank" rel="noopener">ChatGPT for Teachers: Leading District-Wide Adoption</a></h3>
+      <p class="take">For school and district leaders planning how teachers will use ChatGPT across a whole district.</p>
+    </article>
+
+    <article class="card talk " data-date="2026-12-08">
+      <div class="when"><span class="num">08</span><div><b>Tue, Dec</b>5:30 – 6:30 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Microsoft</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://developer.microsoft.com/en-us/reactor/events/27795/" target="_blank" rel="noopener">Ignite 2026: What's New, What's Next?</a></h3>
+      <p class="take">A walkthrough of Microsoft's Ignite announcements on AI, Copilot, Azure and security, and what comes next.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-12-08">
+      <div class="when"><span class="num">08</span><div><b>Tue, Dec</b>9:00 – 10:00 AM PST · webinar</div></div>
+      <div class="tags"><span class="tag dark">Anthropic</span><span class="tag">Government</span></div>
+      <h3><a href="https://claude.com/resources/webinars/best-practices-for-government-it-modernization-with-claude" target="_blank" rel="noopener">Best Practices for Government: IT Modernization with Claude</a></h3>
+      <p class="take">A government technology leader on modernizing a legacy system with Claude, and how to do it securely.</p>
+    </article>
+
+    <article class="card talk " data-date="2026-12-10">
+      <div class="when"><span class="num">10</span><div><b>Thu, Dec</b>8:00 – 9:00 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Microsoft</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://developer.microsoft.com/en-us/reactor/events/27703/" target="_blank" rel="noopener">AI @Work Live: Real People, Real Projects, Real AI</a></h3>
+      <p class="take">People share real AI projects from their work and what they learned along the way.</p>
+    </article>
+
+    <article class="card talk sky" data-date="2026-12-15">
+      <div class="when"><span class="num">15</span><div><b>Tue, Dec</b>5:30 – 6:30 AM PST · livestream</div></div>
+      <div class="tags"><span class="tag dark">Microsoft</span><span class="tag">Free stream</span></div>
+      <h3><a href="https://developer.microsoft.com/en-us/reactor/events/27796/" target="_blank" rel="noopener">Frontier Transformation: Reimagining Business with the New Microsoft 365 Copilot</a></h3>
+      <p class="take">How teams move from AI-assisted work to agents with the new Microsoft 365 Copilot, Copilot Cowork and Autopilot.</p>
+    </article>
+<!--/T:LIST-->
+  </section>
+  <!-- ===== END WEEKLY LIST ===== -->
+
+  <section class="courses" id="courses">
+    <div class="sec"><h2>Free <b>courses</b></h2><p class="sec-sub">Learn at your own pace, no cost.</p></div>
+    <div class="c-grid"><!--T:COURSES-->
+      <a class="course k0" href="https://anthropic.skilljar.com/ai-fluency-framework-foundations" target="_blank" rel="noopener">
+        <span class="tag dark">Anthropic Academy</span>
+        <h3>AI Fluency: Framework &amp; Foundations</h3>
+        <p>Learn to work with AI effectively, efficiently, ethically and safely.</p>
+        <div class="c-foot"><span>Free · certificate</span><span class="c-go">Start free ›</span></div>
+      </a>
+      <a class="course k1" href="https://huggingface.co/learn/agents-course/unit0/introduction" target="_blank" rel="noopener">
+        <span class="tag dark">Hugging Face</span>
+        <h3>AI Agents Course</h3>
+        <p>From beginner to building your own AI agents, at about 3 to 4 hours a week.</p>
+        <div class="c-foot"><span>Free · certificate</span><span class="c-go">Start free ›</span></div>
+      </a>
+      <a class="course k2" href="https://academy.openai.com/pages/courses" target="_blank" rel="noopener">
+        <span class="tag dark">OpenAI Academy</span>
+        <h3>AI Foundations</h3>
+        <p>AI basics, prompting, context and how to review what AI gives you.</p>
+        <div class="c-foot"><span>Free · 60–75 min</span><span class="c-go">Start free ›</span></div>
+      </a>
+    <!--/T:COURSES--></div>
+  </section>
+
+  <section class="card getlist" id="get">
+    <div><h2>Get the full list of <b>top AI talks</b> in your inbox.</h2><p class="sec-sub">Every week, with top picks marked.</p></div>
+    <a class="pill dark big" href="#signup">Sign up free <i aria-hidden="true">›</i></a>
+  </section>
+
+
+  <p class="note" style="text-align:center;margin-top:28px">Dates and times verified on each host’s official website as of <!--T:ASOF-->November 23, 2026<!--/T:ASOF-->. Schedules may change, so please confirm before registering.</p>
+
+  <section class="closer">
+    <a href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><img src="../assets/behind-the-prompt-logo.png" alt="Behind The Prompt newsletter" width="180" style="display:block;height:auto;margin:0 auto 14px"></a>
+    <p class="follow-label">Created by Weiwei Hu</p>
+    <div class="social-row"><a class="social-pill" href="../pathway/">AI Learning Pathway <span aria-hidden="true">›</span></a><a class="social-pill" href="https://www.linkedin.com/in/weiweihu/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a><a class="social-pill" href="https://github.com/wei-wei-hu/ai-learning-hub" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a><a class="social-pill" href="https://weiweihu.carrd.co/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a><a class="social-pill" href="https://behindprompt.substack.com/" target="_blank" rel="noopener"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Newsletter</a></div>
+    <p class="foot">Created by <a href="https://weiweihu.carrd.co/" target="_blank" rel="noopener">Weiwei Hu</a> · © 2026 Weiwei Hu. All rights reserved. · Independent guide, not affiliated with OpenAI, Anthropic or the event hosts · <a href="https://forms.gle/9DdkzDKoyQURQJJZ9" target="_blank" rel="noopener">Give feedback</a>.</p>
+  </section>
+</div>
+
+<script>
+// Signup form address (ends in /exec)
+var TALKS = { scriptUrl: "" };
+(function(){
+  // Hide talks whose date has passed (Pacific time), between weekly rebuilds.
+  var today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
+  document.querySelectorAll('article[data-date]').forEach(function(a){if(a.getAttribute('data-date')<today)a.hidden=true;});
+})();
+(function(){
+  var f=document.getElementById('signup'),m=document.getElementById('signup-msg');
+  function say(t,bad){m.hidden=false;m.textContent=t;m.style.color=bad?'#a12':'';}
+  function done(st,email){
+    var J=document.getElementById('join'),D=document.getElementById('join-done'),H=document.getElementById('join-h'),P=document.getElementById('join-p'),T=document.getElementById('join-tag');
+    J.querySelector('.join-form').hidden=true;D.hidden=false;J.classList.add('done');
+    if(st==='paid'||st==='free'){H.textContent="You're already subscribed.";}
+    else{T.textContent='Free';H.textContent="You're in.";P.textContent='The next list arrives this week.';P.hidden=false;}
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=f.email.value.trim(),b=f.querySelector('button');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){say('Please enter a valid email.',true);return;}
+    b.disabled=true;say('Adding you…');
+    if(!TALKS.scriptUrl){say('Signups open very soon. Please check back shortly.',true);b.disabled=false;return;}
+    fetch(TALKS.scriptUrl,{method:'POST',headers:{'content-type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'subscribe',email:email,website:f.website.value,source:'talks page'})})
+      .then(function(r){return r.json().catch(function(){return {ok:false};});})
+      .then(function(j){if(j.ok){done(j.status,email);}else{say(j.error||'Something went wrong. Please try again.',true);}})
+      .catch(function(){say('Something went wrong. Please try again.',true);})
+      .then(function(){b.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>
